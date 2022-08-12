@@ -35,8 +35,12 @@ Foo -> Foo5 : To database
 Foo -> Foo6 : To collections
 Foo -> Foo7 : To queue
 
-Foo -> Foo : This is a signal to self.\nIt also demonstrates\nmultiline text
+Foo -> Foo : 自己メッセージ
 Foo <- Foo : This is a signal to self.\nIt also demonstrates\nmultiline text
+
+Foo -> Bar  : 同期メッセージ
+Foo <-- Bar : 戻りメッセージ
+Foo ->> Bar : 非同期メッセージ
 
 Foo ->x Bar
 Foo -> Bar
