@@ -1,9 +1,0 @@
-@startuml
-
-' 応答メッセージのテキストを矢印の下に表示
-skinparam responseMessageBelowArrow true
-
-Alice -> Bob : Hello
-Bob -> Alice : World
-
-@enduml
