@@ -397,6 +397,10 @@ Bar -[#0000FF]-> Foo : ok
 Alice -> App ++ : run
 App --> Alice -- : ret
 
+Alice ->  Bob ++   #yellow : hello1
+Bob   ->  Eve --++ #gold   : hello2
+Eve   --> Alice --         : ok
+
 Alice -> App ++ : run
 
 App -> DB ** : create
