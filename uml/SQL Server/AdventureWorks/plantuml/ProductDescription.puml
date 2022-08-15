@@ -1,0 +1,12 @@
+@startuml
+class ProductDescription <<partial>> {
+    + ProductDescription()
+    + ProductDescriptionId : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+ProductDescription --> "Rowguid" Guid
+ProductDescription --> "ModifiedDate" DateTime
+ProductDescription --> "ProductModelProductDescriptions<ProductModelProductDescription>" "ICollection`1"
+@enduml

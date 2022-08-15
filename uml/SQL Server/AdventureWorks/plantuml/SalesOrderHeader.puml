@@ -1,0 +1,33 @@
+@startuml
+class SalesOrderHeader <<partial>> {
+    + SalesOrderHeader()
+    + SalesOrderId : int <<get>> <<set>>
+    + RevisionNumber : byte <<get>> <<set>>
+    + ShipDate : DateTime? <<get>> <<set>>
+    + Status : byte <<get>> <<set>>
+    + OnlineOrderFlag : bool? <<get>> <<set>>
+    + SalesOrderNumber : string <<get>> <<set>>
+    + PurchaseOrderNumber : string <<get>> <<set>>
+    + AccountNumber : string <<get>> <<set>>
+    + CustomerId : int <<get>> <<set>>
+    + ShipToAddressId : int? <<get>> <<set>>
+    + BillToAddressId : int? <<get>> <<set>>
+    + ShipMethod : string <<get>> <<set>>
+    + CreditCardApprovalCode : string <<get>> <<set>>
+    + SubTotal : decimal <<get>> <<set>>
+    + TaxAmt : decimal <<get>> <<set>>
+    + Freight : decimal <<get>> <<set>>
+    + TotalDue : decimal <<get>> <<set>>
+    + Comment : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+SalesOrderHeader --> "OrderDate" DateTime
+SalesOrderHeader --> "DueDate" DateTime
+SalesOrderHeader --> "Rowguid" Guid
+SalesOrderHeader --> "ModifiedDate" DateTime
+SalesOrderHeader --> "BillToAddress" Address
+SalesOrderHeader --> "Customer" Customer
+SalesOrderHeader --> "ShipToAddress" Address
+SalesOrderHeader --> "SalesOrderDetails<SalesOrderDetail>" "ICollection`1"
+@enduml

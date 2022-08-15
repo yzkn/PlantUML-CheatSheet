@@ -1,0 +1,24 @@
+@startuml
+class Customer <<partial>> {
+    + Customer()
+    + CustomerId : int <<get>> <<set>>
+    + NameStyle : bool <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + MiddleName : string <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + Suffix : string <<get>> <<set>>
+    + CompanyName : string <<get>> <<set>>
+    + SalesPerson : string <<get>> <<set>>
+    + EmailAddress : string <<get>> <<set>>
+    + Phone : string <<get>> <<set>>
+    + PasswordHash : string <<get>> <<set>>
+    + PasswordSalt : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+Customer --> "Rowguid" Guid
+Customer --> "ModifiedDate" DateTime
+Customer --> "CustomerAddresses<CustomerAddress>" "ICollection`1"
+Customer --> "SalesOrderHeaders<SalesOrderHeader>" "ICollection`1"
+@enduml

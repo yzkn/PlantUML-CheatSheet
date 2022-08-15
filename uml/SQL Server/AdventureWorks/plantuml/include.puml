@@ -1,0 +1,18 @@
+@startuml
+!include .\\Address.puml
+!include .\\BuildVersion.puml
+!include .\\Customer.puml
+!include .\\CustomerAddress.puml
+!include .\\ErrorLog.puml
+!include .\\mydbContext.puml
+!include .\\Product.puml
+!include .\\ProductCategory.puml
+!include .\\ProductDescription.puml
+!include .\\ProductModel.puml
+!include .\\ProductModelProductDescription.puml
+!include .\\SalesOrderDetail.puml
+!include .\\SalesOrderHeader.puml
+!include .\\VGetAllCategory.puml
+!include .\\VProductAndDescription.puml
+!include .\\VProductModelCatalogDescription.puml
+@enduml

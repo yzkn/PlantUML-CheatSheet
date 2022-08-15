@@ -1,0 +1,11 @@
+@startuml
+class ProductModelProductDescription <<partial>> {
+    + ProductModelId : int <<get>> <<set>>
+    + ProductDescriptionId : int <<get>> <<set>>
+    + Culture : string <<get>> <<set>>
+}
+ProductModelProductDescription --> "Rowguid" Guid
+ProductModelProductDescription --> "ModifiedDate" DateTime
+ProductModelProductDescription --> "ProductDescription" ProductDescription
+ProductModelProductDescription --> "ProductModel" ProductModel
+@enduml

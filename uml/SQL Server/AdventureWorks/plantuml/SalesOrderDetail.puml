@@ -1,0 +1,15 @@
+@startuml
+class SalesOrderDetail <<partial>> {
+    + SalesOrderId : int <<get>> <<set>>
+    + SalesOrderDetailId : int <<get>> <<set>>
+    + OrderQty : short <<get>> <<set>>
+    + ProductId : int <<get>> <<set>>
+    + UnitPrice : decimal <<get>> <<set>>
+    + UnitPriceDiscount : decimal <<get>> <<set>>
+    + LineTotal : decimal <<get>> <<set>>
+}
+SalesOrderDetail --> "Rowguid" Guid
+SalesOrderDetail --> "ModifiedDate" DateTime
+SalesOrderDetail --> "Product" Product
+SalesOrderDetail --> "SalesOrder" SalesOrderHeader
+@enduml

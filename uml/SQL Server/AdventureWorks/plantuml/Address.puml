@@ -1,0 +1,19 @@
+@startuml
+class Address <<partial>> {
+    + Address()
+    + AddressId : int <<get>> <<set>>
+    + AddressLine1 : string <<get>> <<set>>
+    + AddressLine2 : string <<get>> <<set>>
+    + City : string <<get>> <<set>>
+    + StateProvince : string <<get>> <<set>>
+    + CountryRegion : string <<get>> <<set>>
+    + PostalCode : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+Address --> "Rowguid" Guid
+Address --> "ModifiedDate" DateTime
+Address --> "CustomerAddresses<CustomerAddress>" "ICollection`1"
+Address --> "SalesOrderHeaderBillToAddresses<SalesOrderHeader>" "ICollection`1"
+Address --> "SalesOrderHeaderShipToAddresses<SalesOrderHeader>" "ICollection`1"
+@enduml

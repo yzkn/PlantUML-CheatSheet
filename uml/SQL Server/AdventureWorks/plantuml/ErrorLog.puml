@@ -1,0 +1,13 @@
+@startuml
+class ErrorLog <<partial>> {
+    + ErrorLogId : int <<get>> <<set>>
+    + UserName : string <<get>> <<set>>
+    + ErrorNumber : int <<get>> <<set>>
+    + ErrorSeverity : int? <<get>> <<set>>
+    + ErrorState : int? <<get>> <<set>>
+    + ErrorProcedure : string <<get>> <<set>>
+    + ErrorLine : int? <<get>> <<set>>
+    + ErrorMessage : string <<get>> <<set>>
+}
+ErrorLog --> "ErrorTime" DateTime
+@enduml

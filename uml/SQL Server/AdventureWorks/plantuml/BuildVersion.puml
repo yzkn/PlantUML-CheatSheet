@@ -1,0 +1,8 @@
+@startuml
+class BuildVersion <<partial>> {
+    + SystemInformationId : byte <<get>> <<set>>
+    + DatabaseVersion : string <<get>> <<set>>
+}
+BuildVersion --> "VersionDate" DateTime
+BuildVersion --> "ModifiedDate" DateTime
+@enduml

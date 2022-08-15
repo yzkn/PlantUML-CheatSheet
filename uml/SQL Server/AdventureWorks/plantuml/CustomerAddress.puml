@@ -1,0 +1,11 @@
+@startuml
+class CustomerAddress <<partial>> {
+    + CustomerId : int <<get>> <<set>>
+    + AddressId : int <<get>> <<set>>
+    + AddressType : string <<get>> <<set>>
+}
+CustomerAddress --> "Rowguid" Guid
+CustomerAddress --> "ModifiedDate" DateTime
+CustomerAddress --> "Address" Address
+CustomerAddress --> "Customer" Customer
+@enduml

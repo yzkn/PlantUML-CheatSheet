@@ -1,0 +1,29 @@
+@startuml
+class VProductModelCatalogDescription <<partial>> {
+    + ProductModelId : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Summary : string <<get>> <<set>>
+    + Manufacturer : string <<get>> <<set>>
+    + Copyright : string <<get>> <<set>>
+    + ProductUrl : string <<get>> <<set>>
+    + WarrantyPeriod : string <<get>> <<set>>
+    + WarrantyDescription : string <<get>> <<set>>
+    + NoOfYears : string <<get>> <<set>>
+    + MaintenanceDescription : string <<get>> <<set>>
+    + Wheel : string <<get>> <<set>>
+    + Saddle : string <<get>> <<set>>
+    + Pedal : string <<get>> <<set>>
+    + BikeFrame : string <<get>> <<set>>
+    + Crankset : string <<get>> <<set>>
+    + PictureAngle : string <<get>> <<set>>
+    + PictureSize : string <<get>> <<set>>
+    + ProductPhotoId : string <<get>> <<set>>
+    + Material : string <<get>> <<set>>
+    + Color : string <<get>> <<set>>
+    + ProductLine : string <<get>> <<set>>
+    + Style : string <<get>> <<set>>
+    + RiderExperience : string <<get>> <<set>>
+}
+VProductModelCatalogDescription --> "Rowguid" Guid
+VProductModelCatalogDescription --> "ModifiedDate" DateTime
+@enduml

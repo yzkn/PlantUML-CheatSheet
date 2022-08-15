@@ -1,0 +1,7 @@
+@startuml
+class VGetAllCategory <<partial>> {
+    + ParentProductCategoryName : string <<get>> <<set>>
+    + ProductCategoryName : string <<get>> <<set>>
+    + ProductCategoryId : int? <<get>> <<set>>
+}
+@enduml

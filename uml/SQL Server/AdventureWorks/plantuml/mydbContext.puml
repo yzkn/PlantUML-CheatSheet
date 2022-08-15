@@ -1,0 +1,25 @@
+@startuml
+class mydbContext <<partial>> {
+    + mydbContext()
+    + mydbContext(options:DbContextOptions<mydbContext>)
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- mydbContext
+mydbContext --> "Addresses<Address>" "DbSet`1"
+mydbContext --> "BuildVersions<BuildVersion>" "DbSet`1"
+mydbContext --> "Customers<Customer>" "DbSet`1"
+mydbContext --> "CustomerAddresses<CustomerAddress>" "DbSet`1"
+mydbContext --> "ErrorLogs<ErrorLog>" "DbSet`1"
+mydbContext --> "Products<Product>" "DbSet`1"
+mydbContext --> "ProductCategories<ProductCategory>" "DbSet`1"
+mydbContext --> "ProductDescriptions<ProductDescription>" "DbSet`1"
+mydbContext --> "ProductModels<ProductModel>" "DbSet`1"
+mydbContext --> "ProductModelProductDescriptions<ProductModelProductDescription>" "DbSet`1"
+mydbContext --> "SalesOrderDetails<SalesOrderDetail>" "DbSet`1"
+mydbContext --> "SalesOrderHeaders<SalesOrderHeader>" "DbSet`1"
+mydbContext --> "VGetAllCategories<VGetAllCategory>" "DbSet`1"
+mydbContext --> "VProductAndDescriptions<VProductAndDescription>" "DbSet`1"
+mydbContext --> "VProductModelCatalogDescriptions<VProductModelCatalogDescription>" "DbSet`1"
+@enduml

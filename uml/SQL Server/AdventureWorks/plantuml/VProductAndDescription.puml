@@ -1,0 +1,9 @@
+@startuml
+class VProductAndDescription <<partial>> {
+    + ProductId : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + ProductModel : string <<get>> <<set>>
+    + Culture : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+}
+@enduml

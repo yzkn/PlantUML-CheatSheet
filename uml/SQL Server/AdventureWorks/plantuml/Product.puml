@@ -1,0 +1,27 @@
+@startuml
+class Product <<partial>> {
+    + Product()
+    + Product(name:string, productNumber:string, standardCost:decimal, listPrice:decimal, sellStartDate:DateTime, rowguid:Guid, modifiedDate:DateTime)
+    + ProductId : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + ProductNumber : string <<get>> <<set>>
+    + Color : string <<get>> <<set>>
+    + StandardCost : decimal <<get>> <<set>>
+    + ListPrice : decimal <<get>> <<set>>
+    + Size : string <<get>> <<set>>
+    + Weight : decimal? <<get>> <<set>>
+    + ProductCategoryId : int? <<get>> <<set>>
+    + ProductModelId : int? <<get>> <<set>>
+    + SellEndDate : DateTime? <<get>> <<set>>
+    + DiscontinuedDate : DateTime? <<get>> <<set>>
+    + ThumbnailPhotoFileName : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+Product --> "SellStartDate" DateTime
+Product --> "Rowguid" Guid
+Product --> "ModifiedDate" DateTime
+Product --> "ProductCategory" ProductCategory
+Product --> "ProductModel" ProductModel
+Product --> "SalesOrderDetails<SalesOrderDetail>" "ICollection`1"
+@enduml

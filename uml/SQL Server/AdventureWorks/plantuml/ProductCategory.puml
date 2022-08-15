@@ -1,0 +1,15 @@
+@startuml
+class ProductCategory <<partial>> {
+    + ProductCategory()
+    + ProductCategoryId : int <<get>> <<set>>
+    + ParentProductCategoryId : int? <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+ProductCategory --> "Rowguid" Guid
+ProductCategory --> "ModifiedDate" DateTime
+ProductCategory --> "ParentProductCategory" ProductCategory
+ProductCategory --> "InverseParentProductCategory<ProductCategory>" "ICollection`1"
+ProductCategory --> "Products<Product>" "ICollection`1"
+@enduml
