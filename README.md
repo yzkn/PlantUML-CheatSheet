@@ -779,6 +779,30 @@ interface       interface
 
 @startuml
 
+
+' 空の属性・操作を省略
+' hide empty members
+
+' その他の省略
+' hide empty fields, hide empty attributes
+' hide empty methods
+' hide fields, hide attributes
+' hide circle
+' hide stereotype
+' hide members
+' hide Class51
+' hide <<Serializable>> members
+
+' 孤立したクラスの省略
+' hide @unlinked
+
+' 削除
+' remove Class51
+
+' 孤立したクラスの削除
+' remove @unlinked
+
+
 Class1 --   Class11
 Class1 --{  Class12
 Class1 --*  Class13
@@ -799,6 +823,11 @@ Class41 "1" *-- "many" Class42 : contains
 Class43 o-- Class44 : aggregation
 Class45 --> "1" Class46
 
+class "非 文 字" as Class51 <<Serializable>>
+class Class52 as "non-letters in the class (or enum...)"
+Class51 -- Class52
+class Class53
+
 @enduml
 
 ```
@@ -807,7 +836,15 @@ Class45 --> "1" Class46
 
 @startuml
 
-Vehicle <|-- Car
+
+' 空の属性・操作を省略
+hide empty members
+
+
+Vehicle <|-- Car : Extension
+' note left on link, note right on link, note top on link, note bottom on link
+note on link : 汎化（継承）
+
 Driver - Car : drives >
 Car *- Wheel : have 4 >
 Car -- Person : < owns
@@ -838,7 +875,8 @@ class Vehicle {
     Decimal speed
     int numberOfPassengers
     String fuelType
-    go()
+    go(float acceleration)
+    go(int maxSpeed)
     stop()
 }
 
@@ -846,6 +884,7 @@ class Wheel {
     int radius
 
     ' skinparam classAttributeIconSize 0 でマークをつけない
+
     -int privateField
     ..
     #int protectedField
@@ -865,52 +904,24 @@ class Wheel {
     {abstract} void abstractMethod()
 }
 
-@enduml
+' note left of, note right of, note top of, note bottom of
+note top of Vehicle
+    <b>b</b> <color:royalBlue>color:royalBlue</color> <i>i</i> <s>s</s> <size:24>size:24</size> <u>u</u>
+end note
 
-```
+note left of Vehicle::"go(float acceleration)"
+    Must set an acceleration
+end note
 
-```plantuml
+note left of Vehicle::"go(int maxSpeed)"
+    Must set a max speed
+end note
 
-@startuml
-
-@enduml
-
-
-```
-
-```plantuml
-
-@startuml
-
-@enduml
-
-
-```
-
-```plantuml
-
-@startuml
+note right of Vehicle::stop
+    To stop
+end note
 
 @enduml
-
-
-```
-
-```plantuml
-
-@startuml
-
-@enduml
-
-
-```
-
-```plantuml
-
-@startuml
-
-@enduml
-
 
 ```
 
