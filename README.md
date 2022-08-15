@@ -750,10 +750,6 @@ package "E-commerce website" {
 @enduml
 
 
-
-@enduml
-
-
 ```
 
 
