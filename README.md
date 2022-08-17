@@ -822,6 +822,14 @@ Class3 ..   Class31
 Class3 ..>  Class32
 Class3 ..|> Class33
 
+' bold、dashed、dotted、hidden、plain
+Class4 -[hidden]>  Class5 /' 水平方向に揃える '/
+Class4 -[hidden]-> Class6 /' 垂直方向に揃える '/
+
+Class6 -[#red]-> Class7
+' bold、dashed、dotted、hidden、plain
+Class6 -[#aqua,dashed,thickness=2]-> Class8
+
 Class41 "1" *-- "many" Class42 : contains
 Class43 o-- Class44 : aggregation
 Class45 --> "1" Class46
@@ -1016,11 +1024,22 @@ note right of Vehicle::stop
     To stop
 end note
 
+@enduml
 
+```
 
-' ''''''''''
+```plantuml
 
-class Location {
+@startuml
+
+skinparam class {
+    ' BackgroundColor PaleGreen
+    ArrowColor Green
+    BorderColor Green
+}
+skinparam classBackgroundColor PaleGreen
+
+class Location #Aquamarine/Aqua {
     + String name
     + Decimal latitude
     + Decimal longitude
@@ -1035,6 +1054,17 @@ class Route {
 Route . diamond
 diamond - "from 0..*" Location
 diamond - "to 0..* " Location
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+class ArrayList implements List
+class ArrayList extends AbstractList
 
 @enduml
 
