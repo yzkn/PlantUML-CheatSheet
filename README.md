@@ -809,6 +809,140 @@ class class {
 
 @startuml
 
+ClassAssociation01 -- ClassAssociation11
+ClassAssociation01 --> ClassAssociation12
+note on link : 誘導可能性
+ClassAssociation01 x--> ClassAssociation13
+note on link : 誘導可能性
+
+note left of ClassAssociation01 : 関連
+
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+' skinparam groupInheritance 1 /' 継承の矢印の矢じりをグループ化しない '/
+skinparam groupInheritance 2 /' 継承の矢印の矢じりが2つ以上の場合にグループ化 '/
+
+' ClassGeneralization01 ^-- ClassGeneralization11
+ClassGeneralization01 <|-- ClassGeneralization11
+ClassGeneralization01 <|-- ClassGeneralization12
+ClassGeneralization01 <|-- ClassGeneralization13
+ClassGeneralization11 -[hidden]> ClassGeneralization12
+ClassGeneralization12 -[hidden]> ClassGeneralization13
+
+note left of ClassGeneralization11
+    ClassGeneralization01 を
+    ClassGeneralization11,12,13 で継承
+
+    サブクラス -> スーパークラス
+    （派生 / is-a / extends / 汎化 / 継承）
+end note
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+class ClassRealization
+interface InterfaceRealization
+
+' InterfaceRealization ^.. ClassRealization
+InterfaceRealization <|.. ClassRealization
+
+note left of ClassRealization
+    InterfaceRealization を
+    ClassRealization で実現
+
+    実装クラス -> インターフェース
+    （実現 / realization / implements / 実装）
+end note
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+ClassAggregation01 o-- ClassAggregation11
+
+note left of ClassAggregation01
+    ClassAggregation01 が全体、
+    ClassAggregation11 が部分で、
+    結びつきが弱い
+    （集約）
+end note
+
+ClassComposition01 *-- ClassComposition11
+
+note left of ClassComposition01
+    ClassComposition01 が全体、 ClassComposition11 が部分で、
+    結びつきが強く、 ClassComposition11 なしに成り立たない
+    （合成 / コンポジション）
+end note
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+ClassDependency01 ..> ClassDependency11
+
+note left of ClassDependency01
+    ClassDependency01 が ClassDependency11 に依存
+    （ClassDependency01 が ClassDependency11 のフィールド／メソッドを利用している）
+end note
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+Class01 ..# Class02
+Class03 ..+ Class04
+
+@enduml
+
+```
+
+## 多重度
+
+```plantuml
+
+@startuml
+
+Class01 "1" -- "4..6" Class02 : 1 対 4～6
+Class03 "1" -- "0..*" Class04 : 1 対 多
+Class05"1..*" -- "*" Class06 : 1以上 対 多
+
+
+' IE記法
+' 最小(オプショナリティ) / 最大(カーディナリティ)
+
+Class11 ||--o| Class12 : 1 対 0 or 1
+Class13 ||--|| Class14 : 1 対 1
+
+Class15 ||--o{ Class16 : 1 対 0以上
+Class17 ||--|{ Class18 : 1 対 1以上
+
+Class19 }o--|{ Class20 : 0以上 対 1以上
+
 @enduml
 
 ```
@@ -905,10 +1039,9 @@ Class01 -[#red,bold]- Class11
 Class02 -[#green,dashed,thickness=2]- Class12
 Class03 -[#blue,dotted,thickness=4]- Class13
 
-class Class17 #pink ##[bold]red
+class Class04 #pink ##[bold]red
+class Class14 << (C,#FFEE00) utility >> #pink;line:red;text:red
 Class04 -- Class14
-class Class18 << (C,#FFEE00) utility >> #pink;line:red;text:red
-Class05 -- Class15
 
 ' 水平方向 left, right, up, down
 Class31 -left- Class32
@@ -919,18 +1052,6 @@ Class34 -[hidden]>  Class35 /' 水平方向に揃える '/
 Class31 -[hidden]-> Class34 /' 垂直方向に揃える '/
 Class01 -[hidden]> Class02
 Class02 -[hidden]> Class03
-Class13 -[hidden]> Class14
-Class14 -[hidden]> Class15
-Class15 -[hidden]> Class16
-
-
-' skinparam groupInheritance 1 /' 継承の矢印の矢じりをグループ化しない '/
-skinparam groupInheritance 2 /' 継承の矢印の矢じりが2つ以上の場合にグループ化 '/
-Class06 <|-- Class16
-Class06 <|-- Class17
-Class06 <|-- Class18
-Class16 -[hidden]> Class17
-Class17 -[hidden]> Class18
 
 class "非 文 字" as Class07 <<Serializable>>
 class Class08 as "non-letters in the class (or enum...)"
@@ -1043,10 +1164,10 @@ interface Movable {
 
 Vehicle <|-- Car
 ' note left on link, note right on link, note top on link, note bottom on link
-note right on link : is-a / extends / 汎化 / 継承 / 派生
+note right on link : 派生
 
 Movable <|.. Vehicle
-note right on link : implements / realization / 実現 / 実装
+note right on link : 実現
 
 Driver "1..*" -> "0..*" Car : drives >
 note right on link : 依存
@@ -1064,7 +1185,7 @@ Car o- Seat : has >
 note right on link : 集約（カスケード削除しない）
 
 Car <|-- Wagon
-note on link : is-a / extends / 汎化 / 継承 / 派生
+note on link : 派生
 
 Car -- Owner : < owns
 
