@@ -1385,6 +1385,14 @@ fork
     split
         :Order;
         :Payment;
+
+        if (Paid?) then (yes)
+            :Notify;
+        else
+            :Payment failure;
+            stop
+        endif
+
     split again
         :Cancel order;
     end split
