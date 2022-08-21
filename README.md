@@ -1380,12 +1380,26 @@ repeat
 repeat while (Valid?) is (no) not (yes)
 
 fork
-  :Search product;
+    :Search product;
+    :Add to cart;
+    split
+        :Order;
+        :Payment;
+    split again
+        :Cancel order;
+    end split
 fork again
-  :View profile;
+    :View profile;
+    split
+        :Change profile;
+    split again
+        :Change password;
+    end split
 fork again
-  :View histories;
+    :View histories;
 end fork
+
+#CCFFFF:Sign out;
 
 end
 
