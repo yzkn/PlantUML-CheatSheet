@@ -1389,7 +1389,11 @@ note right : Connector
 
 
 group 条件文
-    partition #aliceblue "if (...) then (...)" {
+    partition #aliceblue "**partition** if (...) then (...)" {
+        note
+            //パーティションのノート//
+        end note
+    
         if (User is enabled?) then (yes)
         else (no)
             :Please sign up;
@@ -1397,21 +1401,21 @@ group 条件文
         endif
     }
 
-    partition #aliceblue "if (...) is (...) then" {
+    package #aliceblue "**package** if (...) is (...) then" {
         if (Is admin?) is (<color:red>yes) then
             :Show admin menu;
         else
         endif
     }
 
-    partition #aliceblue "if (...) equals (...) then" {
+    rectangle #aliceblue "**rectangle** if (...) equals (...) then" {
         if (Demo flag?) equals (true) then
             :Show live demo;
         else
         endif
     }
 
-    partition #aliceblue "else if" {
+    card #aliceblue "**card** else if" {
         ' !pragma useVerticalIf on /' 垂直モード '/
         if (condition A) then (yes)
             :process A;
