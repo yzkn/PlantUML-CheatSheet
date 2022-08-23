@@ -1628,15 +1628,59 @@ end split
 
 ```
 
-## スイムレーン
+## スイムレーン・スタイル
 
 ```plantuml
 
 @startuml
 
+<style>
+activityDiagram {
+    BackgroundColor #AliceBlue
+    BorderColor #CornflowerBlue
+    FontColor #SteelBlue
+    FontName arial
+
+    diamond {
+        BackgroundColor #HoneyDew
+        FontColor #MediumSeaGreen
+        FontName arial
+        FontSize 15
+        LineColor #MediumTurquoise
+    }
+
+    arrow {
+        FontColor #DimGray
+        FontName arial
+        FontSize 15
+        LineColor #SlateGray
+        LineThickness 2
+    }
+
+    partition {
+        BackgroundColor #LightGoldenRodYellow
+        FontColor #DarkOrange
+        LineColor #DarkOrange
+        RoundCorner 10
+    }
+
+    note {
+        BackgroundColor #Lavender
+        FontColor #Violet
+        LineColor #Violet
+    }
+}
+document {
+   BackgroundColor transparent
+}
+</style>
+
 |Swimlane1|
 start
-:Activity 1;
+partition start {
+    :Activity 1;
+    note right : Note 1
+}
 
 |#AliceBlue|Swimlane2|
 if (flag?) is (true) then
