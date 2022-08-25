@@ -1079,6 +1079,12 @@ class Class14 << (C,#FFEE00) utility >> #pink;line:red;text:red
 Class04 -- Class14
 
 ' 水平方向 left, right, up, down
+class Class31 <<boundary>>
+note top : アクターが利用するクラス
+class Class32 <<entity>>
+note top : データを保持するクラス
+class Class33 <<control>>
+note top : 業務や機能を管理するクラス
 Class31 -left- Class32
 Class31 -      Class33
 
@@ -1100,6 +1106,18 @@ class Class09
 
 ```
 
+```plantuml
+
+@startuml
+
+boundary バウンダリー <<boundary>>
+entity エンティティ <<entity>>
+control コントロール <<control>>
+
+@enduml
+
+```
+
 ## 例
 
 ```plantuml
@@ -1116,7 +1134,7 @@ package Machine #CDE {
     class Engine
     class Wagon
     class Wheel
-    class FuelMeter
+    class FuelMeter <<boundary>>
     class FuelTank
 }
 
@@ -1153,7 +1171,7 @@ class Engine {
     int weight
 }
 
-class DriveLog #Aqua {
+class DriveLog <<entity>> #Azure {
     DateTime date
     Location origin
     Location destination
@@ -1191,7 +1209,7 @@ class Wheel {
 ' インターフェース
 Vehicle -() Driveable
 
-interface Movable {
+interface Movable <<interface>> {
     goForward()
     goBack()
 }
