@@ -1294,9 +1294,23 @@ object "太郎 : Driver" as taro {
     weight = 70
 }
 
+object " : Driver" as driver {
+    id = 2
+    height = 180
+    weight = 70
+}
+note top : オブジェクト名が定まっていない時は省略
 
-taro --> corolla
-taro --> century
+object "コントソ : Team" as contoso {
+    id = 1
+}
+
+
+taro --> corolla : 運転
+taro --> century : 運転
+
+driver --> contoso : 所属
+taro   --> contoso : 所属
 
 
 package マップテーブル（連想配列） {
