@@ -1871,6 +1871,8 @@ po4 -( d5
 
 package "Group" {
 
+    component Component $tagComponent
+
     node "Node" {
         [Component] as c11
 
