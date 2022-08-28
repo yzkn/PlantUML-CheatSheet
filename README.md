@@ -1,35 +1,36 @@
 # PlantUML概要
 
-| ダイアグラム                    |                        | 内容                                                                                      |
-| ------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------- |
-| 〇 アクティビティ図             |                        | 「アクション（制御）」の遷移を記述                                                        |
-| 〇 オブジェクト図               |                        | クラス図の定義を具体化（インスタンス化）して記述                                          |
-| 〇 クラス図                     |                        | クラスの定義とクラス間の関係を記述                                                        |
-| 〇 コンポーネント図             |                        | コンポーネント、ポート、インターフェイス、コンポーネント間の関係を記述                    |
-| 〇 ユースケース図               |                        | アクター（人／組織／別のシステム）とシステムのやり取りを記述                              |
-| 〇 状態遷移図                   |                        | 「状態」の遷移を記述（ステート図 / ステートマシン図）                                     |
-| 〇 配置図                       |                        | 物理的な構成を記述                                                                        |
-|                                 |                        |                                                                                           |
-| ● 相互作用図                    |                        |                                                                                           |
-|                                 | 〇 シーケンス図        | 登場人物とシステム内のオブジェクト、通過するメッセージと発生順序を記述                    |
-|                                 | 〇 タイミング図        | 時間軸と状態変化を記述                                                                    |
-|                                 | ● コミュニケーション図 | クラスやオブジェクト間の応答と関係を記述                                                  |
-|                                 | ● 相互作用概要図       | *相互作用図* をアクティビティ図の構成要素にしたもの                                       |
-|                                 |                        |                                                                                           |
-| ● コンポジット構造図            |                        | 複数のクラスの定義とクラス間の関係を記述                                                  |
-| ● パッケージ図                  |                        | クラスをグループ化して記述                                                                |
-|                                 |                        |                                                                                           |
-| △ Archimate（アーキテクチャ図） |                        | システムの構造を記述                                                                      |
-| △ AsciiMath                     |                        | 数式を記述                                                                                |
-| △ Ditaa                         |                        | アスキーアートを画像化するものDitaa (DIagrams Through Ascii Art)                          |
-| △ JSON                          |                        |                                                                                           |
-| △ nwdiag（ネットワーク図）      |                        | ネットワーク機器の物理的な接続を記述                                                      |
-| △ Salt（Wireframe）             |                        | ワイヤフレームによる GUI 設計ツール                                                       |
-| △ WBS                           |                        | タスクを分割して階層構造を可視化するもの（Work Breakdown Structure）                      |
-| △ YAML                          |                        |                                                                                           |
-| △ ガントチャート                |                        | タスクごとのスケジュールを可視化するもの                                                  |
-| △ マインドマップ                |                        | アイディアを可視化するもの                                                                |
-| ▲ ER図                          |                        | RDBの構造（エンティティ・アトリビュート・リレーション・カーディナリティ）を可視化するもの |
+| ダイアグラム |                                 |                        | 内容                                                                                      |
+| ------------ | ------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------- |
+| 構造図       |                                 |                        |
+|              | 〇 クラス図                     |                        | クラスの定義とクラス間の関係を記述                                                        |
+|              | 〇 オブジェクト図               |                        | クラス図の定義を具体化（インスタンス化）して記述                                          |
+|              | ● パッケージ図                  |                        | クラスをグループ化して記述                                                                |
+|              | 〇 コンポーネント図             |                        | コンポーネント、ポート、インターフェイス、コンポーネント間の関係を記述                    |
+|              | ● コンポジット構造図            |                        | 複数のクラスの定義とクラス間の関係を記述                                                  |
+|              | 〇 配置図                       |                        | 物理的な構成を記述                                                                        |
+| ふるまい図   |                                 |                        |
+|              | ● 相互作用図                    |                        |                                                                                           |
+|              |                                 | 〇 シーケンス図        | 登場人物とシステム内のオブジェクト、通過するメッセージと発生順序を記述                    |
+|              |                                 | ● コミュニケーション図 | クラスやオブジェクト間の応答と関係を記述                                                  |
+|              |                                 | 〇 タイミング図        | 時間軸と状態変化を記述                                                                    |
+|              |                                 | ● 相互作用概要図       | *相互作用図* をアクティビティ図の構成要素にしたもの                                       |
+|              |                                 |                        |                                                                                           |
+|              | 〇 ユースケース図               |                        | アクター（人／組織／別のシステム）とシステムのやり取りを記述                              |
+|              | 〇 アクティビティ図             |                        | 「アクション（制御）」の遷移を記述                                                        |
+|              | 〇 状態遷移図                   |                        | 「状態」の遷移を記述（ステート図 / ステートマシン図）                                     |
+| その他       |                                 |                        |
+|              | △ Archimate（アーキテクチャ図） |                        | システムの構造を記述                                                                      |
+|              | △ AsciiMath                     |                        | 数式を記述                                                                                |
+|              | △ Ditaa                         |                        | アスキーアートを画像化するものDitaa (DIagrams Through Ascii Art)                          |
+|              | △ JSON                          |                        |                                                                                           |
+|              | △ nwdiag（ネットワーク図）      |                        | ネットワーク機器の物理的な接続を記述                                                      |
+|              | △ Salt（Wireframe）             |                        | ワイヤフレームによる GUI 設計ツール                                                       |
+|              | △ WBS                           |                        | タスクを分割して階層構造を可視化するもの（Work Breakdown Structure）                      |
+|              | △ YAML                          |                        |                                                                                           |
+|              | △ ガントチャート                |                        | タスクごとのスケジュールを可視化するもの                                                  |
+|              | △ マインドマップ                |                        | アイディアを可視化するもの                                                                |
+|              | ▲ ER図                          |                        | RDBの構造（エンティティ・アトリビュート・リレーション・カーディナリティ）を可視化するもの |
 
 ## UMLダイアグラムの関係
 
@@ -247,550 +248,12 @@ class classA {
 ```
 
 
-# シーケンス図
+# 構造図
 
-```plantuml
 
-@startuml
+## クラス図
 
-'header Page Header
-left header Page Header Left
-
-footer Page %page% of %lastpage% Footer
-
-title Diagram Title
-
-caption Figure.1
-
-participant Alice as Foo
-participant Bob as Bar #FF9999    /' 背景色 '/
-participant Bar2 order 99 #orange /' 順番変更 '/
-participant Multiline [           /' 複数行 '/
-    =Title
-    ----
-    ""SubTitle""
-]
-participant "マルチ バイト"
-
-actor       Actor       as Foo1
-boundary    Boundary    as Foo2
-control     Control     as Foo3
-entity      Entity      as Foo4
-database    Database    as Foo5
-collections Collections as Foo6
-queue       Queue       as Foo7
-
-Foo -> Foo1 : To actor
-Foo -> Foo7 : To queue
-Foo -> Bar2 : To orange
-[-> Foo1
-Foo1 ->]
-
-Foo -> Foo : 自己メッセージ
-Foo <- Foo : This is a signal to self.\nmultiline\ntext
-
-' 処理の遅延
-...
-
-Foo -> Bar  : 同期メッセージ
-Foo <-- Bar : 戻りメッセージ
-Foo ->> Bar : 非同期メッセージ
-
-Foo ->x Bar
-Foo -> Bar
-Foo ->> Bar
-Foo -\ Bar
-Foo \\- Bar
-Foo //-- Bar
-Foo ->o Bar
-Foo o\\-- Bar
-Foo <-> Bar
-Foo <->o Bar
-Foo -[#red]> Bar : hello
-Bar -[#0000FF]-> Foo : ok
-
-@enduml
-
-```
-
-
-## メッセージ連番
-
-```plantuml
-
-@startuml
-
-autonumber 100 10 "<font color=blue><b>Message 000</b></font>"
-Foo -> Foo1
-Foo -> Foo2
-Foo -> Foo3
-autonumber stop
-Foo -> Foo4
-Foo -> Foo5
-autonumber resume
-Foo -> Foo6
-Foo -> Foo7
-
-autonumber 1.1.1
-Foo -> Foo8
-Foo -> Foo9
-Foo -> Foo10
-autonumber inc B
-Foo -> Foo11
-Foo -> Foo12
-autonumber inc A
-Foo -> Foo13
-note right
-  ** %autonumber% **
-end note
-Foo -> Foo14
-
-@enduml
-
-```
-
-
-## テキスト位置
-
-```plantuml
-
-@startuml
-
-'header Page Header
-left header Page Header Left
-
-footer Page %page% of %lastpage% Footer
-
-title Diagram Title
-
-caption Figure.1
-
-participant Alice as Foo
-participant Bob as Bar #FF9999    /' 背景色 '/
-participant Bar2 order 99 #orange /' 順番変更 '/
-participant Multiline [           /' 複数行 '/
-    =Title
-    ----
-    ""SubTitle""
-]
-participant "マルチ バイト"
-
-actor       Actor       as Foo1
-boundary    Boundary    as Foo2
-control     Control     as Foo3
-entity      Entity      as Foo4
-database    Database    as Foo5
-collections Collections as Foo6
-queue       Queue       as Foo7
-
-Foo -> Foo1 : To actor
-Foo -> Foo7 : To queue
-Foo -> Bar2 : To orange
-
-Foo -> Foo : 自己メッセージ
-Foo <- Foo : This is a signal to self.\nmultiline\ntext
-
-' 処理の遅延
-...
-
-Foo -> Bar  : 同期メッセージ
-Foo <-- Bar : 戻りメッセージ
-Foo ->> Bar : 非同期メッセージ
-
-Foo ->x Bar
-Foo -> Bar
-Foo ->> Bar
-Foo -\ Bar
-Foo \\- Bar
-Foo //-- Bar
-Foo ->o Bar
-Foo o\\-- Bar
-Foo <-> Bar
-Foo <->o Bar
-Foo -[#red]> Bar : hello
-Bar -[#0000FF]-> Foo : ok
-
-@enduml
-
-```
-
-
-## ライフライン
-
-
-### 分類子の生成／削除
-
-- `++` 対象を活性化
-- `--` 起点側を非活性化
-- `**` 対象のインスタンスを生成
-- `!!` 対象のインスタンスを破棄
-
-```plantuml
-
-@startuml
-
-Alice -> App ++ : run
-App --> Alice -- : ret
-
-Alice ->  Bob ++   #yellow : hello1
-Bob   ->  Eve --++ #gold   : hello2
-Eve   --> Alice --         : ok
-
-Alice -> App ++ : run
-
-App -> DB ** : create
-
-App -> DB : execute
-activate DB
-DB --> App : results
-deactivate DB
-
-App -> DB !! : delete
-
-return success
-
-@enduml
-
-```
-
-
-### 分類子の活性
-
-```plantuml
-
-@startuml
-participant User
-
-User -> "Web server": Request
-activate "Web server"
-"Web server" --> User: Done
-deactivate "Web server"
-
-User -> "Web server": Request
-activate "Web server"
-return Done
-
-autoactivate on
-User -> "Web server": Request
-return Done
-
-autoactivate off
-
-|||
-
-User -> "Web server": Request
-activate "Web server"
-
-"Web server" -> API: Call
-activate API
-
-API -> DB: Request
-activate DB
-DB --> API: Return
-destroy DB
-
-API --> "Web server": Return JSON
-deactivate API
-
-"Web server" --> User: Show items
-deactivate "Web server"
-
-|||
-
-User -> "Web server": Request
-activate "Web server" #FCC
-
-"Web server" -> "Web server": Internal call
-activate "Web server" #FAA
-
-"Web server" -> API: Call
-activate API
-
-API --> "Web server": Return JSON
-deactivate API
-deactivate "Web server"
-"Web server" --> User: Done
-deactivate "Web server"
-
-@enduml
-
-```
-
-
-## グループ化
-
-```plantuml
-
-@startuml
-
-== ログイン ==
-
-Client -> Server: 認証リクエスト(ID,PW)
-
-' 条件分岐（if, else if. else）
-alt 認証成功
-    Server --> Client: ユーザー情報
-else 認証失敗
-    Server --> Client: Wrong password
-else 通信エラー
-    Server --> Client: Retry later
-end
-
-== 管理者メニュー ==
-
-Client -> Server: 管理者メニュー
-
-' 条件分岐（ifのみ）
-opt 管理者か？
-    Server --> Client : 管理メニュー表示
-end
-
-== 検索 ==
-
-Client -> Server: 検索リクエスト(keyword)
-
-' ループ
-' loop                    /' 無限ループ '/
-' loop 1, 100             /' 開始, 終了 '/
-loop for each search item /' Foreach '/
-    Server -> Server : 検索結果集計
-
-    break length = 5000
-        Server --> Client : エラー
-    end
-end
-
-Server --> Client : 検索結果
-
-== 情報取得 ==
-
-' 並列処理
-par
-    Client -> API : 天気リクエスト
-    API --> Client : 天気(JSON)
-    critical
-        Client -> Client : 画面表示
-    end
-else
-    Client -> API : ニュースリクエスト
-    API --> Client : ニュース(JSON)
-    critical
-        Client -> Client : 画面表示
-    end
-end
-
-== 外部参照 ==
-
-ref over Client, Server
-    Order
-    Payment
-    Delivery
-end ref
-
-== ログイン ==
-
-group
-
-    alt
-        ' 必須の処理
-        group consider {Send password}
-            Client -> Server : Send password
-            activate Client
-            activate Server
-            Client -> Server : Send client info
-        end
-        ' 必須ではない処理
-        group ignore {Send client info}
-            Client -> Server : Send password
-            Client -> Server : Send client info
-        end
-
-        ' 妥当な処理
-        skinparam sequenceGroupBorderColor blue
-        group assert
-            Server -> DB : Check password
-            note right : Check whether password is correct
-            activate DB
-            DB -> DB: Search user's credential
-            deactivate DB
-        end
-
-    else credential not matched
-        ' 不正な処理
-        skinparam sequenceGroupBorderColor red
-        group neg
-            Server --> Client : Show error message
-        end
-    end
-
-end
-
-@enduml
-
-```
-
-
-# ユースケース図
-
-```plantuml
-
-@startuml
-
-rectangle Actors {
-    ' 棒人間
-    :Actor1:
-    :Actor: as Actor2
-    actor Actor3
-    actor :Another\nactor: as Actor4
-
-    actor :Business actor:/ as BAct
-
-    ' Awesome man
-    skinparam actorStyle awesome
-    :Actor5:
-
-    ' Hollow man
-    skinparam actorStyle hollow
-    :Actor6:
-}
-
-rectangle Usecases {
-    (UC1)
-    (Usecase) as (UC2)
-    usecase UC3
-    usecase (Another\nusecase) as UC4
-
-    usecase UC5 as "
-    aaa
-    --
-    bbb
-    ..
-    ccc
-    ==
-    ddd
-    ___
-    eee
-    -- ff --
-    .. gg ..
-    == hh ==
-    __ ii __
-    "
-
-    usecase (Business usecase)/ as BUC
-}
-' -- (ダッシュ)
-' .. (ピリオド)
-' == (イコール)
-' __ (アンダースコア)
-' これらのペアで囲んで、その間に
-
-rectangle Systems {
-    package System1 {
-        (UC6)
-    }
-
-    skinparam packageStyle rect
-    package System2 {
-        (UC7)
-    }
-}
-
-rectangle Colors {
-    skinparam actorStyle none
-
-    actor foo #pink;line:red;line.bold;text:red
-    usecase bar1 #mistyrose;line:red;line.bold;text:green
-    usecase bar2 #palegreen;line:green;line.dashed;text:green
-    usecase bar3 #aliceblue;line:blue;line.dotted;text:blue
-
-    foo --> (bar) : normal
-    foo --> (bar1) #line:red;line.bold;text:red  : red bold
-    foo --> (bar2) #green;line.dashed;text:green : green dashed
-    foo --> (bar3) #blue;line.dotted;text:blue   : blue dotted
-}
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-
-' 作図方向
-' top to bottom direction /' 既定値 '/
-' left to right direction
-
-
-actor "Admin user" as Admin
-actor "Clerk" as Clerk
-actor "Normal user" as User <<Human>>
-
-actor "NginX" as HTTPD <<Application>>
-actor "PostgreSQL" as DB <<Application>>
-
-
-' 継承
-User <|-- Admin
-User <|-- Clerk
-
-
-package "E-commerce website" {
-    Admin --> (管理者メニュー)
-    (管理者サインイン) --> (管理者メニュー)
-    (管理者メニュー) -left-> (店員追加)
-    (管理者メニュー) --> (店員変更)
-    (管理者メニュー) -right-> (店員削除)
-    (管理者メニュー) ..> (サインイン) : <<include>>
-
-    Clerk --> (店員メニュー)
-    (店員メニュー) --> (商品登録)
-    (店員メニュー) --> (商品変更)
-    (店員メニュー) --> (商品削除)
-    (店員メニュー) ..> (サインイン) : <<include>>
-    User --> (アカウント登録)
-    User --> (商品検索)
-    (商品検索) --> (会員メニュー)
-    (会員メニュー) ..> (サインイン) : <<include>>
-
-    User --> (会員メニュー) : 直接サインイン
-
-    note "This note is connected\nto several objects." as N2
-    N2 .. (サインイン)
-    N2 .. (店員サインイン)
-    N2 .. (管理者サインイン)
-
-    ' note right of 、 note top of 、 note bottom of
-    note left of (サインイン)
-        サインイン処理
-    end note
-
-    ' 長い矢印
-    (会員メニュー) -----> (アカウント変更)
-    (会員メニュー) -----> (アカウント削除)
-
-    (会員メニュー) --> (カートアイテム追加)
-    (会員メニュー) --> (カートアイテム変更)
-    (会員メニュー) --> (カートアイテム削除)
-    (カートアイテム追加) --> (注文)
-    (カートアイテム変更) --> (注文)
-    (カートアイテム削除) --> (注文)
-
-    (会員メニュー) --> (注文)
-    (注文) .> (支払) : include
-    (届け先住所の指定（変更）) .> (注文) : extends
-}
-
-@enduml
-
-
-```
-
-
-# クラス図
-
-## 要素
+### 要素
 
 ```plantuml
 
@@ -838,7 +301,7 @@ class class {
 
 ```
 
-## 関係
+### 関係
 
 ```plantuml
 
@@ -956,7 +419,7 @@ Class03 ..+ Class04
 
 ```
 
-## 多重度
+### 多重度
 
 ```plantuml
 
@@ -982,7 +445,7 @@ Class19 }o--|{ Class20 : 0以上 対 1以上
 
 ```
 
-## パッケージと名前空間
+### パッケージと名前空間
 
 ```plantuml
 
@@ -1037,7 +500,7 @@ namespace jp.example2 {
 
 ```
 
-## 外観
+### 外観
 
 ```plantuml
 
@@ -1118,7 +581,7 @@ control コントロール <<control>>
 
 ```
 
-## 例
+### 例
 
 ```plantuml
 
@@ -1286,7 +749,7 @@ end note
 ```
 
 
-# オブジェクト図
+## オブジェクト図
 
 ```plantuml
 
@@ -1355,7 +818,7 @@ package マップテーブル（連想配列） {
 ```
 
 
-## PERT図
+### PERT図
 
 Program Evaluation and Review Technique
 
@@ -1432,7 +895,778 @@ task.5 --> task.10
 ```
 
 
-# アクティビティ図
+## パッケージ図
+
+```plantuml
+
+
+
+```
+
+
+## コンポーネント図
+
+```plantuml
+
+@startuml
+
+skinparam interface {
+    Shadowing false
+    BorderColor<<hidden>> transparent
+    BackgroundColor<<hidden>> transparent
+    FontColor<<hidden>> transparent
+}
+hide <<hidden>> stereotype
+
+
+component "EC site" <<subsystem>> as ECsite {
+    portin pi1
+    portin pi2
+    portin pi3
+
+    portout po1
+    portout po2
+    portout po3
+
+    component ":Search" as c1
+    component ":Shopping cart" as c2
+    component ":Authentication" as c3
+    () Session as d1
+}
+
+component Warehouse <<subsystem>> {
+    portin pi4
+    portin pi5
+
+    component ":Inventory" as c4
+}
+
+component Payment <<subsystem>> {
+    portin pi6
+    portin pi7
+
+    portout po4
+
+    component ":Orders" as c5
+    component ":Customers" as c6
+    component ":Accounts" as c7
+
+    () "Manage profile" as d6
+    () "Manage account" as d7
+}
+
+
+() "Search inventory" as d2
+() "Manage order" as d3
+() "Manage profile" as d4
+() "Manage inventory" as d5
+interface ProductSearch as i1
+interface Shopping as i2
+interface Signin as i3
+
+
+c1 #-down- po1
+c2 #-down- po2
+c2 #-right-( d1
+c3 #-down- po3
+c4 #-- pi5
+c5 --( d6
+c5 #-- po4
+c6 --( d7
+d1 -right-# c3
+d2 -- pi4
+d3 -- pi6
+d4 -- pi7
+d5 - pi5
+d6 -- c6
+d7 -- c7
+i1 -- pi1
+i2 -- pi2
+i3 -- pi3
+pi1 -down-# c1
+pi2 -down-# c2
+pi3 -down-# c3
+pi4 --# c4
+pi6 --# c5
+pi7 --# c6
+po1 --( d2
+po2 --( d3
+po3 -( d4
+po4 -( d5
+
+
+package "Group" {
+
+    component Component $tagComponent
+
+    node "Node" {
+        [Component] as c11
+
+        note left of c11 : left note
+
+        note as n
+            floating note
+        end note
+        c11 .. n
+    }
+
+    folder "Folder" {
+        component c12 [
+            This component
+            has a long comment
+            on several lines
+        ]
+
+        component [Yellow component] #PaleGreen
+    }
+
+    frame "Frame" {
+        sprite $rightarrow [16x16/16] {
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFF0FFFFF
+            FFFFFFFFFF00FFFF
+            FF00000000000FFF
+            FF000000000000FF
+            FF00000000000FFF
+            FFFFFFFFFF00FFFF
+            FFFFFFFFFF0FFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFF
+        }
+
+        rectangle "process" <<$rightarrow>> {
+            [sprite] <<$rightarrow>>
+        }
+    }
+
+    cloud "Cloud" {
+    }
+
+    database "DB" {
+    }
+
+}
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+skinparam component {
+    ArrowColor Tomato
+    ArrowFontColor OrangeRed
+    ArrowFontName Impact
+    BackgroundColor PaleGreen
+    BackgroundColor<<Apache>> Pink
+    BorderColor SeaGreen
+    BorderColor<<Apache>> Red
+    FontName Courier
+    FontSize 16
+}
+
+skinparam databaseBackgroundColor Aqua
+
+skinparam interface {
+    backgroundColor #MistyRose
+    borderColor #Red
+}
+
+skinparam node {
+    borderColor Gold
+    backgroundColor Yellow
+    backgroundColor<<shared_node>> Magenta
+}
+
+Component "Web Server" as WS << Apache >>
+component "Component" as C1
+
+database DB
+
+() "Data Access" as DA
+
+node Node
+
+DA - C1
+C1 ..> () HTTP : use
+HTTP - WS
+
+@enduml
+
+```
+
+
+## 合成構造図
+
+
+## 配置図
+
+
+# ふるまい図
+
+
+## 相互作用図
+
+
+### シーケンス図
+
+```plantuml
+
+@startuml
+
+'header Page Header
+left header Page Header Left
+
+footer Page %page% of %lastpage% Footer
+
+title Diagram Title
+
+caption Figure.1
+
+participant Alice as Foo
+participant Bob as Bar #FF9999    /' 背景色 '/
+participant Bar2 order 99 #orange /' 順番変更 '/
+participant Multiline [           /' 複数行 '/
+    =Title
+    ----
+    ""SubTitle""
+]
+participant "マルチ バイト"
+
+actor       Actor       as Foo1
+boundary    Boundary    as Foo2
+control     Control     as Foo3
+entity      Entity      as Foo4
+database    Database    as Foo5
+collections Collections as Foo6
+queue       Queue       as Foo7
+
+Foo -> Foo1 : To actor
+Foo -> Foo7 : To queue
+Foo -> Bar2 : To orange
+[-> Foo1
+Foo1 ->]
+
+Foo -> Foo : 自己メッセージ
+Foo <- Foo : This is a signal to self.\nmultiline\ntext
+
+' 処理の遅延
+...
+
+Foo -> Bar  : 同期メッセージ
+Foo <-- Bar : 戻りメッセージ
+Foo ->> Bar : 非同期メッセージ
+
+Foo ->x Bar
+Foo -> Bar
+Foo ->> Bar
+Foo -\ Bar
+Foo \\- Bar
+Foo //-- Bar
+Foo ->o Bar
+Foo o\\-- Bar
+Foo <-> Bar
+Foo <->o Bar
+Foo -[#red]> Bar : hello
+Bar -[#0000FF]-> Foo : ok
+
+@enduml
+
+```
+
+
+#### メッセージ連番
+
+```plantuml
+
+@startuml
+
+autonumber 100 10 "<font color=blue><b>Message 000</b></font>"
+Foo -> Foo1
+Foo -> Foo2
+Foo -> Foo3
+autonumber stop
+Foo -> Foo4
+Foo -> Foo5
+autonumber resume
+Foo -> Foo6
+Foo -> Foo7
+
+autonumber 1.1.1
+Foo -> Foo8
+Foo -> Foo9
+Foo -> Foo10
+autonumber inc B
+Foo -> Foo11
+Foo -> Foo12
+autonumber inc A
+Foo -> Foo13
+note right
+  ** %autonumber% **
+end note
+Foo -> Foo14
+
+@enduml
+
+```
+
+
+#### テキスト位置
+
+```plantuml
+
+@startuml
+
+'header Page Header
+left header Page Header Left
+
+footer Page %page% of %lastpage% Footer
+
+title Diagram Title
+
+caption Figure.1
+
+participant Alice as Foo
+participant Bob as Bar #FF9999    /' 背景色 '/
+participant Bar2 order 99 #orange /' 順番変更 '/
+participant Multiline [           /' 複数行 '/
+    =Title
+    ----
+    ""SubTitle""
+]
+participant "マルチ バイト"
+
+actor       Actor       as Foo1
+boundary    Boundary    as Foo2
+control     Control     as Foo3
+entity      Entity      as Foo4
+database    Database    as Foo5
+collections Collections as Foo6
+queue       Queue       as Foo7
+
+Foo -> Foo1 : To actor
+Foo -> Foo7 : To queue
+Foo -> Bar2 : To orange
+
+Foo -> Foo : 自己メッセージ
+Foo <- Foo : This is a signal to self.\nmultiline\ntext
+
+' 処理の遅延
+...
+
+Foo -> Bar  : 同期メッセージ
+Foo <-- Bar : 戻りメッセージ
+Foo ->> Bar : 非同期メッセージ
+
+Foo ->x Bar
+Foo -> Bar
+Foo ->> Bar
+Foo -\ Bar
+Foo \\- Bar
+Foo //-- Bar
+Foo ->o Bar
+Foo o\\-- Bar
+Foo <-> Bar
+Foo <->o Bar
+Foo -[#red]> Bar : hello
+Bar -[#0000FF]-> Foo : ok
+
+@enduml
+
+```
+
+
+#### ライフライン
+
+
+##### 分類子の生成／削除
+
+- `++` 対象を活性化
+- `--` 起点側を非活性化
+- `**` 対象のインスタンスを生成
+- `!!` 対象のインスタンスを破棄
+
+```plantuml
+
+@startuml
+
+Alice -> App ++ : run
+App --> Alice -- : ret
+
+Alice ->  Bob ++   #yellow : hello1
+Bob   ->  Eve --++ #gold   : hello2
+Eve   --> Alice --         : ok
+
+Alice -> App ++ : run
+
+App -> DB ** : create
+
+App -> DB : execute
+activate DB
+DB --> App : results
+deactivate DB
+
+App -> DB !! : delete
+
+return success
+
+@enduml
+
+```
+
+
+##### 分類子の活性
+
+```plantuml
+
+@startuml
+participant User
+
+User -> "Web server": Request
+activate "Web server"
+"Web server" --> User: Done
+deactivate "Web server"
+
+User -> "Web server": Request
+activate "Web server"
+return Done
+
+autoactivate on
+User -> "Web server": Request
+return Done
+
+autoactivate off
+
+|||
+
+User -> "Web server": Request
+activate "Web server"
+
+"Web server" -> API: Call
+activate API
+
+API -> DB: Request
+activate DB
+DB --> API: Return
+destroy DB
+
+API --> "Web server": Return JSON
+deactivate API
+
+"Web server" --> User: Show items
+deactivate "Web server"
+
+|||
+
+User -> "Web server": Request
+activate "Web server" #FCC
+
+"Web server" -> "Web server": Internal call
+activate "Web server" #FAA
+
+"Web server" -> API: Call
+activate API
+
+API --> "Web server": Return JSON
+deactivate API
+deactivate "Web server"
+"Web server" --> User: Done
+deactivate "Web server"
+
+@enduml
+
+```
+
+
+#### グループ化
+
+```plantuml
+
+@startuml
+
+== ログイン ==
+
+Client -> Server: 認証リクエスト(ID,PW)
+
+' 条件分岐（if, else if. else）
+alt 認証成功
+    Server --> Client: ユーザー情報
+else 認証失敗
+    Server --> Client: Wrong password
+else 通信エラー
+    Server --> Client: Retry later
+end
+
+== 管理者メニュー ==
+
+Client -> Server: 管理者メニュー
+
+' 条件分岐（ifのみ）
+opt 管理者か？
+    Server --> Client : 管理メニュー表示
+end
+
+== 検索 ==
+
+Client -> Server: 検索リクエスト(keyword)
+
+' ループ
+' loop                    /' 無限ループ '/
+' loop 1, 100             /' 開始, 終了 '/
+loop for each search item /' Foreach '/
+    Server -> Server : 検索結果集計
+
+    break length = 5000
+        Server --> Client : エラー
+    end
+end
+
+Server --> Client : 検索結果
+
+== 情報取得 ==
+
+' 並列処理
+par
+    Client -> API : 天気リクエスト
+    API --> Client : 天気(JSON)
+    critical
+        Client -> Client : 画面表示
+    end
+else
+    Client -> API : ニュースリクエスト
+    API --> Client : ニュース(JSON)
+    critical
+        Client -> Client : 画面表示
+    end
+end
+
+== 外部参照 ==
+
+ref over Client, Server
+    Order
+    Payment
+    Delivery
+end ref
+
+== ログイン ==
+
+group
+
+    alt
+        ' 必須の処理
+        group consider {Send password}
+            Client -> Server : Send password
+            activate Client
+            activate Server
+            Client -> Server : Send client info
+        end
+        ' 必須ではない処理
+        group ignore {Send client info}
+            Client -> Server : Send password
+            Client -> Server : Send client info
+        end
+
+        ' 妥当な処理
+        skinparam sequenceGroupBorderColor blue
+        group assert
+            Server -> DB : Check password
+            note right : Check whether password is correct
+            activate DB
+            DB -> DB: Search user's credential
+            deactivate DB
+        end
+
+    else credential not matched
+        ' 不正な処理
+        skinparam sequenceGroupBorderColor red
+        group neg
+            Server --> Client : Show error message
+        end
+    end
+
+end
+
+@enduml
+
+```
+
+
+### コミュニケーション図
+
+
+### タイミング図
+
+
+### 相互作用概観図
+
+
+## ユースケース図
+
+```plantuml
+
+@startuml
+
+rectangle Actors {
+    ' 棒人間
+    :Actor1:
+    :Actor: as Actor2
+    actor Actor3
+    actor :Another\nactor: as Actor4
+
+    actor :Business actor:/ as BAct
+
+    ' Awesome man
+    skinparam actorStyle awesome
+    :Actor5:
+
+    ' Hollow man
+    skinparam actorStyle hollow
+    :Actor6:
+}
+
+rectangle Usecases {
+    (UC1)
+    (Usecase) as (UC2)
+    usecase UC3
+    usecase (Another\nusecase) as UC4
+
+    usecase UC5 as "
+    aaa
+    --
+    bbb
+    ..
+    ccc
+    ==
+    ddd
+    ___
+    eee
+    -- ff --
+    .. gg ..
+    == hh ==
+    __ ii __
+    "
+
+    usecase (Business usecase)/ as BUC
+}
+' -- (ダッシュ)
+' .. (ピリオド)
+' == (イコール)
+' __ (アンダースコア)
+' これらのペアで囲んで、その間に
+
+rectangle Systems {
+    package System1 {
+        (UC6)
+    }
+
+    skinparam packageStyle rect
+    package System2 {
+        (UC7)
+    }
+}
+
+rectangle Colors {
+    skinparam actorStyle none
+
+    actor foo #pink;line:red;line.bold;text:red
+    usecase bar1 #mistyrose;line:red;line.bold;text:green
+    usecase bar2 #palegreen;line:green;line.dashed;text:green
+    usecase bar3 #aliceblue;line:blue;line.dotted;text:blue
+
+    foo --> (bar) : normal
+    foo --> (bar1) #line:red;line.bold;text:red  : red bold
+    foo --> (bar2) #green;line.dashed;text:green : green dashed
+    foo --> (bar3) #blue;line.dotted;text:blue   : blue dotted
+}
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+
+' 作図方向
+' top to bottom direction /' 既定値 '/
+' left to right direction
+
+
+actor "Admin user" as Admin
+actor "Clerk" as Clerk
+actor "Normal user" as User <<Human>>
+
+actor "NginX" as HTTPD <<Application>>
+actor "PostgreSQL" as DB <<Application>>
+
+
+' 継承
+User <|-- Admin
+User <|-- Clerk
+
+
+package "E-commerce website" {
+    Admin --> (管理者メニュー)
+    (管理者サインイン) --> (管理者メニュー)
+    (管理者メニュー) -left-> (店員追加)
+    (管理者メニュー) --> (店員変更)
+    (管理者メニュー) -right-> (店員削除)
+    (管理者メニュー) ..> (サインイン) : <<include>>
+
+    Clerk --> (店員メニュー)
+    (店員メニュー) --> (商品登録)
+    (店員メニュー) --> (商品変更)
+    (店員メニュー) --> (商品削除)
+    (店員メニュー) ..> (サインイン) : <<include>>
+    User --> (アカウント登録)
+    User --> (商品検索)
+    (商品検索) --> (会員メニュー)
+    (会員メニュー) ..> (サインイン) : <<include>>
+
+    User --> (会員メニュー) : 直接サインイン
+
+    note "This note is connected\nto several objects." as N2
+    N2 .. (サインイン)
+    N2 .. (店員サインイン)
+    N2 .. (管理者サインイン)
+
+    ' note right of 、 note top of 、 note bottom of
+    note left of (サインイン)
+        サインイン処理
+    end note
+
+    ' 長い矢印
+    (会員メニュー) -----> (アカウント変更)
+    (会員メニュー) -----> (アカウント削除)
+
+    (会員メニュー) --> (カートアイテム追加)
+    (会員メニュー) --> (カートアイテム変更)
+    (会員メニュー) --> (カートアイテム削除)
+    (カートアイテム追加) --> (注文)
+    (カートアイテム変更) --> (注文)
+    (カートアイテム削除) --> (注文)
+
+    (会員メニュー) --> (注文)
+    (注文) .> (支払) : include
+    (届け先住所の指定（変更）) .> (注文) : extends
+}
+
+@enduml
+
+
+```
+
+
+## アクティビティ図
 
 ```plantuml
 
@@ -1653,7 +1887,7 @@ end note
 
 ```
 
-## 複数開始／複数終了
+### 複数開始／複数終了
 
 ```plantuml
 
@@ -1697,7 +1931,7 @@ end split
 
 ```
 
-## スイムレーン・スタイル
+### スイムレーン・スタイル
 
 ```plantuml
 
@@ -1778,207 +2012,7 @@ stop
 ```
 
 
-# コンポーネント図
-
-```plantuml
-
-@startuml
-
-skinparam interface {
-    Shadowing false
-    BorderColor<<hidden>> transparent
-    BackgroundColor<<hidden>> transparent
-    FontColor<<hidden>> transparent
-}
-hide <<hidden>> stereotype
-
-
-component "EC site" <<subsystem>> as ECsite {
-    portin pi1
-    portin pi2
-    portin pi3
-
-    portout po1
-    portout po2
-    portout po3
-
-    component ":Search" as c1
-    component ":Shopping cart" as c2
-    component ":Authentication" as c3
-    () Session as d1
-}
-
-component Warehouse <<subsystem>> {
-    portin pi4
-    portin pi5
-
-    component ":Inventory" as c4
-}
-
-component Payment <<subsystem>> {
-    portin pi6
-    portin pi7
-
-    portout po4
-
-    component ":Orders" as c5
-    component ":Customers" as c6
-    component ":Accounts" as c7
-
-    () "Manage profile" as d6
-    () "Manage account" as d7
-}
-
-
-() "Search inventory" as d2
-() "Manage order" as d3
-() "Manage profile" as d4
-() "Manage inventory" as d5
-interface ProductSearch as i1
-interface Shopping as i2
-interface Signin as i3
-
-
-c1 #-down- po1
-c2 #-down- po2
-c2 #-right-( d1
-c3 #-down- po3
-c4 #-- pi5
-c5 --( d6
-c5 #-- po4
-c6 --( d7
-d1 -right-# c3
-d2 -- pi4
-d3 -- pi6
-d4 -- pi7
-d5 - pi5
-d6 -- c6
-d7 -- c7
-i1 -- pi1
-i2 -- pi2
-i3 -- pi3
-pi1 -down-# c1
-pi2 -down-# c2
-pi3 -down-# c3
-pi4 --# c4
-pi6 --# c5
-pi7 --# c6
-po1 --( d2
-po2 --( d3
-po3 -( d4
-po4 -( d5
-
-
-package "Group" {
-
-    component Component $tagComponent
-
-    node "Node" {
-        [Component] as c11
-
-        note left of c11 : left note
-
-        note as n
-            floating note
-        end note
-        c11 .. n
-    }
-
-    folder "Folder" {
-        component c12 [
-            This component
-            has a long comment
-            on several lines
-        ]
-
-        component [Yellow component] #PaleGreen
-    }
-
-    frame "Frame" {
-        sprite $rightarrow [16x16/16] {
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFF0FFFFF
-            FFFFFFFFFF00FFFF
-            FF00000000000FFF
-            FF000000000000FF
-            FF00000000000FFF
-            FFFFFFFFFF00FFFF
-            FFFFFFFFFF0FFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-            FFFFFFFFFFFFFFFF
-        }
-
-        rectangle "process" <<$rightarrow>> {
-            [sprite] <<$rightarrow>>
-        }
-    }
-
-    cloud "Cloud" {
-    }
-
-    database "DB" {
-    }
-
-}
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-skinparam component {
-    ArrowColor Tomato
-    ArrowFontColor OrangeRed
-    ArrowFontName Impact
-    BackgroundColor PaleGreen
-    BackgroundColor<<Apache>> Pink
-    BorderColor SeaGreen
-    BorderColor<<Apache>> Red
-    FontName Courier
-    FontSize 16
-}
-
-skinparam databaseBackgroundColor Aqua
-
-skinparam interface {
-    backgroundColor #MistyRose
-    borderColor #Red
-}
-
-skinparam node {
-    borderColor Gold
-    backgroundColor Yellow
-    backgroundColor<<shared_node>> Magenta
-}
-
-Component "Web Server" as WS << Apache >>
-component "Component" as C1
-
-database DB
-
-() "Data Access" as DA
-
-node Node
-
-DA - C1
-C1 ..> () HTTP : use
-HTTP - WS
-
-@enduml
-
-```
-
-
-# 状態図
+# 状態遷移図
 
 ```plantuml
 
