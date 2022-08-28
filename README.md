@@ -1119,6 +1119,126 @@ HTTP - WS
 
 @startuml
 
+<style>
+componentDiagram {
+    BackGroundColor WhiteSmoke
+    LineThickness 1
+    LineColor Silver
+}
+
+document {
+    BackGroundColor white
+}
+
+' ''''''''''
+
+actor {
+  BackGroundColor #ff9999/#ffff99
+  LineThickness 2
+  LineColor #Red
+}
+
+' agent {
+'   BackGroundColor #fdcecc
+' }
+
+artifact {
+  BackGroundColor #fbd0cc
+}
+
+' boundary {
+'   BackGroundColor #f9d2cc
+' }
+
+card {
+  BackGroundColor #f7d4cc
+}
+
+' circle {
+'   BackGroundColor #f5d6cc
+' }
+
+cloud {
+  BackGroundColor #f3d8cc
+}
+
+' collections {
+'   BackGroundColor #f1dacc
+' }
+
+component {
+  BackGroundColor #efdccc
+}
+
+' control {
+'   BackGroundColor #eddecc
+' }
+
+database {
+  BackGroundColor #ebe0cc
+}
+
+' entity {
+'   BackGroundColor #e9e2cc
+' }
+
+file {
+  BackGroundColor #e7e4cc
+}
+
+folder {
+  BackGroundColor #e6e6cc
+}
+
+frame {
+  BackGroundColor #e4e7cc
+}
+
+hexagon {
+  BackGroundColor #e2e9cc
+}
+
+' interface {
+'   BackGroundColor #e0ebcc
+' }
+
+' label {
+'   BackGroundColor #deedcc
+' }
+
+node {
+  BackGroundColor #dcefcc
+}
+
+package {
+  BackGroundColor #daf1cc
+}
+
+' person {
+'   BackGroundColor #d8f3cc
+' }
+
+queue {
+  BackGroundColor #d6f5cc
+}
+
+rectangle {
+  BackGroundColor #d4f7cc
+}
+
+stack {
+  BackGroundColor #d2f9cc
+}
+
+storage {
+  BackGroundColor #d0fbcc
+}
+
+' usecase {
+'   BackGroundColor #cefdcc
+' }
+</style>
+
 package 要素 {
     ' :アクタ―:
     actor アクター
@@ -1144,10 +1264,23 @@ package 要素 {
         <u>u</u>
     ]
     usecase/ "ユースケース/"
+
+    cloud co #AliceBlue;line:Navy;line.dotted;text:MediumBlue [
+        cloud description
+    ]
+
+    file fi #Linen;line:LightSlateGray;line.dashed;text:LightSlateGray {
+        [c1]
+        [c2]
+    }
+
+    frame fr {
+        node no #LightSkyBlue;line:DarkSlateBlue;line.dotted;text:DarkSlateBlue
+    }
 }
 
 package 入れ子にできる要素 {
-    artifact node {
+    artifact アーティファクト {
         card カード {
             cloud クラウド {
                 ' [コンポーネント]
@@ -1258,6 +1391,7 @@ package リンク {
     node21 --> node35 #green;line.dashed;text:green : green dashed
     node21 --> node36 #blue;line.dotted;text:blue   : blue dotted
 }
+
 @enduml
 
 ```
