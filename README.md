@@ -786,13 +786,14 @@ object "コントソ : Team" as contoso {
     id = 1
 }
 
-object " : エンジン" as engine
+rectangle {
+    object " : エンジン" as engine
 
-object " : タイヤ" as tire1
-object " : タイヤ" as tire2
-object " : タイヤ" as tire3
-object " : タイヤ" as tire4
-
+    object " : タイヤ" as tire1
+    object " : タイヤ" as tire2
+    object " : タイヤ" as tire3
+    object " : タイヤ" as tire4
+}
 
 taro --> corolla : 運転
 taro --> century : 運転
