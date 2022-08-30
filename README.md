@@ -1193,7 +1193,65 @@ HTTP - WS
 
 ```plantuml
 
+@startuml
 
+rectangle クラス図 {
+    class "自動車" as Car
+    class "エンジン" as Engine
+    class "タイヤ" as Wheel
+
+    Car "1" *- "1" Engine : has an >
+    note right on link : コンポジション（カスケード削除する）
+    Car "1" o-- "4" Wheel : has 4 >
+    note right on link : 集約（カスケード削除しない）
+}
+
+rectangle オブジェクト図 {
+    object " : 自動車" as car
+
+    object " : エンジン" as engine
+
+    object " : タイヤ" as wheel1
+    object " : タイヤ" as wheel2
+    object " : タイヤ" as wheel3
+    object " : タイヤ" as wheel4
+
+    wheel1 o-- car
+    wheel2 o-- car
+    wheel3 o-- car
+    wheel4 o-- car
+    note on link : 集約
+    wheel1 -[hidden]> wheel2
+    wheel2 -[hidden]> wheel3
+    wheel3 -[hidden]> wheel4
+
+    engine *- car
+    note on link : コンポジション
+}
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+rectangle 合成構造図 {
+
+    skinparam componentStyle rectangle
+
+
+    component 自動車 as scCar{
+        component " : エンジン" as partEngine
+        note right of partEngine : パート　→オブジェクトを示す
+
+        component " : タイヤ[4]" as partWheel
+    }
+    note top of scCar : 構造化分類子（structured-classifiers）　→クラスを示す
+}
+
+@enduml
 
 ```
 
