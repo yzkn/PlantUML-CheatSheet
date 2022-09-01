@@ -1237,6 +1237,16 @@ rectangle オブジェクト図 {
 
 @startuml
 
+skinparam interface {
+    Shadowing false
+    BorderColor<<hidden>> transparent
+    BackgroundColor<<hidden>> transparent
+    ' FontColor<<hidden>> transparent
+}
+
+hide <<hidden>> stereotype
+
+
 rectangle 合成構造図 {
 
     skinparam componentStyle rectangle
@@ -1247,8 +1257,18 @@ rectangle 合成構造図 {
         note right of partEngine : パート　→オブジェクトを示す
 
         component " : タイヤ[4]" as partWheel
+
+        () iRequired
+        note top of iProvided : 提供側インターフェイス
+
+        () iRequired <<hidden>>
+        note top of iRequired : 要求側インターフェイス
+
+        iProvided -right- partEngine
+        iRequired )-up- partEngine
     }
     note top of scCar : 構造化分類子（structured-classifiers）　→クラスを示す
+
 }
 
 @enduml
