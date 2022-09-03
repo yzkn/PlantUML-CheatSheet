@@ -248,6 +248,76 @@ class classA {
 ```
 
 
+## 画像埋め込み
+
+スプライト（モノクロで4、8、16段階のグレースケールの小さい画像）を埋め込む
+
+```plantuml
+
+@startuml
+
+sprite $sprite1 {
+    FFFFFFFFFFFFFFFFF
+    F0123456789ABCDEF
+    F1123456789ABCDEF
+    F2223456789ABCDEF
+    F3333456789ABCDEF
+    F4444456789ABCDEF
+    F5555556789ABCDEF
+    F6666666789ABCDEF
+    F7777777789ABCDEF
+    F8888888889ABCDEF
+    F9999999999ABCDEF
+    FAAAAAAAAAAABCDEF
+    FBBBBBBBBBBBBCDEF
+    FDDDDDDDDDDDDDDEF
+    FEEEEEEEEEEEEEEEF
+    FFFFFFFFFFFFFFFFF
+}
+
+:Alice: -> :Bob: : <$sprite1>
+:Bob: -> :Charlie: : <$sprite1,scale=2>
+:Charlie: -> :Dave: : <$sprite1,color=Tomato>
+
+@enduml
+
+```
+
+### SVGタグ
+
+```plantuml
+
+@startuml
+
+sprite sprite2 <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="30" cy="30" r="24" fill="orange" /></svg>
+:Alice: -> :Bob: : <$sprite2>
+
+@enduml
+
+```
+
+### アーキテクチャ図で使用できるアイコン
+
+```plantuml
+
+@startuml
+
+listsprite
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/f78c90623945a10e798f02fe70c50733ac9503f4/img/listsprite.png "アイコン")
+
+### 画像ファイルをスプライトに変換
+
+```bash
+$ java -jar plantuml.jar -encodesprite 16z foo.png
+# -encodesprite : 4、8、16、4z、8z、16z
+```
+
+
 # 構造図
 
 
@@ -1195,6 +1265,88 @@ HTTP - WS
 
 @startuml
 
+skinparam componentStyle rectangle
+
+skinparam interface {
+    Shadowing false
+    BorderColor<<hidden>> transparent
+    BackgroundColor<<hidden>> transparent
+    ' FontColor<<hidden>> transparent
+}
+
+hide <<hidden>> stereotype
+
+
+interface Sound
+interface Video
+interface Keyboard <<hidden>>
+interface Mouse <<hidden>>
+
+component PC {
+    component Motherboard
+    component BIOS
+    component CPU
+    component Memory
+    component GPU
+    component SSD
+    component "Power supply" as PowerSupply
+    component "Sound card" as SoundCard
+    component "Video card" as VideoCard
+    component I/O as IO {
+        component USB
+        component HDMI
+    }
+    component "Network interface" as NetworkInterface{
+        component Ethernet
+        component Wifi
+    }
+
+    port UsbPort
+    portout SoundPort
+    portout VideoPort
+
+    USB -- UsbPort
+    SoundCard --> SoundPort
+    VideoCard --> VideoPort
+
+    Motherboard --# BIOS
+    Motherboard --# CPU
+    Motherboard --# Memory
+    Motherboard --# GPU
+    Motherboard --# SSD
+    Motherboard --# PowerSupply
+
+    Motherboard --# SoundCard
+    Motherboard --# VideoCard
+    Motherboard --# IO
+    Motherboard --# NetworkInterface
+
+    ' BIOS -[hidden]-> CPU
+    ' CPU -[hidden]-> Memory
+    ' Memory -[hidden]-> GPU
+    ' GPU -[hidden]-> SSD
+    ' SSD -[hidden]-> PowerSupply
+    ' PowerSupply -[hidden]-> SoundCard
+    ' SoundCard -[hidden]-> VideoCard
+
+    IO -[hidden]-> NetworkInterface
+}
+
+UsbPort --( Keyboard
+UsbPort --( Mouse
+SoundPort --> Sound
+VideoPort --> Video
+
+@enduml
+
+```
+
+### クラス図・オブジェクト図と合成構造図の違い
+
+```plantuml
+
+@startuml
+
 rectangle クラス図 {
     class "自動車" as Car
     class "エンジン" as Engine
@@ -1949,11 +2101,26 @@ end
 ```
 
 
-### コミュニケーション図
+### コミュニケーション図（コラボレーション図）
 
 ```plantuml
 
+@startuml
 
+rectangle Member
+rectangle ECsite
+rectangle Warehouse
+rectangle Goods
+rectangle Order
+
+Member ->> ECsite : 1: sign-in
+ECsite -->> Warehouse : 2: submit order
+ECsite -- Goods
+Warehouse -- Goods
+Warehouse -- Order
+Goods -right- Order
+
+@enduml
 
 ```
 
@@ -2752,6 +2919,235 @@ note top of ExpansionInputOutputPoints : 展開
 [*] --> einput1
 [*] --> einput2
 eoutput1 --> [*]
+
+@enduml
+
+```
+
+
+# その他の図
+
+
+## Archimate（アーキテクチャ図）
+
+### アーキテクチャの要素
+
+```plantuml
+
+@startuml
+
+archimate #Business Business
+archimate #Application Application
+archimate #Motivation Motivation
+archimate #Strategy Strategy
+archimate #Technology Technology
+archimate #Physical Physical
+archimate #Implementation Implementation
+
+@enduml
+
+```
+
+### リレーション
+
+```plantuml
+
+@startuml
+
+rectangle RelationType {
+    left to right direction
+    skinparam nodesep 4
+
+    !include <archimate/Archimate>
+
+
+    Rel_Triggering(i15, j15, Triggering)
+    Rel_Specialization(i14, j14, Specialization)
+    Rel_Serving(i13, j13, Serving)
+    Rel_Realization(i12, j12, Realization)
+    Rel_Influence(i11, j11, Influence)
+    Rel_Flow(i10, j10, Flow)
+    Rel_Composition(i9, j9, Composition)
+    Rel_Association_dir(i8, j8, Association_dir)
+    Rel_Association(i7, j7, Association)
+    Rel_Assignment(i6, j6, Assignment)
+    Rel_Aggregation(i5, j5, Aggregation)
+    Rel_Access_w(i4, j4, Access_w)
+    Rel_Access_rw(i3, j3, Access_rw)
+    Rel_Access_r(i2, j2, Access_r)
+    Rel_Access(i1, j1, Access)
+}
+
+@enduml
+
+@startuml
+
+!include <archimate/Archimate>
+left to right direction
+skinparam nodesep 5
+
+<style>
+    interface {
+        shadowing 0
+        backgroundcolor transparent
+        linecolor transparent
+        FontColor transparent
+    }
+</style>
+
+
+rectangle Other {
+    () i14
+    () j14
+}
+
+
+rectangle Dynamic {
+    () i10
+    () j10
+    () i15
+    () j15
+}
+
+rectangle Dependency {
+    () i13
+    () j13
+    () i4
+    () j4
+    () i11
+    () j11
+    () i7
+    () j7
+}
+
+rectangle Structural {
+    () i9
+    () j9
+    () i5
+    () j5
+    () i6
+    () j6
+    () i12
+    () j12
+}
+
+Rel_Triggering(i15, j15, Triggering)
+Rel_Specialization(i14, j14, Specialization)
+Rel_Serving(i13, j13, Serving)
+Rel_Realization(i12, j12, Realization)
+Rel_Influence(i11, j11, Influence)
+Rel_Flow(i10, j10, Flow)
+Rel_Composition(i9, j9, Composition)
+Rel_Association_dir(i7, j7, \nAssociation_dir)
+Rel_Association(i7, j7, Association)
+Rel_Assignment(i6, j6, Assignment)
+Rel_Aggregation(i5, j5, Aggregation)
+Rel_Access_w(i4, j4, Access_w)
+Rel_Access_rw(i4, j4, Access_rw)
+Rel_Access_r(i4, j4, Access_r)
+Rel_Access(i4, j4, Access)
+
+@enduml
+
+```
+
+### ジャンクション
+
+```plantuml
+
+@startuml
+
+!define Junction_Or circle #black
+!define Junction_And circle #whitesmoke
+
+
+Junction_And JunctionAnd
+Junction_Or JunctionOr
+
+archimate #Business Element1
+archimate #Business Element2
+archimate #Business Element3
+archimate #Business Element4
+
+Element1 -right-> JunctionOr
+JunctionOr -right-> Element2
+JunctionOr -down-> Element3
+Element2 -right-> JunctionAnd
+Element3 -up-> JunctionAnd
+JunctionAnd -right-> Element4
+
+@enduml
+
+```
+
+
+### AWS
+
+- [awslabs/aws-icons-for-plantuml](https://github.com/awslabs/aws-icons-for-plantuml)
+
+```plantuml
+
+@startuml
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!includeurl AWSPuml/AWSCommon.puml
+
+' 簡易ビュー
+' !includeurl AWSPuml/AWSSimplified.puml
+
+!includeurl AWSPuml/General/Users.puml
+!includeurl AWSPuml/Mobile/APIGateway.puml
+!includeurl AWSPuml/Compute/Lambda.puml
+!includeurl AWSPuml/Database/DynamoDB.puml
+
+
+Users(users, "Users", "Application users")
+APIGateway(apig, "API Gateway", "Exposed endpoint")
+Lambda(myLambda, "My Application", "Application that read or write data")
+DynamoDB(myDB, "My Database", "Data store")
+
+users <-> apig
+apig <-> myLambda
+myLambda <-> myDB
+
+
+' Sprite
+!includeurl AWSPuml/Database/AmazonRedshift.puml
+database "<color:#Tomato><$AmazonRedshift></color>" as myDWH1
+AmazonRedshift(myDWH2, "My DWH", "Big data")
+rectangle "<color:AWS_SYMBOL_COLOR><$AmazonRedshift></color>" as myDWH3
+
+users -[hidden]-> myDWH1
+myDWH1 -[hidden]> myDWH2
+myDWH2 -[hidden]> myDWH3
+
+@enduml
+
+```
+
+
+### Azure
+
+
+```plantuml
+
+@startuml
+
+
+
+@enduml
+
+```
+
+
+### GCP
+
+
+```plantuml
+
+@startuml
+
+
 
 @enduml
 
