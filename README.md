@@ -321,6 +321,38 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 ### アイコン画像
 
 
+#### C4 model4
+
+コンテキスト（context）、コンテナ（containers）、コンポーネント（components）、コード（code）
+
+```plantuml
+
+@startuml
+
+!include <C4/C4_Context>
+!include <C4/C4_Container>
+
+Person(personAlias, "Personal Banking Customer", "A customer of the bank")
+
+System(systemAlias, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+Container(containerAlias, "Web application", "Container: Java and Spring MVC", "Delivers the static content and the internet banking single page application.")
+
+System_Ext(mainframeSystemAlias, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+System_Ext(emailSystemAlias, "E-mail System", "The internal e-mail system.")
+
+Rel(personAlias, containerAlias, "Visits contosobank.com using", "HTTPS")
+Rel(personAlias, systemAlias, "views account balances, and makes payments using")
+Rel(systemAlias, mainframeSystemAlias, "Gets account information from, and makes payments using")
+Rel(systemAlias, emailSystemAlias, "Sends e-mail using")
+' Rel_U
+
+@enduml
+
+```
+
+
 #### Google Material Icons
 
 ```plantuml
@@ -336,6 +368,148 @@ MA_FILE_MULTIPLE(Tomato, 1, files, rectangle, "My file")
 MA_FOLDER(Red, 1, folder, rectangle, "Home directory")
 
 folder *- files
+
+@enduml
+
+```
+
+
+#### Kubernetes
+
+```plantuml
+
+@startuml
+
+!include <kubernetes/k8s-sprites-unlabeled-25pct>
+
+
+component "<$c_role>"
+component "<$cm>"
+component "<$crb>"
+component "<$crd>"
+component "<$cronjob>"
+component "<$deploy>"
+component "<$ds>"
+component "<$ep>"
+component "<$etcd>"
+component "<$group>"
+component "<$hpa>"
+component "<$ing>"
+component "<$job>"
+component "<$limits>"
+component "<$master>"
+component "<$netpol>"
+component "<$node>"
+component "<$ns>"
+component "<$pod>"
+component "<$psp>"
+component "<$pv>"
+component "<$pvc>"
+component "<$quota>"
+component "<$rb>"
+component "<$role>"
+component "<$rs>"
+component "<$sa>"
+component "<$sc>"
+component "<$secret>"
+component "<$sts>"
+component "<$svc>"
+component "<$user>"
+component "<$vol>"
+
+@enduml
+
+```
+
+
+#### Logos
+
+```plantuml
+
+@startuml
+
+!include <logos/debian>
+!include <logos/flask>
+!include <logos/nginx>
+!include <logos/postgresql>
+!include <logos/python>
+
+skinparam monochrome true
+
+
+actor User as users
+
+rectangle "<$debian>\nDebian" as debian {
+    rectangle "<$python>\nPython" as py {
+        rectangle "<$flask>\nwebapp" as webapp
+    }
+
+    rectangle "<$nginx>\nNGINX" as httpd
+
+    database "<$postgresql>\nDB" as db
+
+    httpd -> webapp
+    webapp --> db
+}
+
+users --> httpd
+
+@enduml
+
+```
+
+
+#### Open Security Architecture
+
+
+```plantuml
+
+@startuml
+
+!include <osa/user/blue/blue>
+rectangle "<$blue>"
+
+!include <osa/user/large/group/group>
+rectangle "<$group>"
+
+!include <osa/desktop/desktop>
+rectangle "<$desktop>"
+
+!include <osa/laptop/laptop>
+rectangle "<$laptop>"
+
+
+' listsprites
+
+@enduml
+
+```
+
+
+#### Tupadr3
+
+including Devicons and Font Awesome
+
+```plantuml
+
+@startuml
+
+!include <tupadr3/common>
+!include <tupadr3/font-awesome/cloud>
+!include <tupadr3/font-awesome/users>
+
+
+FA_CLOUD(cloud1, Cloud1) #ADD8E6
+FA_CLOUD(cloud2, Cloud2) #FFFACD
+FA_CLOUD(cloud3, Cloud3) #90EE90
+FA_USERS(users, Users, rectangle, #White) #Tomato
+
+users --> cloud1
+users --> cloud2
+users --> cloud3
+
+cloud1 -[hidden]> cloud2
+cloud2 -[hidden]> cloud3
 
 @enduml
 
@@ -3099,6 +3273,39 @@ JunctionOr -down-> Element3
 Element2 -right-> JunctionAnd
 Element3 -up-> JunctionAnd
 JunctionAnd -right-> Element4
+
+@enduml
+
+```
+
+
+### Office
+
+```plantuml
+
+@startuml
+
+!include <tupadr3/common>
+
+!include <office/Servers/database_server>
+!include <office/Servers/application_server>
+!include <office/Clouds/azure>
+!include <office/Clouds/office_365_cloud>
+
+
+rectangle "<img:https://raw.githubusercontent.com/Roemer/plantuml-office/master/office2014/Users/users_green.png>\r Users" as users
+
+' OFF_AZURE(azure,Azure)
+rectangle "<img:https://raw.githubusercontent.com/Roemer/plantuml-office/master/office2014/Clouds/azure.png>\r Azure" {
+    OFF_APPLICATION_SERVER(app,AppServer)
+    OFF_DATABASE_SERVER(db,DB)
+    app <-> db
+}
+
+OFF_OFFICE_365_CLOUD(o365,O365)
+
+users <--> app
+users <-> o365
 
 @enduml
 
