@@ -3128,12 +3128,26 @@ myDWH2 -[hidden]> myDWH3
 
 ### Azure
 
-
 ```plantuml
 
 @startuml
 
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/release/2-1/dist
+!includeurl AzurePuml/AzureCommon.puml
 
+!includeurl AzurePuml/Compute/AzureFunction.puml
+!includeurl AzurePuml/Databases/AzureCosmosDb.puml
+!includeurl AzurePuml/Web/AzureAPIManagement.puml
+
+
+actor "User" as users
+AzureAPIManagement(apim, "API Management", "Exposed endpoint")
+AzureFunction(myFunction, "My Application", "Application that read or write data")
+AzureCosmosDb(myDB, "My Database", "Document DB")
+
+users <-> apim
+apim <-> myFunction
+myFunction <-> myDB
 
 @enduml
 
