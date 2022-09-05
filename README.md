@@ -318,6 +318,30 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 ```
 
 
+### アイコン画像
+
+
+#### Google Material Icons
+
+```plantuml
+
+@startuml
+
+!include <material/common>
+!include <material/file_multiple>
+!include <material/folder>
+
+
+MA_FILE_MULTIPLE(Tomato, 1, files, rectangle, "My file")
+MA_FOLDER(Red, 1, folder, rectangle, "Home directory")
+
+folder *- files
+
+@enduml
+
+```
+
+
 # 構造図
 
 
