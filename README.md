@@ -321,7 +321,7 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 ### アイコン画像
 
 
-#### C4 model4
+#### C4 model
 
 コンテキスト（context）、コンテナ（containers）、コンポーネント（components）、コード（code）
 
@@ -347,6 +347,252 @@ Rel(personAlias, systemAlias, "views account balances, and makes payments using"
 Rel(systemAlias, mainframeSystemAlias, "Gets account information from, and makes payments using")
 Rel(systemAlias, emailSystemAlias, "Sends e-mail using")
 ' Rel_U
+
+@enduml
+
+```
+
+
+#### Cloudinsight
+
+```plantuml
+
+@startuml
+
+skinparam monochrome true
+
+!include <cloudinsight/ai>
+!include <cloudinsight/aliyun>
+!include <cloudinsight/apache>
+!include <cloudinsight/bearychat>
+!include <cloudinsight/bell>
+!include <cloudinsight/bi>
+!include <cloudinsight/cacti>
+!include <cloudinsight/cassandra>
+!include <cloudinsight/ci-large>
+!include <cloudinsight/ci>
+!include <cloudinsight/cog>
+!include <cloudinsight/copy>
+!include <cloudinsight/couchbase>
+!include <cloudinsight/couchdb>
+!include <cloudinsight/ct>
+!include <cloudinsight/dashboard>
+!include <cloudinsight/desktop>
+!include <cloudinsight/disable>
+!include <cloudinsight/docker>
+!include <cloudinsight/download>
+!include <cloudinsight/edit>
+!include <cloudinsight/elasticsearch>
+!include <cloudinsight/exit>
+!include <cloudinsight/file>
+!include <cloudinsight/gearman>
+!include <cloudinsight/gunicorn>
+!include <cloudinsight/haproxy>
+!include <cloudinsight/hdfs>
+!include <cloudinsight/iis>
+!include <cloudinsight/java>
+!include <cloudinsight/jianliao>
+!include <cloudinsight/kafka>
+!include <cloudinsight/left>
+!include <cloudinsight/linux>
+!include <cloudinsight/listalt>
+!include <cloudinsight/loading>
+!include <cloudinsight/memcached>
+!include <cloudinsight/mesos>
+!include <cloudinsight/mi>
+!include <cloudinsight/mongodb>
+!include <cloudinsight/mysql>
+!include <cloudinsight/nagios>
+!include <cloudinsight/nginx>
+!include <cloudinsight/nodejs>
+!include <cloudinsight/onealert>
+!include <cloudinsight/oneapmlogo>
+!include <cloudinsight/openstack>
+!include <cloudinsight/overview>
+!include <cloudinsight/pause>
+!include <cloudinsight/php_fpm>
+!include <cloudinsight/php>
+!include <cloudinsight/play>
+!include <cloudinsight/plus>
+!include <cloudinsight/point>
+!include <cloudinsight/postgresql>
+!include <cloudinsight/pubu>
+!include <cloudinsight/python>
+!include <cloudinsight/question>
+!include <cloudinsight/rabbitmq>
+!include <cloudinsight/redis>
+!include <cloudinsight/remove-sign>
+!include <cloudinsight/right>
+!include <cloudinsight/ruby>
+!include <cloudinsight/server>
+!include <cloudinsight/singlePage>
+!include <cloudinsight/snmp>
+!include <cloudinsight/solr>
+!include <cloudinsight/sqlserver>
+!include <cloudinsight/supervisord>
+!include <cloudinsight/tomcat>
+!include <cloudinsight/tongzhi>
+!include <cloudinsight/trash>
+!include <cloudinsight/user>
+!include <cloudinsight/windows>
+!include <cloudinsight/x>
+!include <cloudinsight/yanjing>
+!include <cloudinsight/zookeeper>
+
+
+rectangle "<$ai>\nai"
+rectangle "<$aliyun>\naliyun"
+rectangle "<$apache>\napache"
+rectangle "<$bearychat>\nbearychat"
+rectangle "<$bell>\nbell"
+rectangle "<$bi>\nbi"
+rectangle "<$cacti>\ncacti"
+rectangle "<$cassandra>\ncassandra"
+rectangle "<$ci-large>\nci-large"
+rectangle "<$ci>\nci"
+rectangle "<$cog>\ncog"
+rectangle "<$copy>\ncopy"
+rectangle "<$couchbase>\ncouchbase"
+rectangle "<$couchdb>\ncouchdb"
+rectangle "<$ct>\nct"
+rectangle "<$dashboard>\ndashboard"
+rectangle "<$desktop>\ndesktop"
+rectangle "<$disable>\ndisable"
+rectangle "<$docker>\ndocker"
+rectangle "<$download>\ndownload"
+rectangle "<$edit>\nedit"
+rectangle "<$elasticsearch>\nelasticsearch"
+rectangle "<$exit>\nexit"
+rectangle "<$file>\nfile"
+rectangle "<$gearman>\ngearman"
+rectangle "<$gunicorn>\ngunicorn"
+rectangle "<$haproxy>\nhaproxy"
+rectangle "<$hdfs>\nhdfs"
+rectangle "<$iis>\niis"
+rectangle "<$java>\njava"
+rectangle "<$jianliao>\njianliao"
+rectangle "<$kafka>\nkafka"
+rectangle "<$left>\nleft"
+rectangle "<$linux>\nlinux"
+rectangle "<$listalt>\nlistalt"
+rectangle "<$loading>\nloading"
+rectangle "<$memcached>\nmemcached"
+rectangle "<$mesos>\nmesos"
+rectangle "<$mi>\nmi"
+rectangle "<$mongodb>\nmongodb"
+rectangle "<$mysql>\nmysql"
+rectangle "<$nagios>\nnagios"
+rectangle "<$nginx>\nnginx"
+rectangle "<$nodejs>\nnodejs"
+rectangle "<$onealert>\nonealert"
+rectangle "<$oneapmlogo>\noneapmlogo"
+rectangle "<$openstack>\nopenstack"
+rectangle "<$overview>\noverview"
+rectangle "<$pause>\npause"
+rectangle "<$php_fpm>\nphp_fpm"
+rectangle "<$php>\nphp"
+rectangle "<$play>\nplay"
+rectangle "<$plus>\nplus"
+rectangle "<$point>\npoint"
+rectangle "<$postgresql>\npostgresql"
+rectangle "<$pubu>\npubu"
+rectangle "<$python>\npython"
+rectangle "<$question>\nquestion"
+rectangle "<$rabbitmq>\nrabbitmq"
+rectangle "<$redis>\nredis"
+rectangle "<$remove-sign>\nremove-sign"
+rectangle "<$right>\nright"
+rectangle "<$ruby>\nruby"
+rectangle "<$server>\nserver"
+rectangle "<$singlePage>\nsinglePage"
+rectangle "<$snmp>\nsnmp"
+rectangle "<$solr>\nsolr"
+rectangle "<$sqlserver>\nsqlserver"
+rectangle "<$supervisord>\nsupervisord"
+rectangle "<$tomcat>\ntomcat"
+rectangle "<$tongzhi>\ntongzhi"
+rectangle "<$trash>\ntrash"
+rectangle "<$user>\nuser"
+rectangle "<$windows>\nwindows"
+rectangle "<$x>\nx"
+rectangle "<$yanjing>\nyanjing"
+rectangle "<$zookeeper>\nzookeeper"
+
+@enduml
+
+```
+
+
+#### Cloudogu
+
+```plantuml
+
+@startuml
+
+' Local
+!include <cloudogu/common>
+
+
+' GitHub
+!define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
+' !includeurl CLOUDOGUURL/common.puml
+
+
+' include
+!includeurl CLOUDOGUURL/dogus/backup.puml
+!include <cloudogu/dogus/cas>
+!include <cloudogu/dogus/cloudogu>
+!include <cloudogu/dogus/cockpit>
+!includeurl CLOUDOGUURL/dogus/confluence.puml
+!includeurl CLOUDOGUURL/dogus/easyredmine.puml
+!include <cloudogu/dogus/jenkins>
+!includeurl CLOUDOGUURL/dogus/jira.puml
+!includeurl CLOUDOGUURL/dogus/ldapmapper.puml
+!include <cloudogu/dogus/nexus>
+!include <cloudogu/dogus/nginx>
+!include <cloudogu/dogus/openldap>
+!include <cloudogu/dogus/plantuml>
+!includeurl CLOUDOGUURL/dogus/portainer.puml
+!include <cloudogu/dogus/postfix>
+!includeurl CLOUDOGUURL/dogus/postgresql.puml
+!include <cloudogu/dogus/redmine>
+!include <cloudogu/dogus/registrator>
+!include <cloudogu/dogus/scm>
+!include <cloudogu/dogus/smeagol>
+!include <cloudogu/dogus/sonarqube>
+!includeurl CLOUDOGUURL/dogus/swaggerui.puml
+!include <cloudogu/dogus/usermgmt>
+
+!include <cloudogu/tools/ansible>
+!includeurl CLOUDOGUURL/tools/cucumber.puml
+!includeurl CLOUDOGUURL/tools/cypress.puml
+!include <cloudogu/tools/docker>
+!include <cloudogu/tools/elastic>
+!include <cloudogu/tools/etcd>
+!includeurl CLOUDOGUURL/tools/fail2ban.puml
+!includeurl CLOUDOGUURL/tools/gatsby.puml
+!include <cloudogu/tools/grafana>
+!include <cloudogu/tools/junit>
+!include <cloudogu/tools/k8s>
+!include <cloudogu/tools/prometheus>
+!include <cloudogu/tools/qemu>
+!includeurl CLOUDOGUURL/tools/react.puml
+!include <cloudogu/tools/terraform>
+!include <cloudogu/tools/ubuntu>
+!includeurl CLOUDOGUURL/tools/virtualbox.puml
+!include <cloudogu/tools/vmware>
+
+
+skinparam node {
+    backgroundColor #FFE4E1
+    borderColor #Red
+}
+
+node "<$ubuntu>"
+
+node "<$redmine>"
+
+TOOL_K8S(k8s, Kubernetes) #ffffff
 
 @enduml
 
