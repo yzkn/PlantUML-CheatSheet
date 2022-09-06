@@ -3605,6 +3605,8 @@ myDWH2 -[hidden]> myDWH3
 
 ### Azure
 
+- [plantuml-stdlib/Azure-PlantUML](https://github.com/plantuml-stdlib/Azure-PlantUML)
+
 ```plantuml
 
 @startuml
@@ -3636,6 +3638,289 @@ rectangle "<color:AWS_SYMBOL_COLOR><$AzureMachineLearningStudio></color>" as myS
 users -[hidden]-> myStudio1
 myStudio1 -[hidden]> myStudio2
 myStudio2 -[hidden]> myStudio3
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!includeurl AzurePuml/AzureCommon.puml
+
+!includeurl AzurePuml/AIMachineLearning/AzureBatchAI.puml
+!includeurl AzurePuml/AIMachineLearning/AzureBotService.puml
+!includeurl AzurePuml/AIMachineLearning/AzureCognitiveServices.puml
+!includeurl AzurePuml/AIMachineLearning/AzureMachineLearningService.puml
+!includeurl AzurePuml/AIMachineLearning/AzureMachineLearningStudio.puml
+!includeurl AzurePuml/AIMachineLearning/AzureMachineLearningStudioClassic.puml
+!includeurl AzurePuml/AIMachineLearning/AzureMachineLearningStudioWebServicePlan.puml
+!includeurl AzurePuml/AIMachineLearning/AzureMachineLearningStudioWorkspace.puml
+!includeurl AzurePuml/AIMachineLearning/AzureTranslatorText.puml
+!includeurl AzurePuml/AIMachineLearning/MicrosoftGenomics.puml
+!includeurl AzurePuml/Analytics/AzureAnalysisServices.puml
+!includeurl AzurePuml/Analytics/AzureDatabricks.puml
+!includeurl AzurePuml/Analytics/AzureDataCatalog.puml
+!includeurl AzurePuml/Analytics/AzureDataExplorer.puml
+!includeurl AzurePuml/Analytics/AzureDataLakeStoreGen1.puml
+!includeurl AzurePuml/Analytics/AzureEventHub.puml
+!includeurl AzurePuml/Analytics/AzureEventHubCluster.puml
+!includeurl AzurePuml/Analytics/AzureHDInsightCluster.puml
+!includeurl AzurePuml/Analytics/AzureLogAnalyticsWorkspace.puml
+!includeurl AzurePuml/Analytics/AzurePowerBIEmbedded.puml
+!includeurl AzurePuml/Analytics/AzurePurviewAccount.puml
+!includeurl AzurePuml/Analytics/AzureStreamAnalyticsJob.puml
+!includeurl AzurePuml/Analytics/AzureSynapseAnalytics.puml
+!includeurl AzurePuml/Analytics/PowerBI.puml
+!includeurl AzurePuml/Blockchain/AzurBlockchainMember.puml
+!includeurl AzurePuml/Blockchain/AzurBlockchainService.puml
+!includeurl AzurePuml/Blockchain/AzurBlockchainTokenService.puml
+!includeurl AzurePuml/Blockchain/AzureBlockchainConnection.puml
+!includeurl AzurePuml/Blockchain/AzureBlockchainConsortium.puml
+!includeurl AzurePuml/Compute/AzureAppService.puml
+!includeurl AzurePuml/Compute/AzureAppServicePlan.puml
+!includeurl AzurePuml/Compute/AzureAppServicePlanLinux.puml
+!includeurl AzurePuml/Compute/AzureAutomanagedVirtualMachine.puml
+!includeurl AzurePuml/Compute/AzureAvailabiltySet.puml
+!includeurl AzurePuml/Compute/AzureBatch.puml
+!includeurl AzurePuml/Compute/AzureBatchAccount.puml
+!includeurl AzurePuml/Compute/AzureCloudServices.puml
+!includeurl AzurePuml/Compute/AzureContainerService.puml
+!includeurl AzurePuml/Compute/AzureDisk.puml
+!includeurl AzurePuml/Compute/AzureDiskEncryptionSet.puml
+!includeurl AzurePuml/Compute/AzureDiskSnapshot.puml
+!includeurl AzurePuml/Compute/AzureFunction.puml
+!includeurl AzurePuml/Compute/AzureImageClassic.puml
+!includeurl AzurePuml/Compute/AzureImageDefinition.puml
+!includeurl AzurePuml/Compute/AzureImageVersion.puml
+!includeurl AzurePuml/Compute/AzureMeshApplication.puml
+!includeurl AzurePuml/Compute/AzureServerFarm.puml
+!includeurl AzurePuml/Compute/AzureServiceFabric.puml
+!includeurl AzurePuml/Compute/AzureSharedImageGallery.puml
+!includeurl AzurePuml/Compute/AzureSpringCloud.puml
+!includeurl AzurePuml/Compute/AzureVirtualDesktop.puml
+!includeurl AzurePuml/Compute/AzureVirtualDesktopApplicationGroup.puml
+!includeurl AzurePuml/Compute/AzureVirtualDesktopHostPool.puml
+!includeurl AzurePuml/Compute/AzureVirtualDesktopWorkspace.puml
+!includeurl AzurePuml/Compute/AzureVirtualMachine.puml
+!includeurl AzurePuml/Compute/AzureVirtualMachineClassic.puml
+!includeurl AzurePuml/Compute/AzureVirtualMachineScaleSet.puml
+!includeurl AzurePuml/Compute/AzureWebSlot.puml
+!includeurl AzurePuml/Compute/AzureWebTest.puml
+!includeurl AzurePuml/Compute/AzureWorkspace.puml
+!includeurl AzurePuml/Containers/AzureContainerApp.puml
+!includeurl AzurePuml/Containers/AzureContainerInstance.puml
+!includeurl AzurePuml/Containers/AzureContainerRegistry.puml
+!includeurl AzurePuml/Containers/AzureKubernetesService.puml
+!includeurl AzurePuml/Containers/AzureServiceEnvironment.puml
+!includeurl AzurePuml/Databases/AzureCosmosDb.puml
+!includeurl AzurePuml/Databases/AzureDatabaseForMariaDB.puml
+!includeurl AzurePuml/Databases/AzureDatabaseForMySQL.puml
+!includeurl AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
+!includeurl AzurePuml/Databases/AzureDatabaseMigrationService.puml
+!includeurl AzurePuml/Databases/AzureDataBricks.puml
+!includeurl AzurePuml/Databases/AzureDataExplorerCluster.puml
+!includeurl AzurePuml/Databases/AzureDataFactory.puml
+!includeurl AzurePuml/Databases/AzureInstancePool.puml
+!includeurl AzurePuml/Databases/AzureManagedDatabase.puml
+!includeurl AzurePuml/Databases/AzureRedisCache.puml
+!includeurl AzurePuml/Databases/AzureSql.puml
+!includeurl AzurePuml/Databases/AzureSqlDatabase.puml
+!includeurl AzurePuml/Databases/AzureSqlDataWarehouse.puml
+!includeurl AzurePuml/Databases/AzureSqlElasticPool.puml
+!includeurl AzurePuml/Databases/AzureSqlManagedInstance.puml
+!includeurl AzurePuml/Databases/AzureSqlServer.puml
+!includeurl AzurePuml/Databases/AzureSqlStretchDatabase.puml
+!includeurl AzurePuml/Databases/AzureSqlVirtualMachine.puml
+!includeurl AzurePuml/Databases/AzureSSISLiftAndShift.puml
+!includeurl AzurePuml/Databases/AzureVirtualCluster.puml
+!includeurl AzurePuml/DevOps/AzureApplicationInsights.puml
+!includeurl AzurePuml/DevOps/AzureArtifacts.puml
+!includeurl AzurePuml/DevOps/AzureBoards.puml
+!includeurl AzurePuml/DevOps/AzureDevOps.puml
+!includeurl AzurePuml/DevOps/AzureDevOpsOrganisation.puml
+!includeurl AzurePuml/DevOps/AzureDevTestLabs.puml
+!includeurl AzurePuml/DevOps/AzureLabServices.puml
+!includeurl AzurePuml/DevOps/AzurePipelines.puml
+!includeurl AzurePuml/DevOps/AzureRepos.puml
+!includeurl AzurePuml/DevOps/AzureTestPlans.puml
+!includeurl AzurePuml/General/Azure.puml
+!includeurl AzurePuml/General/AzureWorkbook.puml
+!includeurl AzurePuml/General/AzureWorkflow.puml
+!includeurl AzurePuml/Health/DICOMService.puml
+!includeurl AzurePuml/Health/FHIRService.puml
+!includeurl AzurePuml/Health/HealthDataServices.puml
+!includeurl AzurePuml/Health/MedTechService.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectory.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryB2C.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryConnectHealth.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryDomainServices.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryGroup.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryIdentityProtection.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryRolesAndAdministrators.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectoryUser.puml
+!includeurl AzurePuml/Identity/AzureAppRegistration.puml
+!includeurl AzurePuml/Identity/AzureEnterpriseApplication.puml
+!includeurl AzurePuml/Identity/AzureIdentityGovernance.puml
+!includeurl AzurePuml/Identity/AzureManagedIdentity.puml
+!includeurl AzurePuml/Integration/AzureBizTalk.puml
+!includeurl AzurePuml/Integration/AzureEventGrid.puml
+!includeurl AzurePuml/Integration/AzureEventGridDomain.puml
+!includeurl AzurePuml/Integration/AzureEventGridSubscription.puml
+!includeurl AzurePuml/Integration/AzureEventGridTopic.puml
+!includeurl AzurePuml/Integration/AzureIntegrationAccount.puml
+!includeurl AzurePuml/Integration/AzureLogicApps.puml
+!includeurl AzurePuml/Integration/AzurePartnerTopic.puml
+!includeurl AzurePuml/Integration/AzureServiceBus.puml
+!includeurl AzurePuml/Integration/AzureServiceBusQueue.puml
+!includeurl AzurePuml/Integration/AzureServiceBusTopic.puml
+!includeurl AzurePuml/Integration/AzureSystemTopic.puml
+!includeurl AzurePuml/InternetOfThings/AzureDeviceProvisioningService.puml
+!includeurl AzurePuml/InternetOfThings/AzureDigitalTwins.puml
+!includeurl AzurePuml/InternetOfThings/AzureIoTCentral.puml
+!includeurl AzurePuml/InternetOfThings/AzureIoTCentralApplications.puml
+!includeurl AzurePuml/InternetOfThings/AzureIoTEdge.puml
+!includeurl AzurePuml/InternetOfThings/AzureIoTHub.puml
+!includeurl AzurePuml/InternetOfThings/AzureMaps.puml
+!includeurl AzurePuml/InternetOfThings/AzureTimeSeriesDataSet.puml
+!includeurl AzurePuml/InternetOfThings/AzureTimeSeriesInsights.puml
+!includeurl AzurePuml/InternetOfThings/AzureTimeSeriesInsightsAccessPolicy.puml
+!includeurl AzurePuml/InternetOfThings/AzureTimeSeriesInsightsEnvironment.puml
+!includeurl AzurePuml/InternetOfThings/AzureTimeSeriesInsightsEventSource.puml
+!includeurl AzurePuml/Intune/AzureIntune.puml
+!includeurl AzurePuml/Intune/AzureIntuneApple.puml
+!includeurl AzurePuml/Intune/AzureIntuneGoogle.puml
+!includeurl AzurePuml/Intune/AzureIntuneWindows.puml
+!includeurl AzurePuml/Management/AppConfiguration.puml
+!includeurl AzurePuml/Management/AzureArc.puml
+!includeurl AzurePuml/Management/AzureArcMachine.puml
+!includeurl AzurePuml/Management/AzureAutomation.puml
+!includeurl AzurePuml/Management/AzureBackup.puml
+!includeurl AzurePuml/Management/AzureBlueprints.puml
+!includeurl AzurePuml/Management/AzureCompliance.puml
+!includeurl AzurePuml/Management/AzureCostAlert.puml
+!includeurl AzurePuml/Management/AzureCostAnalysis.puml
+!includeurl AzurePuml/Management/AzureCostBudget.puml
+!includeurl AzurePuml/Management/AzureCostManagement.puml
+!includeurl AzurePuml/Management/AzureCostManagementAndBilling.puml
+!includeurl AzurePuml/Management/AzureGeoRecovery.puml
+!includeurl AzurePuml/Management/AzureLighthouse.puml
+!includeurl AzurePuml/Management/AzureLogAnalytics.puml
+!includeurl AzurePuml/Management/AzureManagedApplicationCenter.puml
+!includeurl AzurePuml/Management/AzureManagedApplications.puml
+!includeurl AzurePuml/Management/AzureManagementGroups.puml
+!includeurl AzurePuml/Management/AzureManagementPortal.puml
+!includeurl AzurePuml/Management/AzureMetrics.puml
+!includeurl AzurePuml/Management/AzureMonitor.puml
+!includeurl AzurePuml/Management/AzurePolicy.puml
+!includeurl AzurePuml/Management/AzureRecoveryServiceVault.puml
+!includeurl AzurePuml/Management/AzureResourceGraphExplorer.puml
+!includeurl AzurePuml/Management/AzureResourceGroupList.puml
+!includeurl AzurePuml/Management/AzureResourceGroups.puml
+!includeurl AzurePuml/Management/AzureResourceLinked.puml
+!includeurl AzurePuml/Management/AzureScheduler.puml
+!includeurl AzurePuml/Management/AzureSiteRecovery.puml
+!includeurl AzurePuml/Management/AzureSolutions.puml
+!includeurl AzurePuml/Management/AzureSubscription.puml
+!includeurl AzurePuml/Management/AzureTag.puml
+!includeurl AzurePuml/Management/AzureUserPrivacy.puml
+!includeurl AzurePuml/Media/AzureMedia.puml
+!includeurl AzurePuml/Media/AzureMediaFile.puml
+!includeurl AzurePuml/Media/AzureMediaServices.puml
+!includeurl AzurePuml/Migrate/AzureDataBoxEdge.puml
+!includeurl AzurePuml/Migrate/AzureMigrate.puml
+!includeurl AzurePuml/Mobile/AzureMobileApp.puml
+!includeurl AzurePuml/Mobile/AzureMobileEngagement.puml
+!includeurl AzurePuml/Mobile/AzureNotificationHub.puml
+!includeurl AzurePuml/Mobile/AzureNotificationHubNamespace.puml
+!includeurl AzurePuml/Mobile/AzureNotificationHubs.puml
+!includeurl AzurePuml/Networking/AzureApplicationGateway.puml
+!includeurl AzurePuml/Networking/AzureAzureDDoSProtection.puml
+!includeurl AzurePuml/Networking/AzureBastion.puml
+!includeurl AzurePuml/Networking/AzureCDNProfile.puml
+!includeurl AzurePuml/Networking/AzureDNS.puml
+!includeurl AzurePuml/Networking/AzureDNSServer.puml
+!includeurl AzurePuml/Networking/AzureExpressRoute.puml
+!includeurl AzurePuml/Networking/AzureExpressRouteCircuit.puml
+!includeurl AzurePuml/Networking/AzureExpressRouteDirect.puml
+!includeurl AzurePuml/Networking/AzureFirewall.puml
+!includeurl AzurePuml/Networking/AzureFirewallManager.puml
+!includeurl AzurePuml/Networking/AzureFrontDoor.puml
+!includeurl AzurePuml/Networking/AzureFrontDoorService.puml
+!includeurl AzurePuml/Networking/AzureIPAddressSpace.puml
+!includeurl AzurePuml/Networking/AzureIPGroups.puml
+!includeurl AzurePuml/Networking/AzureLoadBalancer.puml
+!includeurl AzurePuml/Networking/AzureNAT.puml
+!includeurl AzurePuml/Networking/AzureNetworkInterface.puml
+!includeurl AzurePuml/Networking/AzureNSG.puml
+!includeurl AzurePuml/Networking/AzurePrivateLink.puml
+!includeurl AzurePuml/Networking/AzurePrivateLinkHub.puml
+!includeurl AzurePuml/Networking/AzurePrivateLinkService.puml
+!includeurl AzurePuml/Networking/AzurePublicIPAddress.puml
+!includeurl AzurePuml/Networking/AzurePublicIPAddressClassic.puml
+!includeurl AzurePuml/Networking/AzurePublicIPPrefix.puml
+!includeurl AzurePuml/Networking/AzureRouteFilter.puml
+!includeurl AzurePuml/Networking/AzureRouteTable.puml
+!includeurl AzurePuml/Networking/AzureServiceEndpoint.puml
+!includeurl AzurePuml/Networking/AzureServiceEndpointPolicy.puml
+!includeurl AzurePuml/Networking/AzureSubnet.puml
+!includeurl AzurePuml/Networking/AzureTrafficManager.puml
+!includeurl AzurePuml/Networking/AzureVirtualNetwork.puml
+!includeurl AzurePuml/Networking/AzureVirtualNetworkPeering.puml
+!includeurl AzurePuml/Networking/AzureVirtualWAN.puml
+!includeurl AzurePuml/Networking/AzureVPNGateway.puml
+!includeurl AzurePuml/Networking/AzureWAFPolicies.puml
+!includeurl AzurePuml/Security/AzureAccessControl.puml
+!includeurl AzurePuml/Security/AzureApplicationSecurityGroup.puml
+!includeurl AzurePuml/Security/AzureConditionalAccess.puml
+!includeurl AzurePuml/Security/AzureDefender.puml
+!includeurl AzurePuml/Security/AzureKeyVault.puml
+!includeurl AzurePuml/Security/AzureSecurityCenter.puml
+!includeurl AzurePuml/Security/AzureSentinel.puml
+!includeurl AzurePuml/Stack/AzureStack.puml
+!includeurl AzurePuml/Stack/AzureStackCapacity.puml
+!includeurl AzurePuml/Stack/AzureStackInfrastructureBackup.puml
+!includeurl AzurePuml/Stack/AzureStackMultiTenancy.puml
+!includeurl AzurePuml/Stack/AzureStackOffer.puml
+!includeurl AzurePuml/Stack/AzureStackPlan.puml
+!includeurl AzurePuml/Stack/AzureStackUpdate.puml
+!includeurl AzurePuml/Stack/AzureStackUserSubscription.puml
+!includeurl AzurePuml/Storage/AzureBlobStorage.puml
+!includeurl AzurePuml/Storage/AzureDataBox.puml
+!includeurl AzurePuml/Storage/AzureDataLakeStorage.puml
+!includeurl AzurePuml/Storage/AzureDiskStorage.puml
+!includeurl AzurePuml/Storage/AzureDiskStorageClassic.puml
+!includeurl AzurePuml/Storage/AzureFileStorage.puml
+!includeurl AzurePuml/Storage/AzureManagedDisks.puml
+!includeurl AzurePuml/Storage/AzureNetAppFiles.puml
+!includeurl AzurePuml/Storage/AzureQueueStorage.puml
+!includeurl AzurePuml/Storage/AzureStorage.puml
+!includeurl AzurePuml/Storage/AzureStorageClassic.puml
+!includeurl AzurePuml/Storage/AzureStorageContainer.puml
+!includeurl AzurePuml/Storage/AzureStorSimple.puml
+!includeurl AzurePuml/Web/AzureAdvancedTools.puml
+!includeurl AzurePuml/Web/AzureAPIManagement.puml
+!includeurl AzurePuml/Web/AzureAppServiceCertificate.puml
+!includeurl AzurePuml/Web/AzureAppServiceDomain.puml
+!includeurl AzurePuml/Web/AzureCDN.puml
+!includeurl AzurePuml/Web/AzureContainerSettings.puml
+!includeurl AzurePuml/Web/AzureCORS.puml
+!includeurl AzurePuml/Web/AzureDeploymentCredentials.puml
+!includeurl AzurePuml/Web/AzureLogStream.puml
+!includeurl AzurePuml/Web/AzureProperties.puml
+!includeurl AzurePuml/Web/AzureQuota.puml
+!includeurl AzurePuml/Web/AzureSearch.puml
+!includeurl AzurePuml/Web/AzureSignalRService.puml
+!includeurl AzurePuml/Web/AzureWebApp.puml
+
+
+' ''''''''''
+
+' !include <azure/Databases/AzureCosmosDb.puml>
+' !includeurl AzurePuml/Databases/AzureCosmosDb.puml
+AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
 @enduml
 
