@@ -308,7 +308,7 @@ listsprite
 
 ```
 
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/f78c90623945a10e798f02fe70c50733ac9503f4/img/listsprite.png "アイコン")
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite.png "アイコン")
 
 ### 画像ファイルをスプライトに変換
 
@@ -705,6 +705,21 @@ users --> httpd
 ```
 
 
+#### OpenIconic
+
+```plantuml
+
+@startuml
+
+listopeniconic
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listopeniconic.png "アイコン")
+
+
 #### Open Security Architecture
 
 
@@ -758,6 +773,273 @@ cloud1 -[hidden]> cloud2
 cloud2 -[hidden]> cloud3
 
 @enduml
+
+```
+
+
+# テキストデータ
+
+
+# JSON
+
+```plantuml
+
+@startjson
+
+"Foobar"
+
+@endjson
+
+@startjson
+
+123
+
+@endjson
+
+@startjson
+
+true
+
+@endjson
+
+@startjson
+
+#highlight "6" /' 13 '/
+
+[ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 ]
+
+@endjson
+
+@startjson
+
+#highlight "key2"
+
+{
+    "key1": "val1",
+    "key2": "val2",
+    "key3": "val3"
+}
+
+@endjson
+
+@startjson
+
+{
+    "null": null,
+    "true": true,
+    "false": false,
+    "JSON_Number": [-1, -1.1, 1E5, "<color:green>TBC"],
+    "JSON_String": [
+        "😀",
+        "\u3042\u3044\u3046 (\\u3042\\u3044\\u3046)",
+        {
+            "escape": {
+                "quotation mark character (U+0022)":       "a\"b",
+                "reverse solidus character (U+005C)":      "a\\b",
+                "solidus character (U+002F)":              "a\/b",
+                "backspace character (U+0008)":            "a\bb",
+                "form feed character (U+000C)":            "a\fb",
+                "line feed character (U+000A)":            "a\nb",
+                "carriage return character (U+000D)":      "a\rb",
+                "character tabulation character (U+0009)": "a\tb"
+            }
+        }
+    ],
+    "JSON_Object": {
+        "{}": {},
+        "k_int": 123,
+        "k_str": "abc",
+        "k_obj": {"k": "v"}
+    },
+    "JSON_Array" : [ /' 配列型 '/
+        [],
+        [true, false],
+        [-1, 1],
+        ["a", "b", "c"],
+        ["mix", null, true, 1, {"k": "v"}]
+    ]
+}
+
+@endjson
+
+@startjson
+
+#highlight "glossary" / "GlossDiv" / "title"
+
+' https://json.org/example.html
+{
+    "glossary": {
+        "title": "example glossary",
+        "GlossDiv": {
+            "title": "S",
+            "GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+                    "SortAs": "SGML",
+                    "GlossTerm": "Standard Generalized Markup Language",
+                    "Acronym": "SGML",
+                    "Abbrev": "ISO 8879:1986",
+                    "GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+                        "GlossSeeAlso": ["GML", "XML"]
+                    },
+                    "GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+@endjson
+
+@startjson
+
+#highlight "menu" / "popup" / "menuitem" / "2"
+#highlight "menu" / "popup" / "menuitem" / "2" / "value"
+#highlight "menu" / "popup" / "menuitem" / "2" / "onclick"
+
+' https://json.org/example.html
+{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+
+@endjson
+
+```
+
+### クラス図・オブジェクト図でJSONを表示
+
+```plantuml
+
+@startjson
+
+{
+   "height": 180,
+   "weight": 70
+}
+
+@endjson
+
+@startuml
+
+class Person
+
+object personObj
+
+json JSON {
+   "height": 180,
+   "weight": 70
+}
+
+@enduml
+
+```
+
+### 配置図・ユースケース図・コンポーネント図でJSONを表示
+
+```plantuml
+
+@startuml
+
+allowmixing
+
+
+actor User
+
+json JSON {
+   "height": 180,
+   "weight": 70
+}
+@enduml
+
+@startuml
+
+allowmixing
+
+database {
+  json "store.json" as J {
+    "id": 1,
+    "height": 180,
+    "weight": 70
+  }
+}
+
+@enduml
+
+```
+
+
+## YAML
+
+```plantuml
+
+@startyaml
+
+#highlight "6" /' 13 '/
+
+' 配列
+- 1
+- 1
+- 2
+- 3
+- 5
+- 8
+- 13
+- 21
+- 34
+- 55
+- 89
+
+@endyaml
+
+@startyaml
+
+#highlight "key2"
+
+' ハッシュ
+key1: val1
+key2: val2
+key3: val3
+
+@endyaml
+
+@startyaml
+
+' データ型
+
+# YAMLのコメント
+
+decimal:
+  - 123
+  - 1,234,567,890
+octal: 0644
+hexa:  0xFF
+float: 0.05
+bool:
+  - true
+  - yes
+  - on
+  - false
+  - no
+  - off
+null:
+  - ~
+  - null
+date: 2005-01-01
+stamp: 2005-01-01 00:00:00 +09:00
+str:
+  - 'true'
+  - "2005"
+
+@endyaml
 
 ```
 
@@ -3929,12 +4211,453 @@ AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
 ### GCP
 
+- [davidholsgrove/gcp-icons-for-plantuml](https://github.com/davidholsgrove/gcp-icons-for-plantuml)
 
 ```plantuml
 
 @startuml
 
+!define GCPPuml https://raw.githubusercontent.com/davidholsgrove/gcp-icons-for-plantuml/master/dist/
+!includeurl GCPPuml/GCPCommon.puml
 
+!define GCP_COLOR #4285f4
+!includeurl GCPPuml/DataAnalytics/BigQuery.puml
+
+
+BigQuery(bigquery, "Our BigQuery", "Data analytics")
+
+@enduml
+
+```
+
+
+## 数式
+
+### AsciiMath
+
+```plantuml
+
+@startuml
+
+:<math>x = (-b +- sqrt(b^2 – 4ac))/(2a)</math>;
+
+note left
+<math>ax^2 + bx + c = 0</math>
+end note
+
+@enduml
+
+```
+
+### JLaTeXMath
+
+```plantuml
+
+@startuml
+
+:<latex>( \sin x )^{\prime} = \cos x </latex>;
+
+:<latex>( \cos x )^{\prime} = ( \sin (x+\pi /2)  )^{\prime} = \cos (x+\pi/2) = - \sin x</latex>;
+
+:<latex>\begin{eqnarray}  ( \tan x )^{\prime} &=& ( \frac{\sin x}{\cos x}  )^{\prime}  = \frac{ (\sin x)^{\prime} \cos x - \sin x ( \cos x )^{\prime}}{\cos^{2} x} \\ &=& \frac{  \cos^{2} x + \sin^{2} x }{\cos^{2} x} = \frac{ 1 }{\cos^{2} x} \end{eqnarray}</latex>;
+
+@enduml
+
+```
+
+
+## Ditaa
+
+```plantuml
+
+@startditaa
+
++--------+
+| c3CC   | /----\ /----\ /----\ /----\
+|   +----+ |c00F| |c06F| |c09F| |c0CF|
+|   |c0FC| |    | |    | |    | |    |
++---+----+ \----/ \----/ \----/ \----/
+
+---
+
++---------+
+|{d}      |
+|Document |<-+   +---------+
+|         |  |   | Storage |
++----*----+  \-->|{s}      |
+     ^           |         |
+     |           +---------+
+   /-+
+   |
+   v
++--*--+
+|{d}  |
+| Doc |
++-----+
+
+---
+
++--------+
+|{c}     |
+| Choice |
+|        |
++--------+
+
++----------+
+|{d}       |
+| Document |
+|          |
++----------+
+
++-----+
+|{io} |
+| I/O |
+|     |
++-----+
+
++------------------+
+|{mo}              |
+| Manual operation |
+|                  |
++------------------+
+
++---------+
+|{o}      | +=--------+
+| Ellipse | | Ellipse | +---------+
++---------+ | {o}     | : Ellipse |
+            +---------+ | {o}     |
+                        +---------+
+
+イコール(水平方向)またはコロン(垂直方向)を1つ以上含む線は破線で描画される
+
++---------+
+|{s}      |
+| Storage |
+|         |
++---------+
+
++-----------+
+|{tr}       |
+| Trapezoid |
+|           |
++-----------+
+
+---
+
+Point markers
+
+*----*
+|    |      /--*
+*    *      |
+|    |  -*--+
+*----*
+
+---
+
+Text handling
+
+/-----------------\
+| Things to do    |
+| cGRE            |
+| o Cut the grass |
+| o Buy jam       |
+| o Fix car       |
+| o Make website  |
+\-----------------/
+
+
+@endditaa
+
+```
+
+
+## Salt（Wireframe）
+
+```plantuml
+
+@startsalt
+
+{
+    Message label
+
+    ==
+
+    [Search button]
+
+    --
+
+    ()  radio button
+
+    (X) radio button
+
+    ..
+
+    []  Checkbox
+
+    [X] Checkbox
+
+    ~~
+
+    "Input text"
+
+    Textarea (50x8)
+    {+
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+        Sed auctor lacinia tempor.
+        Sed a ornare nibh. Maecenas
+        sodales ut ipsum a faucibus.
+        .
+        .
+        "                                                  "
+    }
+
+    {
+        {S
+            Both scroll
+            "                    "
+        } |
+        {SI
+            Vertical scroll
+            .
+            "                    "
+        } |
+        {S-
+            Horizontal scroll
+            "                    "
+        }
+    }
+
+    ==
+
+    ^Select menu^
+
+    {
+        ^Select1^ |
+        ^Select2^^item 1^^item 2^
+    }
+
+    .
+    .
+
+    ==
+
+    Table
+
+    {#
+        記号          |#   |! |- |+
+        表示される罫線|縦横|縦|横|.
+        .             | * | * | * | 外枠
+    }
+    ' . 空白セル
+    ' * 左のセルと結合
+
+    {+
+        ID       | "John Doe        "
+        Password | "********        "
+        [Cancel] | [  OK  ]
+    }
+
+    ==
+
+    {^"Group box"
+        Upload file:  | { "~/foobar.txt " | [Browse...] }
+
+        [Cancel] | [  OK  ]
+    }
+
+    ==
+
+    木構造
+
+    {T
+        + C:
+        ++ Program Files
+        +++ Donec
+        ++++ Quis
+        +++ Nisl
+        ++++ Ultricies
+    }
+
+    {
+        {T#
+            +Region          | File count | Size
+            + C:             | 123456     | 30GiB
+            ++ Program Files | 23456      | 20GiB
+            +++ Donec        | 345        | 100MiB
+            ++++ Quis        | 56         | 50MiB
+            +++ Nisl         | 67         | 100MiB
+            ++++ Ultricies   | 8         |  10MiB
+        }
+    }
+
+    ==
+
+    Tab
+
+    {+
+        {/ <b>Main | Sub | Other }
+    }
+
+    ..
+
+    {+
+        {/ <b>Main
+        Sub
+        Other }
+    }
+
+    ==
+
+    Menu
+
+    {+
+        {* File | Edit | View | Help
+            File | Open | Save | SaveAs
+            ' Edit | Cut | Copy | Paste
+            ' View | Option
+            ' Help | About
+        }
+        .
+        .
+        .
+        .
+    }
+
+    ==
+
+    画像
+
+    疑似スプライト
+
+    {
+        <<folder
+        ............
+        .XXXXX......
+        .X...X......
+        .XXXXXXXXXX.
+        .X........X.
+        .X........X.
+        .X........X.
+        .X........X.
+        .XXXXXXXXXX.
+        ............
+        >>
+
+        { <<folder>> | [ Select files ] }
+    }
+
+    ..
+
+    OpenIconic
+
+    <&image>
+
+}
+
+@endsalt
+
+
+```
+
+
+## nwdiag（ネットワーク図）
+
+```plantuml
+
+@startuml
+
+!include <office/Devices/device_mac_client>
+!include <office/Servers/application_server>
+!include <office/Servers/database_server>
+
+
+nwdiag {
+    inet [shape = cloud, description = "Internet"];
+    inet -- utm;
+
+    network dmz{
+        color = "LightPink";
+        address = "192.168.0.0/24"
+
+        utm [address = ".254"];
+
+        group App {
+            color = "MistyRose";
+            description = "Application servers";
+
+            app01 [address = ".8", description = "<$application_server>\n App01"];
+            app02 [address = ".9", description = "<$application_server>\n App02"];
+        }
+    }
+    network internal {
+        address = "172.16.0.0/24";
+
+        app01 [address = "172.16.0.1"];
+        app02 [address = "172.16.0.2"];
+        db01 [address = "172.16.0.100", description = "<$database_server>\n db01", shape = "database"];
+        db02 [address = "172.16.0.101", description = "<$database_server>\n db02", shape = "database"];
+
+        group DB {
+            color = "LightSkyBlue";
+            description = "Databases";
+
+            db01;
+            db02;
+        }
+    }
+
+    network intra {
+        color = "LightCyan"
+        address = "192.168.1.0/24"
+
+        utm [address = ".254"];
+
+        pc01 [address = ".8", description = "<$device_mac_client>\n PC01"];
+        pc02 [address = ".9", description = "<$device_mac_client>\n PC02"];
+        ptr01 [address = ".10", description = "<&print*4>\n Ptr01"];
+    }
+}
+
+@enduml
+
+```
+
+```plantuml
+
+@startuml
+
+nwdiag {
+    network Shapes {
+        ' 配置図と同じ形状
+
+        Actor       [shape = actor]
+        Agent       [shape = agent]
+        Artifact    [shape = artifact]
+        Boundary    [shape = boundary]
+        Card        [shape = card]
+        Cloud       [shape = cloud]
+        Collections [shape = collections]
+        Component   [shape = component]
+        Control     [shape = control]
+        Database    [shape = database]
+        Entity      [shape = entity]
+        File        [shape = file]
+        Folder      [shape = folder]
+        Frame       [shape = frame]
+        Hexagon     [shape = hexagon]
+        Interface   [shape = interface]
+        Label       [shape = label]
+        Node        [shape = node]
+        Package     [shape = package]
+        Person      [shape = person]
+        Queue       [shape = queue]
+        Stack       [shape = stack]
+        Rectangle   [shape = rectangle]
+        Storage     [shape = storage]
+        Usecase     [shape = usecase]
+    }
+}
 
 @enduml
 
