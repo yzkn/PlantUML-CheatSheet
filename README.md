@@ -4557,6 +4557,80 @@ Text handling
 
 @endsalt
 
+```
+
+###アクティビティ図でSaltを表示
+
+```plantuml
+
+@startuml
+
+start
+
+while (\n{{\nsalt\n{+\nPassword | "****     " | [ OK ]}\n}}\n) is (Incorrect)
+  :log;
+  if (cond) then (yes)
+    :sleep;
+  else (no)
+  endif
+endwhile (correct)
+
+:print;
+
+repeat :read data;
+  :print data;
+repeat while (\n{{\nsalt\n{^"Next step"\n Read more \n[Yes]|[No]\n}\n}}\n)
+
+stop
+
+@enduml
+
+@startuml
+
+(*) --> "
+{{
+    salt
+    {+
+        <b>Main menu
+        ^Select2^^item 1^^item 2^
+        .
+        .
+        [Next]
+    }
+}}
+" as mainmenu
+
+mainmenu -->[Navigate] "
+{{
+    salt
+    {+
+        ()  Option1
+        (X) Option2
+        [Next]
+    }
+}}
+" as screen1
+
+screen1 -> "
+{{
+    salt
+    {+
+        [Cancel]
+    }
+}}
+" as screen2
+
+screen1 --> "Some Test"
+
+if "Some Test" then
+  -->[true] "Some Activity"
+  -right-> (*)
+else
+  ->[false] "Something else"
+  --> (*)
+endif
+
+@enduml
 
 ```
 
