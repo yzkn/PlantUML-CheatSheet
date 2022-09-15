@@ -296,7 +296,7 @@ sprite sprite2 <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="30" c
 
 ```
 
-### アーキテクチャ図で使用できるアイコン
+### アーキテクチャ図で使用できるArchimateアイコン
 
 ```plantuml
 
@@ -308,7 +308,7 @@ listsprite
 
 ```
 
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite.png "アイコン")
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-Archimate.png "アイコン")
 
 ### 画像ファイルをスプライトに変換
 
@@ -727,24 +727,68 @@ listopeniconic
 
 @startuml
 
-!include <osa/user/blue/blue>
-rectangle "<$blue>"
+scale .5
 
-!include <osa/user/large/group/group>
-rectangle "<$group>"
-
+!include <osa/arrow/green/left/left>
+!include <osa/arrow/yellow/right/right>
+!include <osa/awareness/awareness>
+!include <osa/contract/contract>
+!include <osa/database/database>
 !include <osa/desktop/desktop>
-rectangle "<$desktop>"
-
+!include <osa/desktop/imac/imac>
+!include <osa/device_music/device_music>
+!include <osa/device_scanner/device_scanner>
+!include <osa/device_usb/device_usb>
+!include <osa/device_wireless_router/device_wireless_router>
+!include <osa/disposal/disposal>
+!include <osa/drive_optical/drive_optical>
+!include <osa/firewall/firewall>
+!include <osa/hub/hub>
+!include <osa/ics/drive/drive>
+!include <osa/ics/plc/plc>
+!include <osa/ics/thermometer/thermometer>
+!include <osa/id/card/card>
 !include <osa/laptop/laptop>
-rectangle "<$laptop>"
+!include <osa/lifecycle/lifecycle>
+!include <osa/lightning/lightning>
+!include <osa/media_flash/media_flash>
+!include <osa/media_optical/media_optical>
+!include <osa/media_tape/media_tape>
+!include <osa/mobile/pda/pda>
+!include <osa/padlock/padlock>
+!include <osa/printer/printer>
+!include <osa/site_branch/site_branch>
+!include <osa/site_factory/site_factory>
+!include <osa/user/audit/audit>
+!include <osa/user/blue/blue>
+!include <osa/user/blue/security/specialist/specialist>
+!include <osa/user/blue/sysadmin/sysadmin>
+!include <osa/user/blue/tester/tester>
+!include <osa/user/blue/tie/tie>
+!include <osa/user/green/architect/architect>
+!include <osa/user/green/business/manager/manager>
+!include <osa/user/green/developer/developer>
+!include <osa/user/green/green>
+!include <osa/user/green/operations/operations>
+!include <osa/user/green/project/manager/manager>
+!include <osa/user/green/service/manager/manager>
+!include <osa/user/green/warning/warning>
+!include <osa/user/large/group/group>
+!include <osa/user/white/hat/hat>
+!include <osa/users/blue/green/green>
+!include <osa/vpn/vpn>
+!include <osa/wireless/network/network>
+' !include <osa/user/black/hat/hat>
+' !include <osa/user/black/hat>
 
 
-' listsprites
+listsprites
 
 @enduml
 
 ```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-OpenSecurityArchitecture.png "アイコン")
 
 
 #### Tupadr3
@@ -2990,11 +3034,7 @@ Binary2 is low
 
 ### 相互作用概観図
 
-```plantuml
-
-
-
-```
+相互作用図をアクティビティ図の構成要素として使用したもの
 
 
 ## ユースケース図
@@ -3806,6 +3846,20 @@ JunctionAnd -right-> Element4
 
 ```
 
+### アーキテクチャ図で使用できるアイコン
+
+```plantuml
+
+@startuml
+
+listsprite
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-Archimate.png "アイコン")
+
 
 ### Office
 
@@ -4225,6 +4279,217 @@ AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
 
 BigQuery(bigquery, "Our BigQuery", "Data analytics")
+
+@enduml
+
+```
+
+
+## ER図
+
+クラス図と同じ文法で、classの代わりにentityを使う
+
+```plantuml
+
+@startuml
+
+hide circle
+skinparam linetype ortho
+
+entity "**actor**" {
+  + ""actor_id"": //integer [PK]//
+  --
+  *""first_name"": //character varying(45) //
+  *""last_name"": //character varying(45) //
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**address**" {
+  + ""address_id"": //integer [PK]//
+  --
+  *""address"": //character varying(50) //
+  ""address2"": //character varying(50) //
+  *""district"": //character varying(20) //
+  *""city_id"": //smallint [FK]//
+  ""postal_code"": //character varying(10) //
+  *""phone"": //character varying(20) //
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**category**" {
+  + ""category_id"": //integer [PK]//
+  --
+  *""name"": //character varying(25) //
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**city**" {
+  + ""city_id"": //integer [PK]//
+  --
+  *""city"": //character varying(50) //
+  *""country_id"": //smallint [FK]//
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**country**" {
+  + ""country_id"": //integer [PK]//
+  --
+  *""country"": //character varying(50) //
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**customer**" {
+  + ""customer_id"": //integer [PK]//
+  --
+  *""store_id"": //smallint //
+  *""first_name"": //character varying(45) //
+  *""last_name"": //character varying(45) //
+  ""email"": //character varying(50) //
+  *""address_id"": //smallint [FK]//
+  *""activebool"": //boolean //
+  *""create_date"": //date //
+  ""last_update"": //timestamp without time zone //
+  ""active"": //integer //
+}
+
+entity "**film**" {
+  + ""film_id"": //integer [PK]//
+  --
+  *""title"": //character varying(255) //
+  ""description"": //text //
+  ""release_year"": //year //
+  *""language_id"": //smallint [FK]//
+  *""rental_duration"": //smallint //
+  *""rental_rate"": //numeric(4,2) //
+  ""length"": //smallint //
+  *""replacement_cost"": //numeric(5,2) //
+  ""rating"": //mpaa_rating //
+  *""last_update"": //timestamp without time zone //
+  ""special_features"": //text[] //
+  *""fulltext"": //tsvector //
+}
+
+entity "**film_actor**" {
+  + ""actor_id"": //smallint [PK][FK]//
+  + ""film_id"": //smallint [PK][FK]//
+  --
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**film_category**" {
+  + ""film_id"": //smallint [PK][FK]//
+  + ""category_id"": //smallint [PK][FK]//
+  --
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**inventory**" {
+  + ""inventory_id"": //integer [PK]//
+  --
+  *""film_id"": //smallint [FK]//
+  *""store_id"": //smallint //
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**language**" {
+  + ""language_id"": //integer [PK]//
+  --
+  *""name"": //character(20) //
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**payment**" {
+  + ""payment_id"": //integer [PK]//
+  --
+  *""customer_id"": //smallint [FK]//
+  *""staff_id"": //smallint [FK]//
+  *""rental_id"": //integer [FK]//
+  *""amount"": //numeric(5,2) //
+  *""payment_date"": //timestamp without time zone //
+}
+
+entity "**rental**" {
+  + ""rental_id"": //integer [PK]//
+  --
+  *""rental_date"": //timestamp without time zone //
+  *""inventory_id"": //integer [FK]//
+  *""customer_id"": //smallint [FK]//
+  ""return_date"": //timestamp without time zone //
+  *""staff_id"": //smallint [FK]//
+  *""last_update"": //timestamp without time zone //
+}
+
+entity "**staff**" {
+  + ""staff_id"": //integer [PK]//
+  --
+  *""first_name"": //character varying(45) //
+  *""last_name"": //character varying(45) //
+  *""address_id"": //smallint [FK]//
+  ""email"": //character varying(50) //
+  *""store_id"": //smallint //
+  *""active"": //boolean //
+  *""username"": //character varying(16) //
+  ""password"": //character varying(40) //
+  *""last_update"": //timestamp without time zone //
+  ""picture"": //bytea //
+}
+
+entity "**store**" {
+  + ""store_id"": //integer [PK]//
+  --
+  *""manager_staff_id"": //smallint [FK]//
+  *""address_id"": //smallint [FK]//
+  *""last_update"": //timestamp without time zone //
+}
+
+legend top left
+    リレーション
+    ----
+        0か1  |o--
+        1のみ ||--
+        0以上 }o--
+        1以上 }|--
+end legend
+
+"**address**"   }--  "**city**"
+
+"**city**"   }--  "**country**"
+
+"**customer**"   }--  "**address**"
+
+"**film**"   }--  "**language**"
+
+"**film_actor**"   }--  "**actor**"
+
+"**film_actor**"   }--  "**film**"
+
+"**film_actor**"   }--  "**film**"
+
+"**film_category**"   }--  "**category**"
+
+"**film_category**"   }--  "**film**"
+
+"**inventory**"   }--  "**film**"
+
+"**payment**"   }--  "**customer**"
+
+"**payment**"   }--  "**rental**"
+
+"**payment**"   }--  "**staff**"
+
+"**rental**"   }--  "**customer**"
+
+"**rental**"   }--  "**inventory**"
+
+"**rental**"   }--  "**inventory**"
+
+"**rental**"   }--  "**staff**"
+
+"**staff**"   }--  "**address**"
+
+"**store**"   }--  "**address**"
+
+"**store**"   }--  "**staff**"
 
 @enduml
 
@@ -5166,32 +5431,118 @@ Project starts the 1st of january 2022
 
 @startmindmap
 
-*[#Red] 日本
---[#SeaGreen] 北海道
----[#LightSeaGreen] 道北
----[#LightSeaGreen] 道東
----[#LightSeaGreen] 道央
----[#LightSeaGreen] 道南
---[#Cyan] 東北
----[#LightCyan] 北東北
----[#LightCyan] 南東北
---[#Orange] 関東
----[#LightSalmon] 北関東
----[#LightSalmon] 南関東
-++ 中部
-+++ 甲信越
-+++ 北陸
-+++ 東海
-++ 近畿
-+++ 関西
-**:中国
+*[#fefefe] 日本
+--[#ff5050] 北海道
+---[#ff9999] 道北
+---[#ff9999] 道東
+---[#ff9999] 道央
+---[#ff9999] 道南
+--[#ffff00] 東北
+---[#ffff99] 北東北
+---[#ffff99] 南東北
+--[#33cc33] 関東
+---[#99ff99] 北関東
+---[#99ff99] 南関東
+++[#33cccc] 中部
++++[#66ffff] 甲信越
++++[#66ffff] 北陸
++++[#66ffff] 東海
+++[#3366ff] 近畿
++++[#99ccff] 関西
+**[#ff00ff]:中国
 四国;
-+++ 中国
-+++ 四国
-++ 九州
-+++ 北部九州
-+++ 南九州
-+++ 沖縄
++++[#ff99ff] 中国
++++[#ff99ff] 四国
+++[#ff6600] 九州
++++[#ffcc99] 北部九州
++++[#ffcc99] 南九州
++++[#ffcc99] 沖縄
+
+' マルチルート
+* イギリス
+-- イングランド
+--- 東部
+--- ミッドランド東部
+--- ロンドン
+--- 北東部
+--- 北西部
+--- 南東部
+--- 南西部
+--- ミッドランド西部
+--- ヨークシャー＆ハンバー
+** スコットランド
+** ウェールズ
+** 北アイルランド
+
+@endmindmap
+
+@startmindmap
+
+<style>
+mindmapDiagram {
+    ' <<gold>>
+    .gold {
+      BackgroundColor gold
+    }
+
+    node {
+        BackgroundColor DimGrey
+    }
+
+    :depth(0) {
+      BackGroundColor #e6f0ff
+    }
+
+    :depth(1) {
+      BackGroundColor #99c2ff
+    }
+
+    :depth(2) {
+      BackGroundColor #4d94ff
+    }
+
+    :depth(3) {
+      BackGroundColor #1a75ff
+    }
+
+    boxless {
+        FontColor red
+    }
+}
+</style>
+
+* 臺灣
+
+left side
+
+** <&lightbulb> 直轄市 /' OpenIconicアイコン '/
+*** 台北市 <<gold>>
+*** 高雄市
+*** 新北市
+*** 台中市
+*** 台南市
+*** 桃園市
+**_ 市
+*** 基隆市
+*** 新竹市
+*** 嘉義市
+
+right side
+
+** 県
+*** 新竹県
+*** 苗栗県
+*** 彰化県
+*** 南投県
+*** 雲林県
+*** 嘉義県
+*** 屏東県
+*** 宜蘭県
+*** 花蓮県
+*** 台東県
+*** 澎湖県
+*** 金門県
+*** 連江県
 
 @endmindmap
 
