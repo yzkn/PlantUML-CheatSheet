@@ -371,6 +371,49 @@ listspritess
 ![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-AWS.png "アイコン")
 
 
+#### Azure
+
+```plantuml
+
+@startuml
+
+scale .5
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AIMachineLearning/all.puml
+!includeurl AzurePuml/Analytics/all.puml
+!includeurl AzurePuml/Blockchain/all.puml
+!includeurl AzurePuml/Compute/all.puml
+!includeurl AzurePuml/Containers/all.puml
+!includeurl AzurePuml/Databases/all.puml
+!includeurl AzurePuml/DevOps/all.puml
+!includeurl AzurePuml/General/all.puml
+!includeurl AzurePuml/Health/all.puml
+!includeurl AzurePuml/Identity/all.puml
+!includeurl AzurePuml/Integration/all.puml
+!includeurl AzurePuml/InternetOfThings/all.puml
+!includeurl AzurePuml/Intune/all.puml
+!includeurl AzurePuml/Management/all.puml
+!includeurl AzurePuml/Media/all.puml
+!includeurl AzurePuml/Migrate/all.puml
+!includeurl AzurePuml/Mobile/all.puml
+!includeurl AzurePuml/Networking/all.puml
+!includeurl AzurePuml/Security/all.puml
+!includeurl AzurePuml/Stack/all.puml
+!includeurl AzurePuml/Storage/all.puml
+
+
+listsprites
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Azure.png "アイコン")
+
+
 #### C4 model
 
 コンテキスト（context）、コンテナ（containers）、コンポーネント（components）、コード（code）
@@ -762,8 +805,6 @@ users --> httpd
 @startuml
 
 scale .5
-
-!include <tupadr3/common>
 
 !define ICONURL https://raw.githubusercontent.com/Roemer/plantuml-office/master/office2014
 !includeurl ICONURL/Clouds/azure.puml
