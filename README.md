@@ -306,21 +306,21 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 
 ### アイコン画像
 
-| 名称                             | アイコン一覧                                                                                                                               |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| ArchiMate                        | -                                                                                                                                          |
-| Amazon Labs AWSライブラリ        | https://github.com/awslabs/aws-icons-for-plantuml/blob/main/AWSSymbols.md                                                                  |
-| Azureライブラリ                  | https://github.com/plantuml-stdlib/Azure-PlantUML/blob/master/AzureSymbols.md#all-generated-azure-symbols-svg-and-png-and-plantuml-sprites |
-| C4ライブラリ                     |                                                                                                                                            |
-| Cloud Insight                    |                                                                                                                                            |
-| Cloudogu                         |                                                                                                                                            |
-| Elasticライブラリ                |                                                                                                                                            |
-| Google Material Icons            |                                                                                                                                            |
-| Kubernetes                       |                                                                                                                                            |
-| Logos                            |                                                                                                                                            |
-| Office                           | https://github.com/Roemer/plantuml-office#icon-index                                                                                       |
-| Open Security Architecture (OSA) |                                                                                                                                            |
-| Tupadr3ライブラリ                |                                                                                                                                            |
+| 名称                             | アイコン一覧                                                                  |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| ArchiMate                        | -                                                                             |
+| Amazon Labs AWSライブラリ        | https://github.com/awslabs/aws-icons-for-plantuml/blob/main/AWSSymbols.md     |
+| Azureライブラリ                  | https://github.com/plantuml-stdlib/Azure-PlantUML/blob/master/AzureSymbols.md |
+| C4ライブラリ                     | -                                                                             |
+| Cloud Insight                    | https://github.com/rabelenda/cicon-plantuml-sprites                           |
+| Cloudogu                         |                                                                               |
+| Elasticライブラリ                |                                                                               |
+| Google Material Icons            |                                                                               |
+| Kubernetes                       |                                                                               |
+| Logos                            |                                                                               |
+| Office                           | https://github.com/Roemer/plantuml-office#icon-index                          |
+| Open Security Architecture (OSA) |                                                                               |
+| Tupadr3ライブラリ                |                                                                               |
 
 
 #### Archimate
@@ -469,6 +469,8 @@ Rel(systemAlias, emailSystemAlias, "Sends e-mail using")
 
 @startuml
 
+scale .5
+
 skinparam monochrome true
 
 !include <cloudinsight/ai>
@@ -550,87 +552,13 @@ skinparam monochrome true
 !include <cloudinsight/zookeeper>
 
 
-rectangle "<$ai>\nai"
-rectangle "<$aliyun>\naliyun"
-rectangle "<$apache>\napache"
-rectangle "<$bearychat>\nbearychat"
-rectangle "<$bell>\nbell"
-rectangle "<$bi>\nbi"
-rectangle "<$cacti>\ncacti"
-rectangle "<$cassandra>\ncassandra"
-rectangle "<$ci-large>\nci-large"
-rectangle "<$ci>\nci"
-rectangle "<$cog>\ncog"
-rectangle "<$copy>\ncopy"
-rectangle "<$couchbase>\ncouchbase"
-rectangle "<$couchdb>\ncouchdb"
-rectangle "<$ct>\nct"
-rectangle "<$dashboard>\ndashboard"
-rectangle "<$desktop>\ndesktop"
-rectangle "<$disable>\ndisable"
-rectangle "<$docker>\ndocker"
-rectangle "<$download>\ndownload"
-rectangle "<$edit>\nedit"
-rectangle "<$elasticsearch>\nelasticsearch"
-rectangle "<$exit>\nexit"
-rectangle "<$file>\nfile"
-rectangle "<$gearman>\ngearman"
-rectangle "<$gunicorn>\ngunicorn"
-rectangle "<$haproxy>\nhaproxy"
-rectangle "<$hdfs>\nhdfs"
-rectangle "<$iis>\niis"
-rectangle "<$java>\njava"
-rectangle "<$jianliao>\njianliao"
-rectangle "<$kafka>\nkafka"
-rectangle "<$left>\nleft"
-rectangle "<$linux>\nlinux"
-rectangle "<$listalt>\nlistalt"
-rectangle "<$loading>\nloading"
-rectangle "<$memcached>\nmemcached"
-rectangle "<$mesos>\nmesos"
-rectangle "<$mi>\nmi"
-rectangle "<$mongodb>\nmongodb"
-rectangle "<$mysql>\nmysql"
-rectangle "<$nagios>\nnagios"
-rectangle "<$nginx>\nnginx"
-rectangle "<$nodejs>\nnodejs"
-rectangle "<$onealert>\nonealert"
-rectangle "<$oneapmlogo>\noneapmlogo"
-rectangle "<$openstack>\nopenstack"
-rectangle "<$overview>\noverview"
-rectangle "<$pause>\npause"
-rectangle "<$php_fpm>\nphp_fpm"
-rectangle "<$php>\nphp"
-rectangle "<$play>\nplay"
-rectangle "<$plus>\nplus"
-rectangle "<$point>\npoint"
-rectangle "<$postgresql>\npostgresql"
-rectangle "<$pubu>\npubu"
-rectangle "<$python>\npython"
-rectangle "<$question>\nquestion"
-rectangle "<$rabbitmq>\nrabbitmq"
-rectangle "<$redis>\nredis"
-rectangle "<$remove-sign>\nremove-sign"
-rectangle "<$right>\nright"
-rectangle "<$ruby>\nruby"
-rectangle "<$server>\nserver"
-rectangle "<$singlePage>\nsinglePage"
-rectangle "<$snmp>\nsnmp"
-rectangle "<$solr>\nsolr"
-rectangle "<$sqlserver>\nsqlserver"
-rectangle "<$supervisord>\nsupervisord"
-rectangle "<$tomcat>\ntomcat"
-rectangle "<$tongzhi>\ntongzhi"
-rectangle "<$trash>\ntrash"
-rectangle "<$user>\nuser"
-rectangle "<$windows>\nwindows"
-rectangle "<$x>\nx"
-rectangle "<$yanjing>\nyanjing"
-rectangle "<$zookeeper>\nzookeeper"
+listsprites
 
 @enduml
 
 ```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Cloudinsight.png "アイコン")
 
 
 #### Cloudogu
