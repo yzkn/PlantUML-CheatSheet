@@ -1,6 +1,5 @@
 #### Open Security Architecture
 
-
 ```plantuml
 
 @startuml
@@ -60,10 +59,10 @@ scale .5
 ' !include <osa/user/black/hat>
 
 
-listsprites
+listspritess
 
 @enduml
 
 ```
 
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-OpenSecurityArchitecture.png "アイコン")
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-OpenSecurityArchitecture.png "アイコン")
