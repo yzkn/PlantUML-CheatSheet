@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="93" height="103.5" viewBox="0 0 69.75 77.625" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1,.st2{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}.st2{fill:#515150}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group212-1" transform="translate(7.8 -6.938)" v:mID="212" v:groupContext="group" v:layerMember="0">
+      <g id="group213-2" v:mID="213" v:groupContext="group" v:layerMember="0">
+        <g id="group214-3" transform="translate(0 -9)" v:mID="214" v:groupContext="group" v:layerMember="0">
+          <g id="group215-4" v:mID="215" v:groupContext="group" v:layerMember="0">
+            <g id="shape216-5" v:mID="216" v:groupContext="shape" v:layerMember="0">
+              <path d="M3.75 77.63c-2.03 0-3.75-1.65-3.75-3.6v-3.45c0-1.88 1.58-3 2.4-3.3.83-.3 5.7-2.7 8.63-6.15l.67-.83 21.45.08.68.67c3.9 3.9 8.25 6 8.85 6.23 1.2.45 2.32 1.65 2.32 3.45v3.22c0 2.03-1.65 3.6-3.6 3.6H3.75v.08z" class="st1"/>
+            </g>
+            <g id="shape217-7" v:mID="217" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+              <path d="M10.5 64.8c-3.22 3.83-8.47 6.38-9.52 6.83-.16.07-.98.52-.98 1.2v3.45c0 .75.75 1.35 1.5 1.35h37.65c.75 0 1.35-.6 1.35-1.35v-3.23c0-1.05-.9-1.35-.9-1.35s-5.02-2.17-9.6-6.75l-19.5-.15z" class="st2"/>
+            </g>
+          </g>
+          <g id="shape218-9" v:mID="218" v:groupContext="shape" v:layerMember="0" transform="translate(.75 -11.25)">
+            <path d="M21.75 77.63C9.75 77.63 0 67.88 0 55.88s9.75-21.75 21.75-21.75S43.5 43.88 43.5 55.88s-9.75 21.75-21.75 21.75z" class="st1"/>
+          </g>
+          <g id="shape219-11" v:mID="219" v:groupContext="shape" v:layerMember="0" transform="translate(3 -13.5)">
+            <path d="M19.5 43.13c8.25 0 15 6.75 15 15s-6.75 15-15 15-15-6.75-15-15 6.75-15 15-15zm0-4.5C8.7 38.63 0 47.33 0 58.13s8.7 19.5 19.5 19.5S39 68.93 39 58.13s-8.7-19.5-19.5-19.5z" class="st2"/>
+          </g>
+          <g id="shape220-13" v:mID="220" v:groupContext="shape" v:layerMember="0" transform="translate(6 -15)">
+            <path d="M33.08 67.13c-.9 2.17-2.25 3.6-3.83 5.25-1.57 1.65-3.6 2.92-5.7 3.82-2.1.9-4.57 1.43-7.05 1.43-2.47 0-4.88-.53-6.97-1.43-2.1-.9-4.13-2.25-5.71-3.82C2.25 70.8.9 69.3 0 67.13h33.08z" class="st2"/>
+          </g>
+          <g id="shape221-15" v:mID="221" v:groupContext="shape" v:layerMember="0" transform="translate(5.925 -40.5)">
+            <path d="M0 77.63c.9-2.18 2.25-3.6 3.82-5.25 1.58-1.65 3.61-2.93 5.71-3.83 2.09-.9 4.57-1.42 7.05-1.42 2.47 0 4.87.52 6.97 1.42 2.1.9 4.13 2.25 5.7 3.83 1.58 1.57 2.93 3.07 3.83 5.25H0z" class="st2"/>
+          </g>
+          <g id="shape222-17" v:mID="222" v:groupContext="shape" v:layerMember="0" transform="translate(18.75 -29.25)">
+            <ellipse cx="3.75" cy="73.875" rx="3.75" ry="3.75" class="st2"/>
+          </g>
+        </g>
+        <g id="group223-19" transform="translate(19.875)" v:mID="223" v:groupContext="group" v:layerMember="0">
+          <g id="shape224-20" v:mID="224" v:groupContext="shape" v:layerMember="0">
+            <path d="M0 77.63L3.6 61.2h28.87c5.1.08 8.25 2.85 8.48 7.43.07 1.95-.6 3.82-2.03 5.25-2.85 3-7.72 3.75-9.82 3.75H0z" class="st1"/>
+          </g>
+          <g id="shape225-22" v:mID="225" v:groupContext="shape" v:layerMember="0" transform="translate(2.85 -2.175)">
+            <path d="M13.43 65.63l-.98 4.42H6l.97-4.42H2.63L0 77.55h4.27l1.06-4.57h6.44l-.97 4.57h4.35l2.1-9h9.9c1.27 0 3.6-.15 3.6 2.55 0 4.28-6.83 3.68-6.83 3.68l1.28-5.4h-4.73l-1.87 8.25h7.57c3.15 0 9.83-1.8 9.68-6.68-.15-4.2-3.45-5.17-6.22-5.25h-16.2v-.07z" class="st2"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

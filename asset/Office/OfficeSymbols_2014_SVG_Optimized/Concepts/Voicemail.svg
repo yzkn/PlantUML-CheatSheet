@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="102" height="75" viewBox="0 0 76.5 56.25" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group1470-1" transform="translate(9.29 -9.563)" v:mID="1470" v:groupContext="group" v:layerMember="0">
+      <g id="group1471-2" v:mID="1471" v:groupContext="group" v:layerMember="0">
+        <g id="group1472-3" v:mID="1472" v:groupContext="group" v:layerMember="0">
+          <g id="shape1473-4" v:mID="1473" v:groupContext="shape" v:layerMember="0">
+            <path d="M4.95 56.25C2.25 56.25 0 54 0 51.3V22.95C0 20.25 2.25 18 4.95 18h48.52c2.78 0 4.95 2.25 4.95 4.95v28.27c0 2.78-2.24 4.95-4.95 4.95H4.95v.08z" class="st1"/>
+          </g>
+          <g id="shape1474-6" v:mID="1474" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.325)">
+            <path d="M51.3 22.57H2.7c-1.5 0-2.7 1.2-2.7 2.7v28.28c0 1.5 1.2 2.7 2.7 2.7h48.52c1.51 0 2.7-1.2 2.7-2.7V25.27c.08-1.5-1.12-2.7-2.62-2.7z" fill="#515150" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+        </g>
+        <g id="shape1475-8" v:mID="1475" v:groupContext="shape" v:layerMember="0" transform="translate(8.1 -10.5)">
+          <path d="M9.67 56.25c-5.02 0-9.22-3.75-9.52-8.63C0 45.07.9 42.67 2.62 40.8c1.73-1.88 4.13-2.85 6.68-2.85.37 0 .83 0 1.2.07 3.67.45 6.83 3.23 7.65 6.83.52 2.17.3 4.35-.68 6.3-.22.37-.14.82.08 1.2.22.37.6.6 1.05.6h5.02c.46 0 .83-.23 1.05-.6.23-.38.23-.83.08-1.2-.98-1.95-1.2-4.2-.67-6.3.89-3.6 3.97-6.3 7.64-6.83.38-.07.83-.07 1.2-.07 2.55 0 4.88 1.05 6.68 2.85 1.72 1.87 2.62 4.27 2.47 6.82-.3 4.88-4.42 8.63-9.45 8.63H9.67zm23.25-14.33c-2.85 0-5.17 2.33-5.17 5.18 0 2.85 2.33 5.17 5.17 5.17 2.86 0 5.18-2.32 5.18-5.17s-2.32-5.18-5.18-5.18zm-23.62 0c-2.85 0-5.18 2.33-5.18 5.18 0 2.85 2.33 5.17 5.18 5.17 2.85 0 5.17-2.32 5.17-5.17s-2.32-5.18-5.17-5.18z" class="st1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

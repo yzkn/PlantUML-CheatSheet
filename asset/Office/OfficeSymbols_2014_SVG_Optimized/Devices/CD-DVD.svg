@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="90" height="88.5" viewBox="0 0 67.5 66.375" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st2{fill:#515050;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group1-1" transform="translate(6.938 -6.563)" v:mID="1" v:groupContext="group" v:layerMember="0">
+      <g id="group2-2" v:mID="2" v:groupContext="group" v:layerMember="0">
+        <g id="shape3-3" v:mID="3" v:groupContext="shape" v:layerMember="0">
+          <path d="M26.62 66.37C11.92 66.37 0 54.45 0 39.75c0-14.7 11.92-26.63 26.62-26.63 14.71 0 26.63 11.93 26.63 26.63S41.33 66.37 26.62 66.37z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="group4-5" transform="translate(2.25 -2.25)" v:mID="4" v:groupContext="group" v:layerMember="0">
+          <g id="shape5-6" v:mID="5" v:groupContext="shape" v:layerMember="0">
+            <path d="M24.38 17.62C10.95 17.62 0 28.57 0 42c0 13.42 10.95 24.37 24.38 24.37 13.42 0 24.37-10.95 24.37-24.37 0-13.43-10.95-24.38-24.37-24.38zm0 36.08c-6.45 0-11.7-5.25-11.7-11.7 0-6.45 5.25-11.7 11.7-11.7 6.44 0 11.7 5.25 11.7 11.7 0 6.45-5.26 11.7-11.7 11.7z" class="st2"/>
+          </g>
+          <g id="shape6-8" v:mID="6" v:groupContext="shape" v:layerMember="0" transform="translate(14.625 -14.625)">
+            <path d="M9.75 46.87A9.73 9.73 0 0 0 0 56.62c0 5.4 4.35 9.75 9.75 9.75s9.75-4.35 9.75-9.75-4.35-9.75-9.75-9.75zm0 12.68c-1.65 0-2.92-1.28-2.92-2.93 0-1.65 1.27-2.92 2.92-2.92s2.93 1.27 2.93 2.92-1.28 2.93-2.93 2.93z" class="st2"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

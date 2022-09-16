@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="90" height="73.5" viewBox="0 0 67.5 55.125" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g transform="translate(4.65 -8.1)" v:mID="102" v:groupContext="group" v:layerMember="0">
+      <g v:mID="103" v:groupContext="group" v:layerMember="0">
+        <g v:mID="104" v:groupContext="shape" v:layerMember="0">
+          <path d="M5.1 51.22c-.15.53-.22 1.13-.22 1.65v2.25h34.2v-2.25c0-5.17-7.36-9.45-16.58-9.6h-3.3l-3.45-3.45L28.58 27c2.17-2.18 6.89-4.13 9.97-4.13h3c.22.08.75.23 1.12.45l.98.6c1.12.68 2.93 1.13 4.42 1.13h6.6c2.1 0 3.68-1.5 3.68-3.53v-4.05c0-2.02-1.5-3.52-3.68-3.52h-6.6c-1.49 0-3.3.45-4.42 1.12l-.98.6c-.45.23-.97.45-1.19.45h-3.01c-4.95 0-11.25 2.63-14.77 6.08L11.02 35.02 9 33 .07 41.92l2.18 1.8L0 45.97l4.72 4.73.38.52z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g v:mID="105" v:groupContext="shape" v:layerMember="0" transform="translate(3.15 -2.25)">
+          <path d="M51.52 18.45h-6.59c-1.05 0-2.56.37-3.31.82l-.97.6c-.68.38-1.58.75-2.1.83H35.4c-4.35 0-10.12 2.4-13.13 5.47L7.88 40.42 5.85 38.4.3 43.95l2.17 1.8L0 48.22l1.58 1.65 2.55-2.55.67.53s2.85 1.8.98 3.6c-.08.07-.16.15-.16.22-1.12 1.05-1.65 2.25-1.65 3.45h29.7c0-3.9-6.74-7.35-14.85-7.35h-3.75l-5.69-5.7 14.4-14.4c2.62-2.62 7.87-4.8 11.54-4.8h3.16c.52.08 1.42.38 2.09.83l.98.6c.75.45 2.25.82 3.3.82h6.6c1.05 0 1.43-.67 1.42-1.27V19.8c.08-.75-.22-1.35-1.35-1.35z" fill="#515050" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

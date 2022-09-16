@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="87" height="87" viewBox="0 0 65.25 65.25" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group298-1" transform="translate(7.875 -8.475)" v:mID="298" v:groupContext="group" v:layerMember="0">
+      <g id="group299-2" v:mID="299" v:groupContext="group" v:layerMember="0">
+        <g id="group300-3" v:mID="300" v:groupContext="group" v:layerMember="0">
+          <g id="shape301-4" v:mID="301" v:groupContext="shape" v:layerMember="0">
+            <path d="M5.17 65.25C2.32 65.25 0 62.93 0 60.08V21c0-2.85 2.32-5.17 5.17-5.17h39.08c2.85 0 5.17 2.32 5.17 5.17v39.08c0 2.85-2.32 5.17-5.17 5.17H5.17z" class="st1"/>
+          </g>
+          <g id="shape302-6" v:mID="302" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+            <path d="M42 65.25H2.92C1.27 65.25 0 63.9 0 62.33V23.25c0-1.65 1.35-2.92 2.92-2.92H42c1.65 0 2.92 1.35 2.92 2.92v39.08c0 1.57-1.27 2.92-2.92 2.92z" fill="#515050" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+        </g>
+        <g id="shape303-8" v:mID="303" v:groupContext="shape" v:layerMember="0" transform="translate(17.1 -8.175)">
+          <path d="M15.15 41.18c0-4.35-3.37-7.95-7.57-7.95C3.37 33.23 0 36.75 0 41.1c0 3.08 2.02 5.85 4.65 7.13v13.72l2.93 3.3 3.3-3.45-2.33-2.47 2.48-2.63v-.15l-2.7-2.85 2.17-2.32v-3.15c2.48-1.28 4.65-3.98 4.65-7.05zm-7.65.22c-1.27 0-2.4-1.05-2.4-2.4 0-1.27 1.05-2.4 2.4-2.4 1.28 0 2.4 1.05 2.4 2.4 0 1.35-1.05 2.4-2.4 2.4z" class="st1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

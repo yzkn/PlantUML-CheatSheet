@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="94.5" height="82.5" viewBox="0 0 70.875 61.875" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st2{fill:#525352;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group644-1" transform="translate(8.578 -8.438)" v:mID="644" v:groupContext="group" v:layerMember="0">
+      <g id="group645-2" v:mID="645" v:groupContext="group" v:layerMember="0">
+        <g id="shape646-3" v:mID="646" v:groupContext="shape" v:layerMember="0">
+          <path d="M48.75 12.38h-12.6c-2.17 0-3.3 1.12-4.35 2.1l-6.6 6.15H5.25C2.33 20.63 0 22.95 0 25.88v36h54V17.63c0-2.93-2.33-5.25-5.25-5.25z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="shape647-5" v:mID="647" v:groupContext="shape" v:layerMember="0" transform="translate(28.5 -41.25)">
+          <path d="M23.25 61.88v-3c0-1.65-1.35-3-3-3H7.65c-1.27 0-1.88.6-2.77 1.5L0 61.88h23.25z" class="st2"/>
+        </g>
+        <g id="shape648-7" v:mID="648" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M3 25.13c-1.65 0-3 1.35-3 3v33.75h49.5V25.13H3z" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

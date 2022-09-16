@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="63" height="94.5" viewBox="0 0 47.25 70.875" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g transform="translate(8.025 -6.938)" v:mID="691" v:groupContext="group" v:layerMember="0">
+      <g v:mID="692" v:groupContext="group" v:layerMember="0">
+        <g v:mID="693" v:groupContext="shape" v:layerMember="0">
+          <path d="M0 70.88V19.13c0-2.93 2.33-5.25 5.25-5.25h21c2.93 0 5.25 2.32 5.25 5.25v51.75H0z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g v:mID="694" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M24 18.38H3c-1.65 0-3 1.35-3 3v49.5h27v-49.5c0-1.65-1.35-3-3-3zm-2.25 46.5H5.25v-2.25h16.5v2.25zm0-6.75H5.25v-2.25h16.5v2.25zm0-30.75H5.25v-2.25h16.5v2.25z" fill="#515050" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

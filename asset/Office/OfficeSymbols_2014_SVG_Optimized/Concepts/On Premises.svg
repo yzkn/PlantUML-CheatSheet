@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="75" height="97.5" viewBox="0 0 56.25 73.125" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g transform="translate(9.563 -6.938)" v:mID="1218" v:groupContext="group" v:layerMember="0">
+      <g v:mID="1219" v:groupContext="group" v:layerMember="0">
+        <g v:mID="1220" v:groupContext="shape" v:layerMember="0">
+          <path d="M21.75 24.38V13.87H0v59.25h37.5V36.37h-2.25v-6H33v-5.99h-2.25v-6.75H24v6.75h-2.25z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g v:mID="1221" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M30.75 40.88v-6H28.5v-6h-2.25v-6.75H24v6.75h-2.25v6H19.5v6h-2.25v-22.5H0v54.74h33V40.88h-2.25zm-24 18.74h-3v-2.99h3v2.99zm0-6.74h-3v-3h3v3zm0-6.75h-3v-3h3v3zm0-6.75h-3v-3h3v3zm0-6.75h-3v-3h3v3zm0-6.75h-3v-3h3v3zm6.75 33.74h-3v-2.99h3v2.99zm0-6.74h-3v-3h3v3zm0-6.75h-3v-3h3v3zm0-6.75h-3v-3h3v3zm0-6.75h-3v-3h3v3zm0-6.75h-3v-3h3v3zm9.75 31.49h-3v-2.99h3v2.99zm0-10.49h-3v-3h3v3zm6 5.25h-3v-3h3v3z" fill="#505150" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

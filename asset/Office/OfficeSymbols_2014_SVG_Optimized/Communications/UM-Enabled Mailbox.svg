@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="87.1" height="84" viewBox="0 0 65.325 63" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1,.st2{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}.st2{fill:#515150}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <g id="group1046-1" transform="translate(.75 -.75)" v:mID="1046" v:groupContext="group">
+      <g id="group1047-2" transform="translate(0 -8.25)" v:mID="1047" v:groupContext="group">
+        <g id="group1048-3" v:mID="1048" v:groupContext="group">
+          <g id="shape1049-4" v:mID="1049" v:groupContext="shape">
+            <path d="M0 48v15h57V45.45l-.45-1.95-3.75-15.67h-1.05V15.75h-1.5v-6H6.75v6h-1.5v12.08H4.2L.45 43.5 0 45.45V48z" class="st1"/>
+          </g>
+          <g id="group1050-6" transform="translate(15 -21.75)" v:mID="1050" v:groupContext="group">
+            <g id="shape1051-7" v:mID="1051" v:groupContext="shape" transform="translate(23.25 -11.25)">
+              <path class="st2" d="M0 56.25h6V63H0z"/>
+            </g>
+            <g id="shape1052-9" v:mID="1052" v:groupContext="shape" transform="translate(0 -5.25)">
+              <path class="st2" d="M0 60.75h15.75V63H0z"/>
+            </g>
+            <g id="shape1053-11" v:mID="1053" v:groupContext="shape">
+              <path class="st2" d="M0 60.75h20.25V63H0z"/>
+            </g>
+          </g>
+          <g id="shape1054-13" v:mID="1054" v:groupContext="shape" transform="translate(9 -47.25)">
+            <path d="M0 59.25V63h2.25v-1.5h34.5V63H39v-3.75H0z" class="st2"/>
+          </g>
+        </g>
+        <g id="shape1055-15" v:mID="1055" v:groupContext="shape" transform="translate(2.25 -2.25)">
+          <path d="M48.75 32.33h-1.5V20.25h-42v12.08h-1.5L0 48v15h52.5V48l-3.75-15.67zm-3.75 0V48H7.5V22.5H45v9.83z" class="st2"/>
+        </g>
+      </g>
+      <g id="group1056-17" transform="translate(30.225)" v:mID="1056" v:groupContext="group">
+        <g id="shape1057-18" v:mID="1057" v:groupContext="shape">
+          <path d="M29.77 33.75h-18c-1.05 0-1.95.38-2.62.98-.38-.3-.82-.53-1.35-.68-.82-.22-1.27-.3-2.33-.3-1.04 0-1.57.08-2.4.3-1.79.53-2.84 1.88-3 3.75-.07.53.01 1.2 0 2.33.08 1.57.16 4.12.16 8.55 0 3.52-.08 5.77-.16 7.35-.07 1.27-.07 2.1 0 2.85.08 1.87 1.28 3.3 3.08 3.82.75.23 1.5.3 2.25.3.83 0 1.58-.07 2.4-.3.53-.15 1.05-.37 1.42-.75.68.6 1.58.98 2.63.98h18c2.17 0 3.75-1.58 3.75-3.75V37.5c-.08-2.17-1.65-3.75-3.83-3.75z" class="st1"/>
+        </g>
+        <g id="shape1058-20" v:mID="1058" v:groupContext="shape" transform="translate(2.1 -2.175)">
+          <path d="M6.45 40.13c-.08-.98-.6-1.5-1.42-1.8-.53-.15-.76-.23-1.73-.23-.9 0-1.13.08-1.72.23-.83.3-1.35.82-1.43 1.8-.08 1.05.15 3.22.15 10.72 0 6.3-.3 8.63-.15 10.13.08.97.6 1.5 1.43 1.8.52.15 1.04.22 1.65.22.6 0 1.2-.07 1.72-.22.83-.23 1.35-.83 1.43-1.8.07-1.5-.15-3.6-.15-9.98.07-7.42.3-9.75.22-10.87z" class="st2"/>
+        </g>
+        <g id="shape1059-22" v:mID="1059" v:groupContext="shape" transform="translate(10.275 -2.25)">
+          <path d="M19.5 38.25h-18c-.98 0-1.5.53-1.5 1.5V61.5c0 .98.52 1.5 1.5 1.5h18c.97 0 1.5-.52 1.5-1.5V39.75c0-.97-.53-1.5-1.5-1.5zM7.5 58.5c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75v-.75c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75v.75zm0-3.75c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75V54c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75v.75zm0-3.75c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75v-.75c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75V51zm4.5 7.5c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75v-.75c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75v.75zm0-3.75c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75V54c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75v.75zM12 51c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75v-.75c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75V51zm4.5 7.5c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75v-.75c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75v.75zm0-3.75c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75V54c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75v.75zm0-3.75c0 .45-.3.75-.75.75h-1.5c-.45 0-.75-.3-.75-.75v-.75c0-.45.3-.75.75-.75h1.5c.45 0 .75.3.75.75V51zm.75-4.5H3.75v-5.25h13.5v5.25z" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

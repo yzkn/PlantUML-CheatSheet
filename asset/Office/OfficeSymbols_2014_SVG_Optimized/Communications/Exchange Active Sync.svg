@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="73" height="73" viewBox="0 0 54.75 54.75" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <g id="group224-1" transform="translate(.75 -.75)" v:mID="224" v:groupContext="group">
+      <g id="group225-2" v:mID="225" v:groupContext="group">
+        <g id="group226-3" v:mID="226" v:groupContext="group">
+          <g id="shape227-4" v:mID="227" v:groupContext="shape">
+            <path d="M26.62 54.75C11.92 54.75 0 42.83 0 28.13 0 13.42 11.92 1.5 26.62 1.5c14.71 0 26.63 11.92 26.63 26.63 0 14.7-11.92 26.62-26.63 26.62z" class="st1"/>
+          </g>
+          <g id="shape228-6" v:mID="228" v:groupContext="shape" transform="translate(2.25 -2.25)">
+            <ellipse cx="24.375" cy="30.375" rx="24.375" ry="24.375" fill="#515150" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+        </g>
+        <g id="group229-8" transform="translate(8.25 -13.5)" v:mID="229" v:groupContext="group">
+          <g id="shape230-9" v:mID="230" v:groupContext="shape" transform="translate(11.175 -3.825)">
+            <path d="M20.47 45.9v-.6c0-7.35-5.92-13.27-13.27-13.27-2.63 0-5.1.82-7.2 2.1l2.55 2.92c1.35-.82 3-1.27 4.65-1.27 5.25 0 9.52 4.27 9.52 9.52 0 .23 0 .45-.07.6h-6.3l7.57 8.85 7.65-8.85h-5.1z" class="st1"/>
+          </g>
+          <g id="shape231-11" v:mID="231" v:groupContext="shape" transform="translate(21.525 -3.825)">
+            <path d="M6.3 45.9H0l7.65 8.85 7.57-8.85H6.3z" fill="#fff"/>
+            <path d="M6.3 45.9H0l7.65 8.85 7.57-8.85" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+          <g id="shape232-14" v:mID="232" v:groupContext="shape">
+            <path d="M23.02 49.65c-1.35.83-3 1.27-4.65 1.28-5.24-.01-9.52-4.28-9.52-9.53v-.22h6.3l-7.58-9.23L0 41.25h5.1v.23c0 7.35 5.92 13.27 13.27 13.27 2.63 0 5.1-.82 7.2-2.1l-2.55-3z" class="st1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

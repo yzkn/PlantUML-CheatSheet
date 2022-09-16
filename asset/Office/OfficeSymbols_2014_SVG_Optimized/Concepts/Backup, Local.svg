@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="79.5" height="88.5" viewBox="0 0 59.625 66.375" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group164-1" transform="translate(3.703 -8.813)" v:mID="164" v:groupContext="group" v:layerMember="0">
+      <g id="group165-2" v:mID="165" v:groupContext="group" v:layerMember="0">
+        <g id="group166-3" transform="translate(13.5 -15.6)" v:mID="166" v:groupContext="group" v:layerMember="0">
+          <g id="shape167-4" v:mID="167" v:groupContext="shape" v:layerMember="0">
+            <path d="M22.35 44.47l-5.1 5.1V33.22h-9v16.35l-5.1-5.1H0v9.23l12.75 12.67L25.5 53.7v-9.23h-3.15z" class="st1"/>
+          </g>
+          <g id="shape168-6" v:mID="168" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -3.15)">
+            <path d="M8.25 58.12L0 49.87v6.08l10.5 10.42L21 55.95v-6.08l-8.25 8.25v-19.5h-4.5v19.5z" fill="#515150" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+        </g>
+        <g id="shape169-8" v:mID="169" v:groupContext="shape" v:layerMember="0">
+          <path d="M0 66.37V53.25c0-2.93 2.7-5.63 5.7-5.63h41.02c3.01 0 5.78 2.7 5.78 5.63v13.12H0z" class="st1"/>
+        </g>
+        <g id="shape170-10" v:mID="170" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M36.45 52.12H3.52C1.8 52.12.08 53.85.07 55.5L0 66.37h48V55.5c0-1.73-1.73-3.38-3.45-3.38h-8.1zm6.9 5.93a1.7 1.7 0 0 1-1.73-1.73c0-.9.75-1.72 1.73-1.72.97 0 1.72.75 1.72 1.72.08.98-.75 1.73-1.72 1.73z" fill="#515050" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="68" height="83" viewBox="0 0 51 62.25" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <g id="group240-1" transform="translate(.75 -.75)" v:mID="240" v:groupContext="group">
+      <g id="group241-2" transform="translate(0 -3.75)" v:mID="241" v:groupContext="group">
+        <g id="shape242-3" v:mID="242" v:groupContext="shape">
+          <path d="M0 62.25V10.5c0-2.93 2.33-5.25 5.25-5.25h21c2.93 0 5.25 2.32 5.25 5.25v51.75H0z" class="st1"/>
+        </g>
+        <g id="shape243-5" v:mID="243" v:groupContext="shape" transform="translate(2.25 -2.25)">
+          <path d="M24 9.75H3c-1.65 0-3 1.35-3 3v49.5h27v-49.5c0-1.65-1.35-3-3-3zm-2.25 46.5H5.25V54h16.5v2.25zm0-6.75H5.25v-2.25h16.5v2.25zm0-30.75H5.25V16.5h16.5v2.25z" fill="#515050" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+      <g id="group244-7" transform="translate(15.75)" v:mID="244" v:groupContext="group">
+        <g id="shape245-8" v:mID="245" v:groupContext="shape">
+          <path d="M12 62.25c-2.1 0-3.75-1.65-3.75-3.75v-.75c-.68.9-1.8 1.5-3 1.5h-1.5C1.65 59.25 0 57.6 0 55.5V45c0-2.1 1.65-3.75 3.75-3.75h1.5c1.2 0 2.32.6 3 1.5v-6C8.25 34.65 9.9 33 12 33h12c2.1 0 3.75 1.65 3.75 3.75v6h.97c2.78.22 5.03 2.85 5.03 5.77v9.23h-6v.75c0 2.1-1.65 3.75-3.75 3.75H12z" class="st1"/>
+        </g>
+        <g id="shape246-10" v:mID="246" v:groupContext="shape" transform="translate(2.25 -2.25)">
+          <path d="M19.5 43.5v.75H12v-.75h7.5zM12 41.25V42h7.5v-.75H12zm-6 6h2.25V39c0-.83.68-1.5 1.5-1.5h12c.82 0 1.5.67 1.5 1.5v8.25h3c1.65.15 3 1.8 3 3.52v6.98h-6v3c0 .82-.68 1.5-1.5 1.5h-12c-.82 0-1.5-.68-1.5-1.5v-3H6v-10.5zm15.75 8.25h-12v5.25h12V55.5zm0-16.5h-12v8.25h12V39zM4.5 47.25c0-.83-.68-1.5-1.5-1.5H1.5c-.83 0-1.5.67-1.5 1.5v10.5c0 .82.67 1.5 1.5 1.5H3c.82 0 1.5-.68 1.5-1.5v-10.5z" fill="#515150" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

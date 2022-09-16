@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="97.125" height="85.5" viewBox="0 0 72.844 64.125" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1,.st2{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}.st2{fill:#2072b8}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group849-1" transform="translate(7.931 -8.438)" v:mID="849" v:groupContext="group" v:layerMember="0">
+      <g id="group850-2" v:mID="850" v:groupContext="group" v:layerMember="0">
+        <g id="group851-3" v:mID="851" v:groupContext="group" v:layerMember="0">
+          <g id="group852-4" v:mID="852" v:groupContext="group" v:layerMember="0">
+            <g id="shape853-5" v:mID="853" v:groupContext="shape" v:layerMember="0">
+              <path class="st1" d="M0 16.875h57v47.25H0z"/>
+            </g>
+            <g id="shape854-7" v:mID="854" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+              <path class="st2" d="M0 21.375h52.5v42.75H0z"/>
+            </g>
+          </g>
+          <g id="shape855-9" v:mID="855" v:groupContext="shape" v:layerMember="0" transform="translate(4.5 -4.5)">
+            <path class="st1" d="M0 25.875h48v38.25H0z"/>
+          </g>
+        </g>
+        <g id="shape856-11" v:mID="856" v:groupContext="shape" v:layerMember="0" transform="translate(14.25 -9)">
+          <path d="M11.25 53.62v10.5h-9v-13.8h-1.2c-.6 0-1.05-.37-1.05-.97 0-.3.07-.53.3-.68l12.97-12.6c.15-.15.68-.52 1.05-.52.38 0 .9.37 1.06.52l5.84 5.63v-3.45c0-.45.38-.9.9-.9h2.63c.45 0 .9.37.9.9v7.8l2.77 2.7c.15.15.3.45.3.67 0 .6-.45.98-1.05.98h-1.42v13.72h-9v-10.5h-6z" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

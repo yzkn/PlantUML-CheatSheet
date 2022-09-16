@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="85.5" height="85.5" viewBox="0 0 64.125 64.125" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st2{fill:#515150;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group1633-1" transform="translate(1.95 -1.8)" v:mID="1633" v:groupContext="group" v:layerMember="0">
+      <g id="group1634-2" v:mID="1634" v:groupContext="group" v:layerMember="0">
+        <g id="shape1635-3" v:mID="1635" v:groupContext="shape" v:layerMember="0">
+          <path d="M56.17 8.03c-1.19-1.2-2.92-1.95-4.57-1.95-1.42 0-2.78.52-3.9 1.42l-.68-.67c-.67-.68-1.57-.98-2.47-.98-.9 0-1.8.38-2.48.98l-16.8 16.8 3.16 3.15-1.05 1.05.6.6L5.55 50.78l.53.52-2.93 2.93c-.9.9-1.42 2.17-1.42 3.45L.45 60.45c-.45.9-.37 1.8.07 2.55.46.68 1.21 1.13 2.1 1.13.38 0 .83-.08 1.28-.3l2.78-1.28c1.27 0 2.54-.52 3.45-1.42l2.92-2.93.53.53 22.27-22.35.45.45L56.4 16.8c2.32-2.32 2.25-6.3-.23-8.77z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="shape1636-5" v:mID="1636" v:groupContext="shape" v:layerMember="0" transform="translate(28.425 -30.45)">
+          <path d="M26.18 40.05c-1.66-1.57-4.13-1.72-5.63-.22l-1.28 1.27-2.25-2.25c-.44-.45-1.27-.45-1.72 0L0 54.08l1.35 1.35h.37c.68 0 1.58-.45 2.18-1.05.67-.68 1.05-1.43 1.05-2.1l11.17-11.1 1.58 1.57L2.1 58.28l5.85 5.85L26.4 45.68c1.43-1.5 1.35-3.98-.22-5.63z" class="st2"/>
+        </g>
+        <g id="shape1637-7" v:mID="1637" v:groupContext="shape" v:layerMember="0" transform="translate(2.175 -2.1)">
+          <path d="M6.52 52.88l.53.52L6 54.45 2.55 57.9c-.6.6-.9 1.5-.75 2.33l-1.57 3.3c-.23.45 0 .6.37.37l3.3-1.57c.83.15 1.65-.08 2.32-.75l3.46-3.45 1.05-1.05.52.52 20.78-20.62-4.8-4.8-20.71 20.7z" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="49.5" height="73.5" viewBox="0 0 37.125 55.125" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group53-1" transform="translate(4.688 -4.313)" v:mID="53" v:groupContext="group" v:layerMember="0">
+      <g id="group54-2" v:mID="54" v:groupContext="group" v:layerMember="0">
+        <g id="shape55-3" v:mID="55" v:groupContext="shape" v:layerMember="0">
+          <path d="M3.75 55.13c-2.1 0-3.75-1.65-3.75-3.75v-39c0-2.1 1.65-3.75 3.75-3.75H24c2.1 0 3.75 1.65 3.75 3.75v39c0 2.1-1.65 3.75-3.75 3.75H3.75z" class="st1"/>
+        </g>
+        <g id="shape56-5" v:mID="56" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M21.75 13.13H1.5c-.83 0-1.5.67-1.5 1.5v39c0 .82.67 1.5 1.5 1.5h20.25c.82 0 1.5-.68 1.5-1.5v-39c0-.83-.68-1.5-1.5-1.5zM21 48.38H2.25v-28.5H21v28.5z" fill="#515150" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="shape57-7" v:mID="57" v:groupContext="shape" v:layerMember="0" transform="translate(7.5 -4.5)">
+          <ellipse cx="1.125" cy="54" rx="1.125" ry="1.125" class="st1"/>
+        </g>
+        <g id="shape58-9" v:mID="58" v:groupContext="shape" v:layerMember="0" transform="translate(12.75 -4.5)">
+          <ellipse cx="1.125" cy="54" rx="1.125" ry="1.125" class="st1"/>
+        </g>
+        <g id="shape59-11" v:mID="59" v:groupContext="shape" v:layerMember="0" transform="translate(18 -4.5)">
+          <ellipse cx="1.125" cy="54" rx="1.125" ry="1.125" class="st1"/>
+        </g>
+        <g id="shape60-13" v:mID="60" v:groupContext="shape" v:layerMember="0" transform="translate(11.25 -41.25)">
+          <path d="M5.25 54.75c0 .23-.15.38-.3.38H.3c-.15 0-.3-.15-.3-.38 0-.22.15-.37.3-.37h4.65c.23 0 .3.15.3.37z" class="st1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

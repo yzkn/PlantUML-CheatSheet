@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="70.5" height="81" viewBox="0 0 52.875 60.75" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st2{fill:#2072b8;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group376-1" transform="translate(6.188 -8.063)" v:mID="376" v:groupContext="group" v:layerMember="0">
+      <g id="group377-2" v:mID="377" v:groupContext="group" v:layerMember="0">
+        <g id="shape378-3" v:mID="378" v:groupContext="shape" v:layerMember="0">
+          <path d="M39.75 24.38v-1.5c0-5.48-9.97-7.88-19.88-7.88C9.98 15 0 17.4 0 22.88v29.1c.68 7.65 12.75 8.77 19.87 8.77 7.13 0 19.21-1.12 19.88-8.77v-27.6z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="shape379-5" v:mID="379" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M17.63 48C10.58 48 3.53 46.8 0 44.1V54c.53 6.23 13.2 6.75 17.63 6.75 4.42 0 17.02-.52 17.62-6.75v-9.9C31.73 46.73 24.68 48 17.63 48z" class="st2"/>
+        </g>
+        <g id="shape380-7" v:mID="380" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -17.25)">
+          <path d="M17.63 48C10.58 48 3.53 46.8 0 44.1V54c.53 6.23 13.2 6.75 17.63 6.75 4.42 0 17.02-.52 17.62-6.75v-9.9C31.73 46.73 24.68 48 17.63 48z" class="st2"/>
+        </g>
+        <g id="shape381-9" v:mID="381" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -32.25)">
+          <ellipse cx="17.625" cy="55.125" rx="17.625" ry="5.625" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="76" height="28" viewBox="0 0 57 21" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <g id="group1125-1" transform="translate(.75 -.75)" v:mID="1125" v:groupContext="group">
+      <g id="group1126-2" v:mID="1126" v:groupContext="group">
+        <g id="shape1127-3" v:mID="1127" v:groupContext="shape">
+          <path d="M0 21V7.12C0 4.2 2.7 1.5 5.7 1.5h44.02c3 0 5.78 2.7 5.78 5.62V21H0z" class="st1"/>
+        </g>
+        <g id="shape1128-5" v:mID="1128" v:groupContext="shape" transform="translate(2.25 -2.25)">
+          <path d="M39.45 6H3.53C1.73 6 0 7.72 0 9.37V21h51V9.37C51 7.65 49.28 6 47.55 6h-8.1z" fill="#515050" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="group1129-7" transform="translate(11.25 -8.25)" v:mID="1129" v:groupContext="group">
+          <g id="shape1130-8" v:mID="1130" v:groupContext="shape">
+            <ellipse cx="1.5" cy="19.5" rx="1.5" ry="1.5" class="st1"/>
+          </g>
+          <g id="shape1131-10" v:mID="1131" v:groupContext="shape" transform="translate(7.5)">
+            <ellipse cx="1.5" cy="19.5" rx="1.5" ry="1.5" class="st1"/>
+          </g>
+          <g id="shape1132-12" v:mID="1132" v:groupContext="shape" transform="translate(15)">
+            <ellipse cx="1.5" cy="19.5" rx="1.5" ry="1.5" class="st1"/>
+          </g>
+          <g id="shape1133-14" v:mID="1133" v:groupContext="shape" transform="translate(22.5)">
+            <ellipse cx="1.5" cy="19.5" rx="1.5" ry="1.5" class="st1"/>
+          </g>
+          <g id="shape1134-16" v:mID="1134" v:groupContext="shape" transform="translate(30)">
+            <ellipse cx="1.5" cy="19.5" rx="1.5" ry="1.5" class="st1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

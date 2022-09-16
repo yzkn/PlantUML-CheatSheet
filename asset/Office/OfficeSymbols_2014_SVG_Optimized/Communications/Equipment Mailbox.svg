@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="87" height="87" viewBox="0 0 65.25 65.25" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1,.st2{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}.st2{fill:#515150}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <g id="group211-1" transform="translate(.75 -.75)" v:mID="211" v:groupContext="group">
+      <g id="group212-2" transform="translate(0 -10.5)" v:mID="212" v:groupContext="group">
+        <g id="group213-3" v:mID="213" v:groupContext="group">
+          <g id="shape214-4" v:mID="214" v:groupContext="shape">
+            <path d="M0 50.25v15h57V47.7l-.45-1.95-3.75-15.68h-1.05V18h-1.5v-6H6.75v6h-1.5v12.07H4.2L.45 45.75 0 47.7v2.55z" class="st1"/>
+          </g>
+          <g id="group215-6" transform="translate(15 -21.75)" v:mID="215" v:groupContext="group">
+            <g id="shape216-7" v:mID="216" v:groupContext="shape" transform="translate(23.25 -11.25)">
+              <path class="st2" d="M0 58.5h6v6.75H0z"/>
+            </g>
+            <g id="shape217-9" v:mID="217" v:groupContext="shape" transform="translate(0 -5.25)">
+              <path class="st2" d="M0 63h15.75v2.25H0z"/>
+            </g>
+            <g id="shape218-11" v:mID="218" v:groupContext="shape">
+              <path class="st2" d="M0 63h20.25v2.25H0z"/>
+            </g>
+          </g>
+          <g id="shape219-13" v:mID="219" v:groupContext="shape" transform="translate(9 -47.25)">
+            <path d="M0 61.5v3.75h2.25v-1.5h34.5v1.5H39V61.5H0z" class="st2"/>
+          </g>
+        </g>
+        <g id="shape220-15" v:mID="220" v:groupContext="shape" transform="translate(2.25 -2.25)">
+          <path d="M48.75 34.57h-1.5V22.5h-42v12.07h-1.5L0 50.25v15h52.5v-15l-3.75-15.68zm-3.75 0v15.68H7.5v-25.5H45v9.82z" class="st2"/>
+        </g>
+      </g>
+      <g id="group221-17" transform="translate(30)" v:mID="221" v:groupContext="group">
+        <g id="shape222-18" v:mID="222" v:groupContext="shape">
+          <path d="M6.75 65.25v-2.63c0-1.72 1.28-3.22 2.92-3.45l3.83-.52v-.15H6c-2.1 0-3.75-1.65-3.75-3.75V41.17C.97 40.87 0 39.67 0 38.25v-2.33C0 34.27 1.35 33 2.92 33h27.9c1.65 0 2.93 1.35 2.93 2.92v2.33c0 1.42-.98 2.62-2.25 2.92v13.58c0 2.1-1.65 3.75-3.75 3.75h-7.5v.07l3.75.53c1.72.3 3 1.72 3 3.45v2.7H6.75z" class="st1"/>
+        </g>
+        <g id="shape223-20" v:mID="223" v:groupContext="shape" transform="translate(2.25 -2.25)">
+          <path d="M28.57 41.25c.38 0 .68-.38.68-.75v-2.33c0-.37-.3-.67-.68-.67H.68c-.38 0-.68.3-.68.67v2.33c0 .37.3.75.68.75h1.57V57c0 .82.68 1.5 1.5 1.5h9.75V63H12l-4.2.6c-.6.07-1.05.6-1.05 1.27v.38H22.5v-.38c0-.6-.45-1.12-1.05-1.27l-4.2-.6h-1.5v-4.5h9.75c.82 0 1.5-.68 1.5-1.5V41.25h1.57zm-3.82 15H4.5v-15h20.25v15z" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="81" height="100.5" viewBox="0 0 60.75 75.375" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group184-1" transform="translate(8.625 -9.188)" v:mID="184" v:groupContext="group" v:layerMember="0">
+      <g id="group185-2" v:mID="185" v:groupContext="group" v:layerMember="0">
+        <g id="shape186-3" v:mID="186" v:groupContext="shape" v:layerMember="0">
+          <path d="M5.25 75.37C2.33 75.37 0 73.05 0 70.12v-46.5c0-2.92 2.33-5.25 5.25-5.25h33c2.92 0 5.25 2.33 5.25 5.25v46.5c0 2.93-2.33 5.25-5.25 5.25h-33z" class="st1"/>
+        </g>
+        <g id="shape187-5" v:mID="187" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M39 72.37c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3v-46.5c0-1.65 1.35-3 3-3h33c1.65 0 3 1.35 3 3v46.5z" fill="#4c4a4c" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g id="shape188-7" v:mID="188" v:groupContext="shape" v:layerMember="0" transform="translate(6 -8.25)">
+          <path class="st1" d="M0 34.875h31.5v40.5H0z"/>
+        </g>
+        <g id="shape189-9" v:mID="189" v:groupContext="shape" v:layerMember="0" transform="translate(21 -51)">
+          <ellipse cx=".75" cy="74.625" rx=".75" ry=".75" class="st1"/>
+        </g>
+        <g id="shape190-11" v:mID="190" v:groupContext="shape" v:layerMember="0" transform="translate(20.25 -3.75)">
+          <ellipse cx="1.5" cy="73.875" rx="1.5" ry="1.5" class="st1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

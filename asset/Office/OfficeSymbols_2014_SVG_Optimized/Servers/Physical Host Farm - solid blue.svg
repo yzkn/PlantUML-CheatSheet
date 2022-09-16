@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="100.5" height="88.5" viewBox="0 0 75.375 66.375" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g transform="translate(7.313 -6.563)" v:mID="657" v:groupContext="group" v:layerMember="0">
+      <g v:mID="658" v:groupContext="group" v:layerMember="0">
+        <g v:mID="659" v:groupContext="shape" v:layerMember="0">
+          <path d="M56.93 26.62H51v-9.67c0-2.1-1.73-3.83-3.83-3.83h-14.1c-1.05 0-2.02.45-2.7 1.13a3.81 3.81 0 0 0-2.69-1.13h-14.1c-2.1 0-3.83 1.73-3.83 3.83v9.67H3.82c-2.1 0-3.82 1.73-3.82 3.83v35.92h60.75V30.45c0-2.1-1.73-3.83-3.82-3.83z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g v:mID="660" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <path d="M15.68 31.12H1.58c-.9 0-1.58.68-1.58 1.58v33.67h17.25V32.7c0-.9-.67-1.58-1.57-1.58zm-1.43 31.5H3v-1.5h11.25v1.5zm0-4.5H3v-1.5h11.25v1.5zm0-21H3v-1.5h11.25v1.5zm20.92-6H21.08c-.9 0-1.58.68-1.58 1.58v33.67h17.25V32.7c0-.9-.68-1.58-1.58-1.58zm-1.42 31.5H22.5v-1.5h11.25v1.5zm0-4.5H22.5v-1.5h11.25v1.5zm0-21H22.5v-1.5h11.25v1.5zm-18.07-8.25c1.04 0 2.02.45 2.7 1.13.67-.68 1.65-1.13 2.7-1.13H27V19.2c0-.9-.67-1.58-1.57-1.58H11.32c-.9 0-1.57.68-1.57 1.58v9.67h5.93zm-2.93-6.75H24v1.5H12.75v-1.5zm22.42 6.75c1.06 0 2.03.45 2.7 1.13a3.87 3.87 0 0 1 2.7-1.13h5.93V19.2c0-.9-.67-1.58-1.57-1.58h-14.1c-.9 0-1.58.68-1.58 1.58v9.67h5.92zm-2.92-6.75H43.5v1.5H32.25v-1.5zm22.43 9H40.57c-.9 0-1.57.68-1.57 1.58v33.67h17.25V32.7c0-.9-.67-1.58-1.57-1.58zm-1.43 31.5H42v-1.5h11.25v1.5zm0-4.5H42v-1.5h11.25v1.5zm0-21H42v-1.5h11.25v1.5z" fill="#2072b8" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="73.5" height="93" viewBox="0 0 55.125 69.75" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g transform="translate(4.125 -4.612)" v:mID="482" v:groupContext="group" v:layerMember="0">
+      <g v:mID="483" v:groupContext="group" v:layerMember="0">
+        <g v:mID="484" v:groupContext="shape" v:layerMember="0">
+          <path d="M34.8 44.18c3.53-3.45 5.62-8.18 5.62-13.2 0-10.13-8.25-18.38-18.37-18.38-10.13 0-18.38 8.25-18.38 18.38C3.67 36.23 6 41.25 9.9 44.7L0 63.53l1.58 1.57 9.07-1.5 5.85 6.15 2.1-.6 3.97-14.32 5.1 14.02 2.18.3 5.4-7.5 10.2 2.33 1.72-1.73L34.8 44.18z" fill="#fff" stroke-linecap="butt" stroke-width=".75"/>
+        </g>
+        <g transform="translate(3 -2.85)" v:mID="485" v:groupContext="group" v:layerMember="0">
+          <g v:mID="486" v:groupContext="shape" v:layerMember="0" transform="translate(9.15 -26.025)">
+            <path d="M9.9 52.05c4.28 0 7.8 3.53 7.8 7.8 0 4.28-3.45 7.8-7.8 7.8a7.79 7.79 0 0 1-7.8-7.8c0-4.27 3.53-7.8 7.8-7.8zm0-2.1c-5.4 0-9.9 4.5-9.9 9.9s4.5 9.9 9.9 9.9 9.9-4.5 9.9-9.9-4.42-9.9-9.9-9.9z" fill="#515251" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+          <g v:mID="487" v:groupContext="shape" v:layerMember="0">
+            <path d="M28.8 46.65c3.83-2.92 6.38-7.57 6.38-12.82 0-8.85-7.2-16.13-16.13-16.13-8.85 0-16.13 7.28-16.13 16.13 0 5.4 2.71 10.2 6.9 13.12L0 65.48l8.4-1.43 5.4 5.7 5.4-19.42 6.9 18.82 5.17-7.2 9.46 2.18L28.8 46.65zM6 33.83c0-7.2 5.85-12.98 12.98-12.98 7.12 0 12.97 5.85 12.97 12.98 0 7.12-5.7 13.05-12.9 13.05S6 41.03 6 33.83z" fill="#515150" stroke-linecap="butt" stroke-width=".75"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

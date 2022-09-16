@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="102" height="37.5" viewBox="0 0 76.5 28.125" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+  <v:documentProperties v:langID="4108" v:metric="true" v:viewMarkup="false"/>
+  <style>
+    .st1,.st2{fill:#fff;stroke:none;stroke-linecap:butt;stroke-width:.75}.st2{fill:#515150}
+  </style>
+  <g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+    <v:pageProperties v:drawingScale=".039" v:pageScale=".039" v:drawingUnits="24" v:shadowOffsetX="8.504" v:shadowOffsetY="-8.504"/>
+    <v:layer v:name="symbols" v:index="0"/>
+    <g id="group1154-1" transform="translate(6.563 -6.938)" v:mID="1154" v:groupContext="group" v:layerMember="0">
+      <g id="group1155-2" v:mID="1155" v:groupContext="group" v:layerMember="0">
+        <g id="shape1156-3" v:mID="1156" v:groupContext="shape" v:layerMember="0" transform="translate(6)">
+          <path d="M0 28.13V13.88h51.75c3.3 0 6 3.22 6 7.12s-2.7 7.13-6 7.13H0z" class="st1"/>
+        </g>
+        <g id="shape1157-5" v:mID="1157" v:groupContext="shape" v:layerMember="0" transform="translate(6.75 -2.25)">
+          <path d="M51 28.13c2.1 0 3.75-2.18 3.75-4.88 0-2.7-1.65-4.87-3.75-4.87H0v9.75h51z" class="st2"/>
+        </g>
+        <g id="shape1158-7" v:mID="1158" v:groupContext="shape" v:layerMember="0">
+          <path d="M6 28.13c-3.3 0-6-3.23-6-7.13s2.7-7.12 6-7.12 6 3.22 6 7.12-2.7 7.13-6 7.13z" class="st1"/>
+        </g>
+        <g id="shape1159-9" v:mID="1159" v:groupContext="shape" v:layerMember="0" transform="translate(2.25 -2.25)">
+          <ellipse cx="3.75" cy="23.25" rx="3.75" ry="4.875" class="st2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
