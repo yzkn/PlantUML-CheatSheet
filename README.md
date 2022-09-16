@@ -67,7 +67,9 @@ UMLダイアグラム <|-- ふるまい図
 
 ```
 
+
 ## 共通コマンド
+
 
 ### コメント
 
@@ -86,6 +88,7 @@ Alice -> Alice
 @enduml
 
 ```
+
 
 ### 拡大
 
@@ -114,6 +117,7 @@ Alice -> Alice
 
 ```
 
+
 ### 凡例
 
 ```plantuml
@@ -130,6 +134,7 @@ endlegend
 @enduml
 
 ```
+
 
 ## 色
 
@@ -242,6 +247,7 @@ class classA {
 
 ```
 
+
 ## 画像埋め込み
 
 スプライト（モノクロで4、8、16段階のグレースケールの小さい画像）を埋め込む
@@ -311,7 +317,59 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 # -encodesprite : 4、8、16、4z、8z、16z
 ```
 
+
 ### アイコン画像
+
+
+#### AWS
+
+```plantuml
+
+@startuml
+
+scale .5
+
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist
+
+!include AWSPuml/AWSCommon.puml
+
+!include AWSPuml/Analytics/all.puml
+!include AWSPuml/ApplicationIntegration/all.puml
+!include AWSPuml/Blockchain/all.puml
+!include AWSPuml/BusinessApplications/all.puml
+!include AWSPuml/CloudFinancialManagement/all.puml
+!include AWSPuml/Compute/all.puml
+!include AWSPuml/Containers/all.puml
+!include AWSPuml/CustomerEnablement/all.puml
+!include AWSPuml/Database/all.puml
+!include AWSPuml/DeveloperTools/all.puml
+!include AWSPuml/EndUserComputing/all.puml
+!include AWSPuml/FrontEndWebMobile/all.puml
+!include AWSPuml/GameTech/all.puml
+!include AWSPuml/General/all.puml
+!include AWSPuml/Groups/all.puml
+!include AWSPuml/InternetOfThings/all.puml
+!include AWSPuml/MachineLearning/all.puml
+!include AWSPuml/ManagementGovernance/all.puml
+!include AWSPuml/MediaServices/all.puml
+!include AWSPuml/MigrationTransfer/all.puml
+!include AWSPuml/NetworkingContentDelivery/all.puml
+!include AWSPuml/QuantumTechnologies/all.puml
+!include AWSPuml/Robotics/all.puml
+!include AWSPuml/Satellite/all.puml
+!include AWSPuml/SecurityIdentityCompliance/all.puml
+!include AWSPuml/Serverless/all.puml
+!include AWSPuml/Storage/all.puml
+
+
+listspritess
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-AWS.png "アイコン")
+
 
 #### C4 model
 
@@ -343,6 +401,7 @@ Rel(systemAlias, emailSystemAlias, "Sends e-mail using")
 @enduml
 
 ```
+
 
 #### Cloudinsight
 
@@ -513,6 +572,7 @@ rectangle "<$zookeeper>\nzookeeper"
 
 ```
 
+
 #### Cloudogu
 
 ```plantuml
@@ -588,6 +648,7 @@ TOOL_K8S(k8s, Kubernetes) #ffffff
 
 ```
 
+
 #### Google Material Icons
 
 ```plantuml
@@ -607,6 +668,7 @@ folder *- files
 @enduml
 
 ```
+
 
 #### Kubernetes
 
@@ -655,6 +717,7 @@ component "<$vol>"
 
 ```
 
+
 #### Logos
 
 ```plantuml
@@ -691,6 +754,567 @@ users --> httpd
 
 ```
 
+
+#### Office
+
+```plantuml
+
+@startuml
+
+scale .5
+
+!include <tupadr3/common>
+
+!define ICONURL https://raw.githubusercontent.com/Roemer/plantuml-office/master/office2014
+!includeurl ICONURL/Clouds/azure.puml
+!includeurl ICONURL/Clouds/cloud.puml
+!includeurl ICONURL/Clouds/cloud_disaster.puml
+!includeurl ICONURL/Clouds/cloud_disaster_red.puml
+!includeurl ICONURL/Clouds/cloud_exchange_online.puml
+!includeurl ICONURL/Clouds/cloud_service_request.puml
+!includeurl ICONURL/Clouds/cloud_sharepoint_online.puml
+!includeurl ICONURL/Clouds/office_365_cloud.puml
+!includeurl ICONURL/Clouds/online_backup.puml
+!includeurl ICONURL/Clouds/online_user.puml
+!includeurl ICONURL/Clouds/private_cloud.puml
+!includeurl ICONURL/Clouds/public_cloud.puml
+!includeurl ICONURL/Clouds/public_im_cloud_service.puml
+!includeurl ICONURL/Communications/3rd_party_call_center_solution.puml
+!includeurl ICONURL/Communications/3rd_party_integration.puml
+!includeurl ICONURL/Communications/3rd_party_service.puml
+!includeurl ICONURL/Communications/application_sharing_workload.puml
+!includeurl ICONURL/Communications/audio_conferencing_application.puml
+!includeurl ICONURL/Communications/central_management_service.puml
+!includeurl ICONURL/Communications/chat_room.puml
+!includeurl ICONURL/Communications/conference_announcement_service.puml
+!includeurl ICONURL/Communications/disconnected_mailbox.puml
+!includeurl ICONURL/Communications/discovery_search_mailbox.puml
+!includeurl ICONURL/Communications/dynamic_distribution_group.puml
+!includeurl ICONURL/Communications/edge_subscription.puml
+!includeurl ICONURL/Communications/email_workload.puml
+!includeurl ICONURL/Communications/equipment_mailbox.puml
+!includeurl ICONURL/Communications/exchange_active_sync.puml
+!includeurl ICONURL/Communications/exchange_active_sync_blue.puml
+!includeurl ICONURL/Communications/fax_partner.puml
+!includeurl ICONURL/Communications/global_address_list.puml
+!includeurl ICONURL/Communications/hybrid_voip_gateway.puml
+!includeurl ICONURL/Communications/im_workload.puml
+!includeurl ICONURL/Communications/journaling_rule.puml
+!includeurl ICONURL/Communications/local_move_request.puml
+!includeurl ICONURL/Communications/lync_control_panel.puml
+!includeurl ICONURL/Communications/lync_phone_edition.puml
+!includeurl ICONURL/Communications/lync_room_system.puml
+!includeurl ICONURL/Communications/lync_server_management_tool.puml
+!includeurl ICONURL/Communications/lync_storage_service.puml
+!includeurl ICONURL/Communications/lync_web_app_client.puml
+!includeurl ICONURL/Communications/mail_enabled_public_folder.puml
+!includeurl ICONURL/Communications/mailbox_assistant.puml
+!includeurl ICONURL/Communications/messages_queued.puml
+!includeurl ICONURL/Communications/offline_address_book.puml
+!includeurl ICONURL/Communications/personal_archive_mailbox.puml
+!includeurl ICONURL/Communications/public_im_cloud_service.puml
+!includeurl ICONURL/Communications/push_notification_service.puml
+!includeurl ICONURL/Communications/queue_viewer.puml
+!includeurl ICONURL/Communications/remote_mailbox.puml
+!includeurl ICONURL/Communications/remote_move_request.puml
+!includeurl ICONURL/Communications/response_group.puml
+!includeurl ICONURL/Communications/response_group_service.puml
+!includeurl ICONURL/Communications/room_mailbox.puml
+!includeurl ICONURL/Communications/shared_mailbox.puml
+!includeurl ICONURL/Communications/sip_uri_um_dial_plan.puml
+!includeurl ICONURL/Communications/site_mailbox.puml
+!includeurl ICONURL/Communications/skype_for_business_control_panel.puml
+!includeurl ICONURL/Communications/skype_for_business_phone_edition.puml
+!includeurl ICONURL/Communications/skype_for_business_room_system.puml
+!includeurl ICONURL/Communications/skype_for_business_server_management_tool.puml
+!includeurl ICONURL/Communications/skype_for_business_storage_service.puml
+!includeurl ICONURL/Communications/skype_for_business_web_app_client.puml
+!includeurl ICONURL/Communications/sms_gateway.puml
+!includeurl ICONURL/Communications/smtp_connector.puml
+!includeurl ICONURL/Communications/system_mailbox.puml
+!includeurl ICONURL/Communications/tdm_pbx.puml
+!includeurl ICONURL/Communications/telephone_extension_dial_plan.puml
+!includeurl ICONURL/Communications/transport_rule.puml
+!includeurl ICONURL/Communications/ucma_application.puml
+!includeurl ICONURL/Communications/ucwa_application.puml
+!includeurl ICONURL/Communications/um_auto_attendant.puml
+!includeurl ICONURL/Communications/um_dial_plan_e164.puml
+!includeurl ICONURL/Communications/um_dial_plan_secondary.puml
+!includeurl ICONURL/Communications/um_enabled_mailbox.puml
+!includeurl ICONURL/Communications/um_hunt_group.puml
+!includeurl ICONURL/Communications/um_ip_gateway.puml
+!includeurl ICONURL/Communications/user_mailbox.puml
+!includeurl ICONURL/Communications/video_workload.puml
+!includeurl ICONURL/Communications/voice_mail_preview_partner.puml
+!includeurl ICONURL/Communications/voice_workload.puml
+!includeurl ICONURL/Communications/voip_gateway.puml
+!includeurl ICONURL/Communications/watcher_node.puml
+!includeurl ICONURL/Communications/xmpp_service.puml
+!includeurl ICONURL/Concepts/address_book.puml
+!includeurl ICONURL/Concepts/anti_spam.puml
+!includeurl ICONURL/Concepts/app_for_office.puml
+!includeurl ICONURL/Concepts/app_for_sharepoint.puml
+!includeurl ICONURL/Concepts/app_part.puml
+!includeurl ICONURL/Concepts/application_android.puml
+!includeurl ICONURL/Concepts/application_generic.puml
+!includeurl ICONURL/Concepts/application_hybrid.puml
+!includeurl ICONURL/Concepts/application_ios.puml
+!includeurl ICONURL/Concepts/application_web.puml
+!includeurl ICONURL/Concepts/application_windows.puml
+!includeurl ICONURL/Concepts/archive.puml
+!includeurl ICONURL/Concepts/attachment.puml
+!includeurl ICONURL/Concepts/backup_local.puml
+!includeurl ICONURL/Concepts/backup_online.puml
+!includeurl ICONURL/Concepts/bandwidth.puml
+!includeurl ICONURL/Concepts/bandwidth_calculator.puml
+!includeurl ICONURL/Concepts/best_practices.puml
+!includeurl ICONURL/Concepts/book_journal.puml
+!includeurl ICONURL/Concepts/calculator.puml
+!includeurl ICONURL/Concepts/calendar.puml
+!includeurl ICONURL/Concepts/clipboard.puml
+!includeurl ICONURL/Concepts/clock.puml
+!includeurl ICONURL/Concepts/column.puml
+!includeurl ICONURL/Concepts/connector.puml
+!includeurl ICONURL/Concepts/contacts.puml
+!includeurl ICONURL/Concepts/content_type.puml
+!includeurl ICONURL/Concepts/credit_card.puml
+!includeurl ICONURL/Concepts/document.puml
+!includeurl ICONURL/Concepts/document_blank.puml
+!includeurl ICONURL/Concepts/document_shared.puml
+!includeurl ICONURL/Concepts/documents.puml
+!includeurl ICONURL/Concepts/documents_shared.puml
+!includeurl ICONURL/Concepts/download.puml
+!includeurl ICONURL/Concepts/email.puml
+!includeurl ICONURL/Concepts/email_approved.puml
+!includeurl ICONURL/Concepts/email_expired.puml
+!includeurl ICONURL/Concepts/email_rejected.puml
+!includeurl ICONURL/Concepts/file_key.puml
+!includeurl ICONURL/Concepts/firewall.puml
+!includeurl ICONURL/Concepts/firewall_blue.puml
+!includeurl ICONURL/Concepts/firewall_ghosted.puml
+!includeurl ICONURL/Concepts/firewall_green.puml
+!includeurl ICONURL/Concepts/firewall_orange.puml
+!includeurl ICONURL/Concepts/folder.puml
+!includeurl ICONURL/Concepts/folder_blue.puml
+!includeurl ICONURL/Concepts/folder_ghosted.puml
+!includeurl ICONURL/Concepts/folder_green.puml
+!includeurl ICONURL/Concepts/folder_open.puml
+!includeurl ICONURL/Concepts/folder_orange.puml
+!includeurl ICONURL/Concepts/folder_public.puml
+!includeurl ICONURL/Concepts/folder_shared.puml
+!includeurl ICONURL/Concepts/folders.puml
+!includeurl ICONURL/Concepts/form.puml
+!includeurl ICONURL/Concepts/get_started.puml
+!includeurl ICONURL/Concepts/globe_internet.puml
+!includeurl ICONURL/Concepts/help.puml
+!includeurl ICONURL/Concepts/home.puml
+!includeurl ICONURL/Concepts/home_blue.puml
+!includeurl ICONURL/Concepts/home_ghosted.puml
+!includeurl ICONURL/Concepts/home_green.puml
+!includeurl ICONURL/Concepts/home_orange.puml
+!includeurl ICONURL/Concepts/home_page.puml
+!includeurl ICONURL/Concepts/home_page_blue.puml
+!includeurl ICONURL/Concepts/home_page_ghosted.puml
+!includeurl ICONURL/Concepts/home_page_green.puml
+!includeurl ICONURL/Concepts/home_page_orange.puml
+!includeurl ICONURL/Concepts/hybrid.puml
+!includeurl ICONURL/Concepts/input_output_filter.puml
+!includeurl ICONURL/Concepts/install.puml
+!includeurl ICONURL/Concepts/integration.puml
+!includeurl ICONURL/Concepts/lab.puml
+!includeurl ICONURL/Concepts/learn.puml
+!includeurl ICONURL/Concepts/license.puml
+!includeurl ICONURL/Concepts/link.puml
+!includeurl ICONURL/Concepts/list_library.puml
+!includeurl ICONURL/Concepts/mailbox.puml
+!includeurl ICONURL/Concepts/mailbox2.puml
+!includeurl ICONURL/Concepts/maintenance.puml
+!includeurl ICONURL/Concepts/marketplace_shopping_bag.puml
+!includeurl ICONURL/Concepts/meets_requirements.puml
+!includeurl ICONURL/Concepts/migration.puml
+!includeurl ICONURL/Concepts/moes.puml
+!includeurl ICONURL/Concepts/navigation.puml
+!includeurl ICONURL/Concepts/node_generic.puml
+!includeurl ICONURL/Concepts/node_generic_blue.puml
+!includeurl ICONURL/Concepts/node_generic_ghosted.puml
+!includeurl ICONURL/Concepts/node_generic_green.puml
+!includeurl ICONURL/Concepts/node_generic_orange.puml
+!includeurl ICONURL/Concepts/office_installed.puml
+!includeurl ICONURL/Concepts/on_premises.puml
+!includeurl ICONURL/Concepts/on_premises_directory.puml
+!includeurl ICONURL/Concepts/phishing.puml
+!includeurl ICONURL/Concepts/pin.puml
+!includeurl ICONURL/Concepts/platform_options.puml
+!includeurl ICONURL/Concepts/properties.puml
+!includeurl ICONURL/Concepts/publish.puml
+!includeurl ICONURL/Concepts/remote_access.puml
+!includeurl ICONURL/Concepts/script.puml
+!includeurl ICONURL/Concepts/search.puml
+!includeurl ICONURL/Concepts/service_application.puml
+!includeurl ICONURL/Concepts/settings.puml
+!includeurl ICONURL/Concepts/settings_office_365.puml
+!includeurl ICONURL/Concepts/sign_up.puml
+!includeurl ICONURL/Concepts/sound_file.puml
+!includeurl ICONURL/Concepts/tasks.puml
+!includeurl ICONURL/Concepts/technical_diagram.puml
+!includeurl ICONURL/Concepts/upgrade_application.puml
+!includeurl ICONURL/Concepts/upgrade_server.puml
+!includeurl ICONURL/Concepts/upgrade_site.puml
+!includeurl ICONURL/Concepts/upload.puml
+!includeurl ICONURL/Concepts/video_play.puml
+!includeurl ICONURL/Concepts/view_form.puml
+!includeurl ICONURL/Concepts/voicemail.puml
+!includeurl ICONURL/Concepts/voicemail_preview.puml
+!includeurl ICONURL/Concepts/walkthrough.puml
+!includeurl ICONURL/Concepts/web_conferencing.puml
+!includeurl ICONURL/Concepts/web_page.puml
+!includeurl ICONURL/Concepts/web_part.puml
+!includeurl ICONURL/Concepts/web_services.puml
+!includeurl ICONURL/Concepts/website.puml
+!includeurl ICONURL/Concepts/whats_new.puml
+!includeurl ICONURL/Concepts/windows_powershell.puml
+!includeurl ICONURL/Concepts/writing_pen.puml
+!includeurl ICONURL/Concepts/writing_pencil.puml
+!includeurl ICONURL/Databases/address_book_store.puml
+!includeurl ICONURL/Databases/application_store.puml
+!includeurl ICONURL/Databases/database.puml
+!includeurl ICONURL/Databases/database_availability_group.puml
+!includeurl ICONURL/Databases/database_blue.puml
+!includeurl ICONURL/Databases/database_cube.puml
+!includeurl ICONURL/Databases/database_cube_blue.puml
+!includeurl ICONURL/Databases/database_cube_ghosted.puml
+!includeurl ICONURL/Databases/database_cube_green.puml
+!includeurl ICONURL/Databases/database_cube_orange.puml
+!includeurl ICONURL/Databases/database_ghosted.puml
+!includeurl ICONURL/Databases/database_green.puml
+!includeurl ICONURL/Databases/database_mini_1.puml
+!includeurl ICONURL/Databases/database_mini_1_blue.puml
+!includeurl ICONURL/Databases/database_mini_1_ghosted.puml
+!includeurl ICONURL/Databases/database_mini_1_green.puml
+!includeurl ICONURL/Databases/database_mini_1_orange.puml
+!includeurl ICONURL/Databases/database_mini_2.puml
+!includeurl ICONURL/Databases/database_mini_2_blue.puml
+!includeurl ICONURL/Databases/database_mini_2_ghosted.puml
+!includeurl ICONURL/Databases/database_mini_2_green.puml
+!includeurl ICONURL/Databases/database_mini_2_orange.puml
+!includeurl ICONURL/Databases/database_mini_3.puml
+!includeurl ICONURL/Databases/database_mini_3_blue.puml
+!includeurl ICONURL/Databases/database_mini_3_ghosted.puml
+!includeurl ICONURL/Databases/database_mini_3_green.puml
+!includeurl ICONURL/Databases/database_mini_3_orange.puml
+!includeurl ICONURL/Databases/database_mirror.puml
+!includeurl ICONURL/Databases/database_mirror_witness_node.puml
+!includeurl ICONURL/Databases/database_orange.puml
+!includeurl ICONURL/Databases/database_partition_2.puml
+!includeurl ICONURL/Databases/database_partition_3.puml
+!includeurl ICONURL/Databases/database_partition_4.puml
+!includeurl ICONURL/Databases/database_partition_5.puml
+!includeurl ICONURL/Databases/database_public_folder.puml
+!includeurl ICONURL/Databases/database_server.puml
+!includeurl ICONURL/Databases/database_server_blue.puml
+!includeurl ICONURL/Databases/database_server_ghosted.puml
+!includeurl ICONURL/Databases/database_server_green.puml
+!includeurl ICONURL/Databases/database_server_orange.puml
+!includeurl ICONURL/Databases/mailbox_database.puml
+!includeurl ICONURL/Databases/monitoring_store.puml
+!includeurl ICONURL/Databases/unified_contact_store.puml
+!includeurl ICONURL/Databases/web_store.puml
+!includeurl ICONURL/Devices/cd_dvd.puml
+!includeurl ICONURL/Devices/cell_phone_android_proportional.puml
+!includeurl ICONURL/Devices/cell_phone_android_stand_alone.puml
+!includeurl ICONURL/Devices/cell_phone_generic.puml
+!includeurl ICONURL/Devices/cell_phone_iphone_proportional.puml
+!includeurl ICONURL/Devices/cell_phone_iphone_stand_alone.puml
+!includeurl ICONURL/Devices/cell_phone_windows_phone_proportional.puml
+!includeurl ICONURL/Devices/cell_phone_windows_phone_stand_alone.puml
+!includeurl ICONURL/Devices/data_jack.puml
+!includeurl ICONURL/Devices/device_bluetooth.puml
+!includeurl ICONURL/Devices/device_fax.puml
+!includeurl ICONURL/Devices/device_headset.puml
+!includeurl ICONURL/Devices/device_laptop.puml
+!includeurl ICONURL/Devices/device_lcd_monitor.puml
+!includeurl ICONURL/Devices/device_mac_client.puml
+!includeurl ICONURL/Devices/device_microphone.puml
+!includeurl ICONURL/Devices/device_phone_digital.puml
+!includeurl ICONURL/Devices/device_phone_traditional.puml
+!includeurl ICONURL/Devices/device_phone_usb.puml
+!includeurl ICONURL/Devices/device_phone_voip.puml
+!includeurl ICONURL/Devices/device_printer.puml
+!includeurl ICONURL/Devices/device_roundtable.puml
+!includeurl ICONURL/Devices/device_stylus.puml
+!includeurl ICONURL/Devices/device_tablet_android.puml
+!includeurl ICONURL/Devices/device_tablet_ipad.puml
+!includeurl ICONURL/Devices/device_tablet_ipad_mini.puml
+!includeurl ICONURL/Devices/device_tablet_windows_7_inch.puml
+!includeurl ICONURL/Devices/device_tablet_windows_8.puml
+!includeurl ICONURL/Devices/device_tv.puml
+!includeurl ICONURL/Devices/device_update_service.puml
+!includeurl ICONURL/Devices/device_webcam.puml
+!includeurl ICONURL/Devices/device_webcam_hd.puml
+!includeurl ICONURL/Devices/hard_disk.puml
+!includeurl ICONURL/Devices/ip_gateway.puml
+!includeurl ICONURL/Devices/ip_pbx.puml
+!includeurl ICONURL/Devices/load_balancer.puml
+!includeurl ICONURL/Devices/management_console.puml
+!includeurl ICONURL/Devices/modem.puml
+!includeurl ICONURL/Devices/nic.puml
+!includeurl ICONURL/Devices/router.puml
+!includeurl ICONURL/Devices/session_border_controller.puml
+!includeurl ICONURL/Devices/shadowed_router.puml
+!includeurl ICONURL/Devices/switch.puml
+!includeurl ICONURL/Devices/video_camera.puml
+!includeurl ICONURL/Devices/video_gateway.puml
+!includeurl ICONURL/Devices/workstation.puml
+!includeurl ICONURL/Devices/workstation_pc.puml
+!includeurl ICONURL/Devices/workstation_visual_studio.puml
+!includeurl ICONURL/Security/active_directory.puml
+!includeurl ICONURL/Security/address_book_policies.puml
+!includeurl ICONURL/Security/certificate.puml
+!includeurl ICONURL/Security/credentials.puml
+!includeurl ICONURL/Security/domain.puml
+!includeurl ICONURL/Security/email_address_policy.puml
+!includeurl ICONURL/Security/federation_service.puml
+!includeurl ICONURL/Security/federation_trust.puml
+!includeurl ICONURL/Security/irm_protected_message.puml
+!includeurl ICONURL/Security/key_permissions.puml
+!includeurl ICONURL/Security/key_permissions_blue.puml
+!includeurl ICONURL/Security/key_permissions_ghosted.puml
+!includeurl ICONURL/Security/key_permissions_green.puml
+!includeurl ICONURL/Security/key_permissions_orange.puml
+!includeurl ICONURL/Security/lock_protected.puml
+!includeurl ICONURL/Security/lock_protected_blue.puml
+!includeurl ICONURL/Security/lock_protected_ghosted.puml
+!includeurl ICONURL/Security/lock_protected_green.puml
+!includeurl ICONURL/Security/lock_protected_orange.puml
+!includeurl ICONURL/Security/lock_unprotected.puml
+!includeurl ICONURL/Security/lock_unprotected_blue.puml
+!includeurl ICONURL/Security/lock_unprotected_ghosted.puml
+!includeurl ICONURL/Security/lock_unprotected_green.puml
+!includeurl ICONURL/Security/lock_unprotected_orange.puml
+!includeurl ICONURL/Security/lock_with_key_security.puml
+!includeurl ICONURL/Security/lock_with_key_security_blue.puml
+!includeurl ICONURL/Security/lock_with_key_security_ghosted.puml
+!includeurl ICONURL/Security/lock_with_key_security_green.puml
+!includeurl ICONURL/Security/lock_with_key_security_orange.puml
+!includeurl ICONURL/Security/management_role.puml
+!includeurl ICONURL/Security/policy.puml
+!includeurl ICONURL/Security/protected_voice_mail.puml
+!includeurl ICONURL/Security/retention_policy.puml
+!includeurl ICONURL/Security/retention_policy_tag.puml
+!includeurl ICONURL/Security/role_assignment_policy.puml
+!includeurl ICONURL/Security/role_group.puml
+!includeurl ICONURL/Security/secure_messaging.puml
+!includeurl ICONURL/Security/security_access_portal.puml
+!includeurl ICONURL/Security/sharing_policy.puml
+!includeurl ICONURL/Security/split_domain_user.puml
+!includeurl ICONURL/Security/token.puml
+!includeurl ICONURL/Security/token_service.puml
+!includeurl ICONURL/Security/trusted_application_server.puml
+!includeurl ICONURL/Security/um_mailbox_policy.puml
+!includeurl ICONURL/Security/universal_security_group.puml
+!includeurl ICONURL/Servers/3rd_party_mail_server.puml
+!includeurl ICONURL/Servers/active_directory_federation_services_proxy.puml
+!includeurl ICONURL/Servers/active_directory_federation_services_server.puml
+!includeurl ICONURL/Servers/active_directory_federation_services_server_blue.puml
+!includeurl ICONURL/Servers/active_directory_federation_services_server_ghosted.puml
+!includeurl ICONURL/Servers/active_directory_federation_services_server_green.puml
+!includeurl ICONURL/Servers/active_directory_federation_services_server_orange.puml
+!includeurl ICONURL/Servers/application_server.puml
+!includeurl ICONURL/Servers/application_server_blue.puml
+!includeurl ICONURL/Servers/application_server_ghosted.puml
+!includeurl ICONURL/Servers/application_server_green.puml
+!includeurl ICONURL/Servers/application_server_orange.puml
+!includeurl ICONURL/Servers/call_admission_control_service.puml
+!includeurl ICONURL/Servers/certificate_authority.puml
+!includeurl ICONURL/Servers/cluster_server.puml
+!includeurl ICONURL/Servers/cluster_server_blue.puml
+!includeurl ICONURL/Servers/cluster_server_ghosted.puml
+!includeurl ICONURL/Servers/cluster_server_green.puml
+!includeurl ICONURL/Servers/cluster_server_orange.puml
+!includeurl ICONURL/Servers/database_server.puml
+!includeurl ICONURL/Servers/database_server_blue.puml
+!includeurl ICONURL/Servers/database_server_ghosted.puml
+!includeurl ICONURL/Servers/database_server_green.puml
+!includeurl ICONURL/Servers/database_server_orange.puml
+!includeurl ICONURL/Servers/datacenter.puml
+!includeurl ICONURL/Servers/dirsync_server.puml
+!includeurl ICONURL/Servers/domain_controller.puml
+!includeurl ICONURL/Servers/exchange_2010_client_access_server_role.puml
+!includeurl ICONURL/Servers/exchange_2010_edge_transport_server_role.puml
+!includeurl ICONURL/Servers/exchange_2010_hub_transport_server_role.puml
+!includeurl ICONURL/Servers/exchange_2010_mailbox_server_role.puml
+!includeurl ICONURL/Servers/exchange_2010_um_server_role.puml
+!includeurl ICONURL/Servers/exchange_2013_client_access_server.puml
+!includeurl ICONURL/Servers/exchange_2013_edge_transport_server.puml
+!includeurl ICONURL/Servers/exchange_2013_mailbox_server.puml
+!includeurl ICONURL/Servers/exchange_2013_server.puml
+!includeurl ICONURL/Servers/file_server.puml
+!includeurl ICONURL/Servers/hybrid_server.puml
+!includeurl ICONURL/Servers/mainframe.puml
+!includeurl ICONURL/Servers/mainframe_host.puml
+!includeurl ICONURL/Servers/monitoring_sql_reporting_services.puml
+!includeurl ICONURL/Servers/network.puml
+!includeurl ICONURL/Servers/office_web_apps_server.puml
+!includeurl ICONURL/Servers/on_premises_server.puml
+!includeurl ICONURL/Servers/physical_host_farm_solid_blue.puml
+!includeurl ICONURL/Servers/physical_host_solid_blue.puml
+!includeurl ICONURL/Servers/reverse_proxy.puml
+!includeurl ICONURL/Servers/scom.puml
+!includeurl ICONURL/Servers/server_disaster.puml
+!includeurl ICONURL/Servers/server_farm.puml
+!includeurl ICONURL/Servers/server_farm_blue.puml
+!includeurl ICONURL/Servers/server_farm_ghosted.puml
+!includeurl ICONURL/Servers/server_farm_green.puml
+!includeurl ICONURL/Servers/server_farm_orange.puml
+!includeurl ICONURL/Servers/server_generic.puml
+!includeurl ICONURL/Servers/server_generic_blue.puml
+!includeurl ICONURL/Servers/server_generic_ghosted.puml
+!includeurl ICONURL/Servers/server_generic_green.puml
+!includeurl ICONURL/Servers/server_generic_orange.puml
+!includeurl ICONURL/Servers/server_side_code.puml
+!includeurl ICONURL/Servers/sharepoint_server.puml
+!includeurl ICONURL/Servers/skype_for_business_back_end_server.puml
+!includeurl ICONURL/Servers/skype_for_business_back_end_server_mirror.puml
+!includeurl ICONURL/Servers/skype_for_business_director.puml
+!includeurl ICONURL/Servers/skype_for_business_director_array.puml
+!includeurl ICONURL/Servers/skype_for_business_edge_server.puml
+!includeurl ICONURL/Servers/skype_for_business_edge_server_pool.puml
+!includeurl ICONURL/Servers/skype_for_business_front_end_pool.puml
+!includeurl ICONURL/Servers/skype_for_business_front_end_server.puml
+!includeurl ICONURL/Servers/skype_for_business_mediation_server.puml
+!includeurl ICONURL/Servers/skype_for_business_monitoring_server.puml
+!includeurl ICONURL/Servers/skype_for_business_persistent_chat_server.puml
+!includeurl ICONURL/Servers/skype_for_business_server.puml
+!includeurl ICONURL/Servers/sql_server.puml
+!includeurl ICONURL/Servers/survivable_branch_appliance.puml
+!includeurl ICONURL/Servers/survivable_branch_server.puml
+!includeurl ICONURL/Servers/topology_builder.puml
+!includeurl ICONURL/Servers/trusted_application_pool.puml
+!includeurl ICONURL/Servers/trusted_application_server.puml
+!includeurl ICONURL/Servers/tunnel_angled.puml
+!includeurl ICONURL/Servers/tunnel_straight.puml
+!includeurl ICONURL/Servers/video_interop_server.puml
+!includeurl ICONURL/Servers/virtual_application_server.puml
+!includeurl ICONURL/Servers/virtual_application_server_blue.puml
+!includeurl ICONURL/Servers/virtual_database_server.puml
+!includeurl ICONURL/Servers/virtual_database_server_blue.puml
+!includeurl ICONURL/Servers/virtual_server.puml
+!includeurl ICONURL/Servers/virtual_server_blue.puml
+!includeurl ICONURL/Servers/virtual_web_server.puml
+!includeurl ICONURL/Servers/virtual_web_server_blue.puml
+!includeurl ICONURL/Servers/voicemail_preview_partner.puml
+!includeurl ICONURL/Servers/web_server.puml
+!includeurl ICONURL/Servers/web_server_blue.puml
+!includeurl ICONURL/Servers/web_server_ghosted.puml
+!includeurl ICONURL/Servers/web_server_green.puml
+!includeurl ICONURL/Servers/web_server_orange.puml
+!includeurl ICONURL/Servers/windows_router.puml
+!includeurl ICONURL/Servers/windows_server.puml
+!includeurl ICONURL/Services/3rd_party_service.puml
+!includeurl ICONURL/Services/access_services.puml
+!includeurl ICONURL/Services/business_connectivity_services.puml
+!includeurl ICONURL/Services/call_admission_control_service.puml
+!includeurl ICONURL/Services/central_management_service.puml
+!includeurl ICONURL/Services/conference_announcement_service.puml
+!includeurl ICONURL/Services/device_update_service.puml
+!includeurl ICONURL/Services/email_service.puml
+!includeurl ICONURL/Services/excel_services.puml
+!includeurl ICONURL/Services/federation_service.puml
+!includeurl ICONURL/Services/lync_storage_service.puml
+!includeurl ICONURL/Services/lync_web_app_client.puml
+!includeurl ICONURL/Services/mobility_service.puml
+!includeurl ICONURL/Services/network_file_share_service.puml
+!includeurl ICONURL/Services/online_hosted_services.puml
+!includeurl ICONURL/Services/outlook_web_app.puml
+!includeurl ICONURL/Services/powerpoint_automation_services.puml
+!includeurl ICONURL/Services/push_notification_service.puml
+!includeurl ICONURL/Services/registrar_service.puml
+!includeurl ICONURL/Services/response_group_service.puml
+!includeurl ICONURL/Services/skype_for_business_storage_service.puml
+!includeurl ICONURL/Services/user_services.puml
+!includeurl ICONURL/Services/verification_service.puml
+!includeurl ICONURL/Services/visio_services.puml
+!includeurl ICONURL/Services/web_services.puml
+!includeurl ICONURL/Services/word_automation_services.puml
+!includeurl ICONURL/Services/xmpp_service.puml
+!includeurl ICONURL/Sites/access_services.puml
+!includeurl ICONURL/Sites/blog_site.puml
+!includeurl ICONURL/Sites/business_connectivity_services.puml
+!includeurl ICONURL/Sites/excel_services.puml
+!includeurl ICONURL/Sites/meeting_workspace_site.puml
+!includeurl ICONURL/Sites/my_site.puml
+!includeurl ICONURL/Sites/powerpoint_automation_services.puml
+!includeurl ICONURL/Sites/publish.puml
+!includeurl ICONURL/Sites/site_collection.puml
+!includeurl ICONURL/Sites/site_shared.puml
+!includeurl ICONURL/Sites/site_team.puml
+!includeurl ICONURL/Sites/subsite.puml
+!includeurl ICONURL/Sites/subsite_blue.puml
+!includeurl ICONURL/Sites/subsite_ghosted.puml
+!includeurl ICONURL/Sites/subsite_green.puml
+!includeurl ICONURL/Sites/subsite_orange.puml
+!includeurl ICONURL/Sites/upgrade_site.puml
+!includeurl ICONURL/Sites/visio_services.puml
+!includeurl ICONURL/Sites/website.puml
+!includeurl ICONURL/Sites/website_public.puml
+!includeurl ICONURL/Sites/wiki_site.puml
+!includeurl ICONURL/Sites/word_automation_services.puml
+!includeurl ICONURL/Users/administrator.puml
+!includeurl ICONURL/Users/approver.puml
+!includeurl ICONURL/Users/call_center_agent.puml
+!includeurl ICONURL/Users/communications.puml
+!includeurl ICONURL/Users/conferencing_attendant.puml
+!includeurl ICONURL/Users/credentials.puml
+!includeurl ICONURL/Users/csv_file.puml
+!includeurl ICONURL/Users/distribution_group.puml
+!includeurl ICONURL/Users/dynamic_distribution_group.puml
+!includeurl ICONURL/Users/mail_user.puml
+!includeurl ICONURL/Users/meeting.puml
+!includeurl ICONURL/Users/mobile_user.puml
+!includeurl ICONURL/Users/on_premises_user.puml
+!includeurl ICONURL/Users/online_user.puml
+!includeurl ICONURL/Users/outlook_user.puml
+!includeurl ICONURL/Users/response_group.puml
+!includeurl ICONURL/Users/response_group_service.puml
+!includeurl ICONURL/Users/role_group.puml
+!includeurl ICONURL/Users/skype_commercial_user.puml
+!includeurl ICONURL/Users/skype_for_business_user.puml
+!includeurl ICONURL/Users/tenant_admin.puml
+!includeurl ICONURL/Users/um_enabled_user.puml
+!includeurl ICONURL/Users/universal_security_group.puml
+!includeurl ICONURL/Users/user.puml
+!includeurl ICONURL/Users/user_accounts.puml
+!includeurl ICONURL/Users/user_blue.puml
+!includeurl ICONURL/Users/user_external.puml
+!includeurl ICONURL/Users/user_ghosted.puml
+!includeurl ICONURL/Users/user_green.puml
+!includeurl ICONURL/Users/user_orange.puml
+!includeurl ICONURL/Users/user_services.puml
+!includeurl ICONURL/Users/user_store.puml
+!includeurl ICONURL/Users/users.puml
+!includeurl ICONURL/Users/users_blue.puml
+!includeurl ICONURL/Users/users_ghosted.puml
+!includeurl ICONURL/Users/users_green.puml
+!includeurl ICONURL/Users/users_orange.puml
+!includeurl ICONURL/Users/users_two.puml
+!includeurl ICONURL/Users/users_two_blue.puml
+!includeurl ICONURL/Users/users_two_ghosted.puml
+!includeurl ICONURL/Users/users_two_green.puml
+!includeurl ICONURL/Users/users_two_orange.puml
+!includeurl ICONURL/Users/writer.puml
+
+
+listsprites
+
+@enduml
+
+```
+
+![アイコン1](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Office1.png "アイコン1")
+![アイコン2](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Office2.png "アイコン2")
+![アイコン3](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Office3.png "アイコン3")
+
+
 #### OpenIconic
 
 ```plantuml
@@ -704,6 +1328,7 @@ listopeniconic
 ```
 
 ![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listopeniconic.png "アイコン")
+
 
 #### Open Security Architecture
 
@@ -774,6 +1399,7 @@ listspritess
 
 ![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-OpenSecurityArchitecture.png "アイコン")
 
+
 #### Tupadr3
 
 including Devicons and Font Awesome
@@ -803,7 +1429,9 @@ cloud2 -[hidden]> cloud3
 
 ```
 
+
 # テキストデータ
+
 
 # JSON
 
@@ -1001,6 +1629,7 @@ database {
 
 ```
 
+
 ## YAML
 
 ```plantuml
@@ -1067,7 +1696,9 @@ str:
 
 ```
 
+
 # 構造図
+
 
 ## クラス図
 
@@ -1566,6 +2197,7 @@ end note
 
 ```
 
+
 ## オブジェクト図
 
 ```plantuml
@@ -1654,6 +2286,7 @@ package マップテーブル（連想配列） {
 
 ```
 
+
 ### PERT図
 
 Program Evaluation and Review Technique
@@ -1730,6 +2363,7 @@ task.5 --> task.10
 
 ```
 
+
 ## パッケージ図
 
 ```plantuml
@@ -1802,6 +2436,7 @@ namespace 検索 {
 @enduml
 
 ```
+
 
 ## コンポーネント図
 
@@ -2002,6 +2637,7 @@ HTTP - WS
 
 ```
 
+
 ## 合成構造図
 
 ```plantuml
@@ -2169,6 +2805,7 @@ rectangle 合成構造図 {
 @enduml
 
 ```
+
 
 ## 配置図
 
@@ -2453,9 +3090,12 @@ package リンク {
 
 ```
 
+
 # ふるまい図
 
+
 ## 相互作用図
+
 
 ### シーケンス図
 
@@ -2523,6 +3163,7 @@ Bar -[#0000FF]-> Foo : ok
 
 ```
 
+
 #### メッセージ連番
 
 ```plantuml
@@ -2557,6 +3198,7 @@ Foo -> Foo14
 @enduml
 
 ```
+
 
 #### テキスト位置
 
@@ -2622,7 +3264,9 @@ Bar -[#0000FF]-> Foo : ok
 
 ```
 
+
 #### ライフライン
+
 
 ##### 分類子の生成／削除
 
@@ -2658,6 +3302,7 @@ return success
 @enduml
 
 ```
+
 
 ##### 分類子の活性
 
@@ -2720,6 +3365,7 @@ deactivate "Web server"
 @enduml
 
 ```
+
 
 #### グループ化
 
@@ -2833,6 +3479,7 @@ end
 
 ```
 
+
 ### コミュニケーション図（コラボレーション図）
 
 ```plantuml
@@ -2855,6 +3502,7 @@ Goods -right- Order
 @enduml
 
 ```
+
 
 ### タイミング図
 
@@ -2992,9 +3640,11 @@ Binary2 is low
 
 ```
 
+
 ### 相互作用概観図
 
 相互作用図をアクティビティ図の構成要素として使用したもの
+
 
 ## ユースケース図
 
@@ -3152,6 +3802,7 @@ package "E-commerce website" {
 
 
 ```
+
 
 ## アクティビティ図
 
@@ -3498,6 +4149,7 @@ stop
 
 ```
 
+
 ## 状態遷移図
 
 ```plantuml
@@ -3647,7 +4299,9 @@ eoutput1 --> [*]
 
 ```
 
+
 # その他の図
+
 
 ## Archimate（アーキテクチャ図）
 
@@ -3815,6 +4469,7 @@ listsprites
 
 ![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Archimate.png "アイコン")
 
+
 ### Office
 
 ```plantuml
@@ -3846,6 +4501,7 @@ users <-> o365
 @enduml
 
 ```
+
 
 ### AWS
 
@@ -3890,6 +4546,7 @@ myDWH2 -[hidden]> myDWH3
 @enduml
 
 ```
+
 
 ### Azure
 
@@ -4214,6 +4871,7 @@ AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
 ```
 
+
 ### GCP
 
 - [davidholsgrove/gcp-icons-for-plantuml](https://github.com/davidholsgrove/gcp-icons-for-plantuml)
@@ -4234,6 +4892,7 @@ BigQuery(bigquery, "Our BigQuery", "Data analytics")
 @enduml
 
 ```
+
 
 ## ER図
 
@@ -4445,6 +5104,7 @@ end legend
 
 ```
 
+
 ## 数式
 
 ### AsciiMath
@@ -4478,6 +5138,7 @@ end note
 @enduml
 
 ```
+
 
 ## Ditaa
 
@@ -4582,6 +5243,7 @@ Text handling
 @endditaa
 
 ```
+
 
 ## Salt（Wireframe）
 
@@ -4771,7 +5433,7 @@ Text handling
 
 ```
 
-### アクティビティ図でSaltを表示
+###アクティビティ図でSaltを表示
 
 ```plantuml
 
@@ -4845,6 +5507,7 @@ endif
 @enduml
 
 ```
+
 
 ## nwdiag（ネットワーク図）
 
@@ -4947,6 +5610,7 @@ nwdiag {
 @enduml
 
 ```
+
 
 ## WBS
 
@@ -5109,6 +5773,7 @@ wbsDiagram {
 @endwbs
 
 ```
+
 
 ## ガントチャート
 
@@ -5368,6 +6033,7 @@ Project starts the 1st of january 2022
 
 ```
 
+
 ## マインドマップ
 
 ```plantuml
@@ -5491,6 +6157,10 @@ right side
 
 ```
 
+
+
 ---
 
-Copyright (c) 2022 YA-androidapp(<https://github.com/YA-androidapp>) All rights reserved.
+Copyright (c) 2022 YA-androidapp(https://github.com/YA-androidapp) All rights reserved.
+
+
