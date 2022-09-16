@@ -296,20 +296,6 @@ sprite sprite2 <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="30" c
 
 ```
 
-### アーキテクチャ図で使用できるArchimateアイコン
-
-```plantuml
-
-@startuml
-
-listsprites
-
-@enduml
-
-```
-
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Archimate.png "アイコン")
-
 ### 画像ファイルをスプライトに変換
 
 ```bash
@@ -319,6 +305,21 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 
 
 ### アイコン画像
+
+
+#### Archimate
+
+```plantuml
+
+@startuml
+
+listspritess
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Archimate.png "アイコン")
 
 
 #### AWS
