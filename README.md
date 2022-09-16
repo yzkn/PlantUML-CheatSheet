@@ -7092,23 +7092,6 @@ scale .5
 !include ICONURL/font-awesome-5/youtube.puml
 !include ICONURL/font-awesome-5/youtube_square.puml
 !include ICONURL/font-awesome-5/zhihu.puml
-
-
-listsprites
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-scale .5
-
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master
-!include ICONURL/common.puml
-
 !include ICONURL/font-awesome/500px.puml
 !include ICONURL/font-awesome/address_book.puml
 !include ICONURL/font-awesome/address_book_o.puml
@@ -7895,23 +7878,6 @@ scale .5
 !include ICONURL/font-awesome/youtube.puml
 !include ICONURL/font-awesome/youtube_play.puml
 !include ICONURL/font-awesome/youtube_square.puml
-
-
-listsprites
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-scale .5
-
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master
-!include ICONURL/common.puml
-
 !include ICONURL/govicons/18F_logo.puml
 !include ICONURL/govicons/540_fedapi.puml
 !include ICONURL/govicons/540_logo.puml
@@ -8041,23 +8007,6 @@ scale .5
 !include ICONURL/govicons/wheel_barrow.puml
 !include ICONURL/govicons/white_house.puml
 !include ICONURL/govicons/world.puml
-
-
-listsprites
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-scale .5
-
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master
-!include ICONURL/common.puml
-
 !include ICONURL/material/3d_rotation.puml
 !include ICONURL/material/ac_unit.puml
 !include ICONURL/material/access_alarm.puml
@@ -8991,23 +8940,6 @@ scale .5
 !include ICONURL/material/zoom_in.puml
 !include ICONURL/material/zoom_out.puml
 !include ICONURL/material/zoom_out_map.puml
-
-
-listsprites
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-scale .5
-
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master
-!include ICONURL/common.puml
-
 !include ICONURL/weather/alien.puml
 !include ICONURL/weather/barometer.puml
 !include ICONURL/weather/celsius.puml
@@ -9592,7 +9524,6 @@ scale .5
 !include ICONURL/weather/yahoo_7.puml
 !include ICONURL/weather/yahoo_8.puml
 !include ICONURL/weather/yahoo_9.puml
-'/
 
 
 listsprites
@@ -9603,6 +9534,11 @@ listsprites
 
 ![アイコン1](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_1.png "アイコン1")
 ![アイコン2](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_2.png "アイコン2")
+![アイコン3](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_3.png "アイコン3")
+![アイコン4](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_4.png "アイコン4")
+![アイコン5](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_5.png "アイコン5")
+![アイコン6](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_6.png "アイコン6")
+![アイコン7](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Tupadr3_7.png "アイコン7")
 
 ```plantuml
 
