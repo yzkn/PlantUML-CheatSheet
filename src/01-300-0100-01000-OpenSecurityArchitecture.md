@@ -59,7 +59,7 @@ scale .5
 ' !include <osa/user/black/hat>
 
 
-listspritess
+listsprites
 
 @enduml
 
