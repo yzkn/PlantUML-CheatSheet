@@ -67,9 +67,7 @@ UMLダイアグラム <|-- ふるまい図
 
 ```
 
-
 ## 共通コマンド
-
 
 ### コメント
 
@@ -88,7 +86,6 @@ Alice -> Alice
 @enduml
 
 ```
-
 
 ### 拡大
 
@@ -117,7 +114,6 @@ Alice -> Alice
 
 ```
 
-
 ### 凡例
 
 ```plantuml
@@ -134,7 +130,6 @@ endlegend
 @enduml
 
 ```
-
 
 ## 色
 
@@ -247,7 +242,6 @@ class classA {
 
 ```
 
-
 ## 画像埋め込み
 
 スプライト（モノクロで4、8、16段階のグレースケールの小さい画像）を埋め込む
@@ -302,13 +296,13 @@ sprite sprite2 <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="30" c
 
 @startuml
 
-listsprite
+listsprites
 
 @enduml
 
 ```
 
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-Archimate.png "アイコン")
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Archimate.png "アイコン")
 
 ### 画像ファイルをスプライトに変換
 
@@ -317,9 +311,7 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 # -encodesprite : 4、8、16、4z、8z、16z
 ```
 
-
 ### アイコン画像
-
 
 #### C4 model
 
@@ -351,7 +343,6 @@ Rel(systemAlias, emailSystemAlias, "Sends e-mail using")
 @enduml
 
 ```
-
 
 #### Cloudinsight
 
@@ -522,7 +513,6 @@ rectangle "<$zookeeper>\nzookeeper"
 
 ```
 
-
 #### Cloudogu
 
 ```plantuml
@@ -598,7 +588,6 @@ TOOL_K8S(k8s, Kubernetes) #ffffff
 
 ```
 
-
 #### Google Material Icons
 
 ```plantuml
@@ -618,7 +607,6 @@ folder *- files
 @enduml
 
 ```
-
 
 #### Kubernetes
 
@@ -667,7 +655,6 @@ component "<$vol>"
 
 ```
 
-
 #### Logos
 
 ```plantuml
@@ -704,7 +691,6 @@ users --> httpd
 
 ```
 
-
 #### OpenIconic
 
 ```plantuml
@@ -719,9 +705,7 @@ listopeniconic
 
 ![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listopeniconic.png "アイコン")
 
-
 #### Open Security Architecture
-
 
 ```plantuml
 
@@ -782,14 +766,13 @@ scale .5
 ' !include <osa/user/black/hat>
 
 
-listsprites
+listspritess
 
 @enduml
 
 ```
 
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-OpenSecurityArchitecture.png "アイコン")
-
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-OpenSecurityArchitecture.png "アイコン")
 
 #### Tupadr3
 
@@ -820,9 +803,7 @@ cloud2 -[hidden]> cloud3
 
 ```
 
-
 # テキストデータ
-
 
 # JSON
 
@@ -1020,7 +1001,6 @@ database {
 
 ```
 
-
 ## YAML
 
 ```plantuml
@@ -1087,9 +1067,7 @@ str:
 
 ```
 
-
 # 構造図
-
 
 ## クラス図
 
@@ -1588,7 +1566,6 @@ end note
 
 ```
 
-
 ## オブジェクト図
 
 ```plantuml
@@ -1677,7 +1654,6 @@ package マップテーブル（連想配列） {
 
 ```
 
-
 ### PERT図
 
 Program Evaluation and Review Technique
@@ -1754,7 +1730,6 @@ task.5 --> task.10
 
 ```
 
-
 ## パッケージ図
 
 ```plantuml
@@ -1827,7 +1802,6 @@ namespace 検索 {
 @enduml
 
 ```
-
 
 ## コンポーネント図
 
@@ -2028,7 +2002,6 @@ HTTP - WS
 
 ```
 
-
 ## 合成構造図
 
 ```plantuml
@@ -2196,7 +2169,6 @@ rectangle 合成構造図 {
 @enduml
 
 ```
-
 
 ## 配置図
 
@@ -2481,12 +2453,9 @@ package リンク {
 
 ```
 
-
 # ふるまい図
 
-
 ## 相互作用図
-
 
 ### シーケンス図
 
@@ -2554,7 +2523,6 @@ Bar -[#0000FF]-> Foo : ok
 
 ```
 
-
 #### メッセージ連番
 
 ```plantuml
@@ -2589,7 +2557,6 @@ Foo -> Foo14
 @enduml
 
 ```
-
 
 #### テキスト位置
 
@@ -2655,9 +2622,7 @@ Bar -[#0000FF]-> Foo : ok
 
 ```
 
-
 #### ライフライン
-
 
 ##### 分類子の生成／削除
 
@@ -2693,7 +2658,6 @@ return success
 @enduml
 
 ```
-
 
 ##### 分類子の活性
 
@@ -2756,7 +2720,6 @@ deactivate "Web server"
 @enduml
 
 ```
-
 
 #### グループ化
 
@@ -2870,7 +2833,6 @@ end
 
 ```
 
-
 ### コミュニケーション図（コラボレーション図）
 
 ```plantuml
@@ -2893,7 +2855,6 @@ Goods -right- Order
 @enduml
 
 ```
-
 
 ### タイミング図
 
@@ -3031,11 +2992,9 @@ Binary2 is low
 
 ```
 
-
 ### 相互作用概観図
 
 相互作用図をアクティビティ図の構成要素として使用したもの
-
 
 ## ユースケース図
 
@@ -3193,7 +3152,6 @@ package "E-commerce website" {
 
 
 ```
-
 
 ## アクティビティ図
 
@@ -3540,7 +3498,6 @@ stop
 
 ```
 
-
 ## 状態遷移図
 
 ```plantuml
@@ -3690,9 +3647,7 @@ eoutput1 --> [*]
 
 ```
 
-
 # その他の図
-
 
 ## Archimate（アーキテクチャ図）
 
@@ -3852,14 +3807,13 @@ JunctionAnd -right-> Element4
 
 @startuml
 
-listsprite
+listsprites
 
 @enduml
 
 ```
 
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprite-Archimate.png "アイコン")
-
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Archimate.png "アイコン")
 
 ### Office
 
@@ -3892,7 +3846,6 @@ users <-> o365
 @enduml
 
 ```
-
 
 ### AWS
 
@@ -3937,7 +3890,6 @@ myDWH2 -[hidden]> myDWH3
 @enduml
 
 ```
-
 
 ### Azure
 
@@ -4262,7 +4214,6 @@ AzureCosmosDb(outputCosmosDb, "Output Database", "1,000 RUs")
 
 ```
 
-
 ### GCP
 
 - [davidholsgrove/gcp-icons-for-plantuml](https://github.com/davidholsgrove/gcp-icons-for-plantuml)
@@ -4283,7 +4234,6 @@ BigQuery(bigquery, "Our BigQuery", "Data analytics")
 @enduml
 
 ```
-
 
 ## ER図
 
@@ -4495,7 +4445,6 @@ end legend
 
 ```
 
-
 ## 数式
 
 ### AsciiMath
@@ -4529,7 +4478,6 @@ end note
 @enduml
 
 ```
-
 
 ## Ditaa
 
@@ -4634,7 +4582,6 @@ Text handling
 @endditaa
 
 ```
-
 
 ## Salt（Wireframe）
 
@@ -4824,7 +4771,7 @@ Text handling
 
 ```
 
-###アクティビティ図でSaltを表示
+### アクティビティ図でSaltを表示
 
 ```plantuml
 
@@ -4898,7 +4845,6 @@ endif
 @enduml
 
 ```
-
 
 ## nwdiag（ネットワーク図）
 
@@ -5001,7 +4947,6 @@ nwdiag {
 @enduml
 
 ```
-
 
 ## WBS
 
@@ -5164,7 +5109,6 @@ wbsDiagram {
 @endwbs
 
 ```
-
 
 ## ガントチャート
 
@@ -5424,7 +5368,6 @@ Project starts the 1st of january 2022
 
 ```
 
-
 ## マインドマップ
 
 ```plantuml
@@ -5548,10 +5491,6 @@ right side
 
 ```
 
-
-
 ---
 
-Copyright (c) 2022 YA-androidapp(https://github.com/YA-androidapp) All rights reserved.
-
-
+Copyright (c) 2022 YA-androidapp(<https://github.com/YA-androidapp>) All rights reserved.
