@@ -306,6 +306,22 @@ $ java -jar plantuml.jar -encodesprite 16z foo.png
 
 ### アイコン画像
 
+| 名称                             | アイコン一覧                                                                                                                               |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| ArchiMate                        | -                                                                                                                                          |
+| Amazon Labs AWSライブラリ        | https://github.com/awslabs/aws-icons-for-plantuml/blob/main/AWSSymbols.md                                                                  |
+| Azureライブラリ                  | https://github.com/plantuml-stdlib/Azure-PlantUML/blob/master/AzureSymbols.md#all-generated-azure-symbols-svg-and-png-and-plantuml-sprites |
+| C4ライブラリ                     |                                                                                                                                            |
+| Cloud Insight                    |                                                                                                                                            |
+| Cloudogu                         |                                                                                                                                            |
+| Elasticライブラリ                |                                                                                                                                            |
+| Google Material Icons            |                                                                                                                                            |
+| Kubernetes                       |                                                                                                                                            |
+| Logos                            |                                                                                                                                            |
+| Office                           | https://github.com/Roemer/plantuml-office#icon-index                                                                                       |
+| Open Security Architecture (OSA) |                                                                                                                                            |
+| Tupadr3ライブラリ                |                                                                                                                                            |
+
 
 #### Archimate
 
@@ -4496,20 +4512,6 @@ JunctionAnd -right-> Element4
 @enduml
 
 ```
-
-### アーキテクチャ図で使用できるアイコン
-
-```plantuml
-
-@startuml
-
-listsprites
-
-@enduml
-
-```
-
-![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/listsprites-Archimate.png "アイコン")
 
 
 ### Office
