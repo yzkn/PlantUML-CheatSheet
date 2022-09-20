@@ -136,6 +136,356 @@ endlegend
 ```
 
 
+## 装飾
+
+
+### テキスト装飾
+
+
+#### Creole
+
+##### インライン
+
+```plantuml
+
+@startuml
+
+rectangle {
+    legend bottom right
+        Creole
+
+        # **bold**  ~**
+        # //italics//  ~//
+        # ""monospaced""  ~""
+        # --stricken-out--  ~--
+        # __underlined__ ~__
+        # ~~wave-underlined~~  ~~
+    end legend
+
+    object エスケープ {
+        # ~__underlined__
+        # ~""monospaced""
+    }
+}
+
+object HTML {
+    * <b>~<b></b>
+    * <i>~<i></i>
+    * <s>~<s></s>
+    * <s:#00FF00>~<s:#00FF00></s>
+    * <s:green>~<s:green></s>
+    * <u>~<u></u>
+    * <u:#FF0000>~<u:#FF0000></u>
+    * <u:red>~<u:red></u>
+    * <font:monospaced>~<font:monospaced></font>
+    * <w>~<w></w>
+    * <w:#FFFF00>~<w:#FFFF00></w>
+    * <w:yellow>~<w:yellow></w>
+    * <plain>~<plain></plain>
+    * <color:#0000FF>~<color:#0000FF></color>
+    * <color:blue>~<color:blue></color>
+    * <back:#FFA500>~<back:#FFA500></back>
+    * <back:orange>~<back:orange></back>
+    * <size:24>~<size:24></size>
+    * <img:https://avatars.githubusercontent.com/u/9039417?v=4>
+    * x<sup>~<sup></sup>
+    * y<sub>~<sub></sub>
+    * <code>print('Hello, world!!')</code>
+}
+
+rectangle リンク {
+    ' クラス図のフィールドとメソッドでは三重の角括弧
+    class Car {
+        - Field1 [[[https://github.com/]]]
+        Method1() [[[https://github.com/{ref}]]]
+    }
+
+    object link {
+        [[https://github.com/ya-androidapp]] simple
+        [[https://github.com/ya-androidapp?tab=repositories My repositories]] label
+        [[https://github.com/ya-androidapp?tab=repositories{Repositories} Repos]] tooltip
+    }
+}
+
+object char {
+    # &#169; 実体参照
+    # <U+3042><U+3044><U+3046><U+3048><U+304A> Unicode
+    # 👺 <:bomb:> Twemoji
+}
+
+@enduml
+
+```
+
+###### Twemoji（絵文字）
+
+* [Unicode block 26](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL30out98pKi12W00)
+* [Unicode block 1F3](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL31qC-PoICrB0Oe00000)
+* [Unicode block 1F4](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL31qC-5oICrB0Oe00000)
+* [Unicode block 1F5](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL31qC-LoICrB0Oe00000)
+* [Unicode block 1F6](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL31qC-DoICrB0Oe00000)
+* [Unicode block 1F9](https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhDpS_AL31qi-HoICrB0Oe00000)
+
+##### ブロック
+
+```plantuml
+
+@startuml
+
+rectangle リスト {
+    object ul {
+        * a
+        ** a-a
+        ** a-b
+        * b
+        ** b-a
+        ** b-b
+    }
+
+    object ol {
+        # 1
+        ## 1-1
+        ## 1-2
+        # 2
+        ## 2-1
+        ## 2-2
+    }
+}
+
+rectangle 区切り {
+    object headline {
+        = 特大見出し
+        == 大見出し
+        === 中見出し
+        ==== 小見出し
+    }
+
+    object hr {
+        --水平線--
+        ----
+
+        ==二重線==
+        ====
+
+        __太線__
+        ____
+
+        ..点線..
+        ....
+    }
+}
+
+@enduml
+
+```
+
+##### テーブル
+
+```plantuml
+
+@startuml
+
+start
+
+:Table 1
+| | 1-2 | 1-3 |
+| 2-1 | 2-2 | 2-3 |;
+
+:Table 2
+<#Gold,#Tomato>|= |= 1-2 |= 1-3 |
+| 2-1 | 2-2 | 2-3 |
+| 3-1 | 3-2 | 3-3 |;
+
+:Table 3
+|= col1 |= col2 |= col3 |
+<#SeaShell>| 1 | 2 | 3 |
+<#Azure>| <#Turquoise> 1 | 2 | 3 |
+<#SeaShell>| 1 | <#SandyBrown><color:#DeepPink> 2 | 3 |
+<#Azure>| 1 | 2 | 3 |;
+
+@enduml
+
+```
+
+##### ツリー
+
+```plantuml
+
+@startuml
+
+:Tree 1
+
+|_ 1-1
+|_ 1-2
+  |_ 1-2-1
+  |_ 1-2-2
+  |_ 1-2-3
+|_ 1-3
+;
+
+@enduml
+
+```
+
+###### ツリー（クラス図）
+
+```plantuml
+
+@startuml
+
+class Class1 {
+
+|_ 1-1
+|_ 1-2
+  |_ 1-2-1
+  |_ 1-2-2
+    |_ 1-2-2-1
+|_ 1-3
+--
+}
+
+@enduml
+
+```
+
+###### ツリー（コンポーネント図・配置図）
+
+```plantuml
+
+@startuml
+
+component Component1 [
+    |_ 1-1
+    |_ 1-2
+      |_ 1-2-1
+      |_ 1-2-2
+        |_ 1-2-2-1
+    |_ 1-3
+]
+
+@enduml
+
+```
+
+
+### スタイル
+
+* FontName
+* FontColor
+* FontSize
+* FontStyle
+* BackGroundColor
+* HyperLinkColor
+* LineColor
+* LineThickness
+* LineStyle （実数または、;で区切られた2つの実数）
+* Padding
+* Margin
+* RoundCorner
+* DiagonalCorner
+* WordWrap
+* HorizontalAlignment （leftまたはright、center）
+
+```plantuml
+
+@startuml
+
+skinparam useBetaStyle true
+
+<style>
+    sequenceDiagram {
+        actor {
+            BackGroundColor LightSteelBlue
+            FontColor Blue
+            LineColor Navy
+        }
+    }
+</style>
+
+
+actor Alice
+actor Bob
+
+@enduml
+
+@startwbs
+
+<style>
+    wbsDiagram {
+        FontColor #000040
+        Linecolor #000040
+
+        :depth(1) {
+            FontColor DarkBlue
+            LineColor DarkBlue
+        }
+        :depth(2) {
+            FontColor Blue
+            LineColor Blue
+        }
+        :depth(3) {
+            FontColor DarkCyan
+            LineColor DarkCyan
+        }
+
+    }
+</style>
+
+* 1
+** 1-1
+*** 1-1-1
+** 1-2
+*** 1-2-1
+*** 1-2-2
+**** 1-2-2-1
+
+@endwbs
+
+```
+
+
+### テーマ
+
+#### 利用可能なテーマ一覧
+
+##### ギャラリー
+
+[All the themes](https://the-lum.github.io/puml-themes-gallery/#all-the-themes)
+
+##### コマンド
+
+```plantuml
+
+@startuml
+
+help themes
+
+@enduml
+
+```
+
+![アイコン](https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/help-themes.png "アイコン")
+
+#### テーマを利用
+
+```plantuml
+
+@startuml
+
+!theme spacelab
+
+
+Bob -> Alice :  $success("SYN")
+Bob <- Alice :  $success("SYN-ACK")
+Bob -> Alice :  $success("ACK")
+Bob -x Alice :  $failure("failure")
+Bob ->> Alice : $warning("warning")
+
+@enduml
+
+```
+
+
 ## 色
 
 ### 色の一覧
