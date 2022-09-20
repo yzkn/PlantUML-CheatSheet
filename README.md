@@ -427,7 +427,6 @@ actor Bob
             FontColor DarkCyan
             LineColor DarkCyan
         }
-
     }
 </style>
 
