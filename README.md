@@ -136,6 +136,188 @@ endlegend
 ```
 
 
+### 前処理（プリプロセッサ）
+
+
+#### 変数
+
+```plantuml
+
+@startuml
+
+' int
+!$age  = 36
+
+' bool(int型を利用)
+'  false
+!$flag = 0
+'  true
+!$flag = 1
+!$flag = "0"
+!$flag = "1"
+
+' str
+!$givenName = "John"
+!$surname = "Doe"
+!$fullName = $givenName + " " + $surname
+
+:"1. $fullName $age":
+
+' JSON
+!$person = { "name": "John Doe", "age" : 36 }
+
+:"2. $person.name $person.age":
+
+' ?= 未定義の場合のみ変数に代入
+!$age ?= 24
+:"3. $fullName $age": /' 36のまま '/
+
+@enduml
+
+```
+
+
+
+#### 制御構文
+
+#####  条件分岐
+
+```plantuml
+
+@startuml
+
+!if ($age == 36) && ($age >= 30)
+:Lorem:
+!elseif (%false() == %not(%true()))
+:Ipsum:
+!else
+:Dolor:
+!endif
+
+@enduml
+
+```
+
+##### ループ・プロシージャ
+
+```plantuml
+
+@startuml
+
+!procedure $proc1($arg)
+  !while $arg!=0
+    !$i=3
+    !while $i!=0
+      :arg=$arg and i=$i;
+      !$i = $i - 1
+    !endwhile
+    !$arg = $arg - 1
+  !endwhile
+!endprocedure
+
+start
+$proc1(4)
+end
+
+@enduml
+
+@startuml
+
+!procedure $proc2($arg)
+  !while $arg!=0
+    [Component $arg]
+    !$arg = $arg - 1
+  !endwhile
+!endprocedure
+
+$proc2(4)
+
+@enduml
+
+```
+
+##### 関数
+
+```plantuml
+
+@startuml
+
+!function $double($a)
+!return 2 * $a
+!endfunction
+' !function $double($a) !return 2 * $a
+
+:$double(333): /' 666 '/
+
+' 引数のデフォルト値
+!function $double2($a=100) !return 2 * $a
+:$double2(): /' 200 '/
+
+' プロシージャや関数の引数をクォーテーション記号で囲まずに記述
+!unquoted function $concat($str1="", $str2="") !return $str1 + $str2
+:$concat(Foo,Bar): /' :$concat("Foo","Bar"): '/
+
+' キーワード引数
+:$concat($str2=Foo,$str1=Bar):
+
+@enduml
+
+```
+
+
+### 組み込み関数
+
+| 名称                 | 説明                                          | 例                                                   | 戻り値  |
+| -------------------- | --------------------------------------------- | ---------------------------------------------------- | ------- |
+| 環境                 |                                               |                                                      |         |
+| %version             | 実行中のPlantUMLのバージョン                  | %version()                                           |         |
+| %feature             | 機能が利用できるか                            | %feature("theme")                                    |         |
+| %dirpath             | 現在のディレクトリパス                        | %dirpath()                                           |         |
+| %filename            | 現在のファイル名                              | %filename()                                          |         |
+| %getenv              | 環境変数                                      | %getenv("OS")                                        |         |
+|                      |                                               |                                                      |         |
+| I/O                  |                                               |                                                      |         |
+| %file_exists         | ファイルが存在するか                          | %file_exists("c:/foo/dummy.txt")                     |         |
+| %loadJSON            | ローカルまたはURLからJSONデータを読み込み     | %loadJSON("http://localhost:7778/management/health") |         |
+|                      |                                               |                                                      |         |
+| 変数・関数           |                                               |                                                      |         |
+| %get_variable_value  | 変数の値を取得                                | %get_variable_value("$my_variable")                  |         |
+| %set_variable_value  | グローバル変数に値を設定                      | %set_variable_value("$my_variable", "some_value")    |         |
+| %function_exists     | 関数が存在するか                              | %function_exists("$some_function")                   |         |
+| %variable_exists     | 変数が存在するか                              | %variable_exists("$my_variable")                     |         |
+|                      |                                               |                                                      |         |
+| 色                   |                                               |                                                      |         |
+| %darken              | 暗くした色                                    | %darken("red", 20)                                   |         |
+| %lighten             | 明るくした色                                  | %lighten("red", 20)                                  |         |
+| %hsl_color           | HSL形式をRGBa形式に変換                       | %hsl_color(120, 100, 50)                             |         |
+| %reverse_color       | RGBを使用して色を反転                         | %reverse_color("#FF7700")                            |         |
+| %reverse_hsluv_color | HSLuvを使用して色を反転                       | %reverse_hsluv_color("#FF7700")                      |         |
+| %is_dark             | 暗い色かどうか判定                            | %is_dark("#000000")                                  |         |
+| %is_light            | 明るい色かどうか判定                          | %is_light("#000000")                                 |         |
+|                      |                                               |                                                      |         |
+| 日時                 |                                               |                                                      |         |
+| %date                | 現在日時                                      | %date("yyyy.MM.dd' at 'HH:mm")                       |         |
+|                      |                                               |                                                      |         |
+| 真偽値               |                                               |                                                      |         |
+| %false               | 常にfalse                                     | %false()                                             | `false` |
+| %not                 | 真偽値の論理否定                              | %not(2+2==4)                                         |         |
+| %true                | 常にtrue                                      | %true()                                              | `true`  |
+|                      |                                               |                                                      |         |
+| 文字列               |                                               |                                                      |         |
+| %chr                 | 与えられたUnicode値に対応する文字             | %chr(65)                                             |         |
+| %dec2hex             | 10進数の数値(Int)に対する16進数文字列(String) | %dec2hex(12)                                         |         |
+| %hex2dec             | 16進数文字列(String)に対する10進数の数値(Int) | %hex2dec("d") or %hex2dec(d)                         |         |
+| %intval              | StringをIntに変換                             | %intval("42")                                        |         |
+| %lower               | 文字列を小文字に変換                          | %lower("Hello")                                      |         |
+| %newline             | 改行文字列                                    | %newline()                                           |         |
+| %size                | 文字列またはJSON構造体のサイズ                | %size("foo")                                         |         |
+| %string              | 文字列に変換                                  | %string(1 + 2)                                       |         |
+| %strlen              | 文字列の長さ                                  | %strlen("foo")                                       |         |
+| %strpos              | 文字列を検索                                  | %strpos("abcdef", "ef")                              |         |
+| %substr              | 部分文字列                                    | %substr("abcdef", 3, 2)                              |         |
+| %upper               | 文字列を大文字に変換                          | %upper("Hello")                                      |         |
+
+
 ## 装飾
 
 
