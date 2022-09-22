@@ -318,6 +318,37 @@ $proc2(4)
 | %upper               | 文字列を大文字に変換                          | `%upper("Lorem ipsum")`                  | `LOREM IPSUM`                                   |
 
 
+#### デバッグ出力
+
+```plantuml
+
+@startuml
+
+!function func($text)
+
+' ログ出力
+!log Result: %date("yyyy.MM.dd' at 'HH:mm") $text
+
+' メモリの全内容をダンプ出力
+!dump_memory
+
+' アサーション
+' true
+!assert %strpos("abcdef", "cd")==2
+' false => This always fails
+!assert %strpos("abcdef", "cd")==3 : "This always fails"
+
+!return $text
+
+!endfunction
+
+:func('Lorem ipsum dolor sit amet'):
+
+@enduml
+
+```
+
+
 ## 装飾
 
 
