@@ -22,7 +22,7 @@
 | &nbsp;&nbsp;&nbsp;&nbsp;〇 状態遷移図                                  | 「状態」の遷移を記述（ステート図 / ステートマシン図）                                     | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-state.png" height="128">               |
 |                                                                        |                                                                                           |                                                                                                                                   |
 | その他                                                                 |                                                                                           |                                                                                                                                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;△ Archimate（アーキテクチャ図）                | システムの構造を記述                                                                      |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ Archimate（アーキテクチャ図）                | システムの構造を記述                                                                      | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-archimate.png" height="128">           |
 | &nbsp;&nbsp;&nbsp;&nbsp;△ AsciiMath                                    | 数式を記述                                                                                |                                                                                                                                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;△ Ditaa                                        | アスキーアートを画像化するものDitaa (DIagrams Through Ascii Art)                          |                                                                                                                                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;△ JSON                                         |                                                                                           |                                                                                                                                   |
@@ -32,7 +32,7 @@
 | &nbsp;&nbsp;&nbsp;&nbsp;△ YAML                                         |                                                                                           |                                                                                                                                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;△ ガントチャート                               | タスクごとのスケジュールを可視化するもの                                                  |                                                                                                                                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;△ マインドマップ                               | アイディアを可視化するもの                                                                |                                                                                                                                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;▲ ER図                                         | RDBの構造（エンティティ・アトリビュート・リレーション・カーディナリティ）を可視化するもの |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;▲ ER図                                         | RDBの構造（エンティティ・アトリビュート・リレーション・カーディナリティ）を可視化するもの | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-er.png" height="128">                  |
 |                                                                        |                                                                                           |                                                                                                                                   |
 
 ## UMLダイアグラムの関係
@@ -13132,6 +13132,89 @@ JunctionAnd -right-> Element4
 
 ```
 
+### 例
+
+```plantuml
+
+@startuml
+
+skinparam rectangle<<behavior>> {
+	roundCorner 50
+}
+
+sprite $actor jar:archimate/actor
+sprite $bRole jar:archimate/business-role
+sprite $bProcess jar:archimate/business-process
+sprite $bService jar:archimate/business-service
+sprite $aService jar:archimate/application-service
+sprite $aComponent jar:archimate/application-component
+
+folder "External Roles and Actors" {
+    rectangle "Insurant" as ISR <<$bRole>> #Business
+    rectangle "Client" as CLI <<$actor>> #Business
+    ISR <- CLI
+}
+
+folder "External Business Services" {
+    rectangle "Claim Registration" as CLR <<$bService>><<behavior>> #Business
+    rectangle "Customer Information" as CSI <<$bService>><<behavior>> #Business
+    rectangle "Claim Payment" as CLP <<$bService>><<behavior>> #Business
+    ISR <-- CLR
+    ISR <-- CSI
+    ISR <-- CLP
+    CLR -right[hidden]-> CSI
+    CSI -right[hidden]> CLP
+}
+
+folder "Business Processes, Internal Actors and Roles" {
+    rectangle "Handle claim"  as HCL <<$bProcess>><<behavior>> #Business {
+        rectangle "Capture Information"  as CIN <<$bProcess>><<behavior>> #Business
+        rectangle "Notify\nAdditional Stakeholders" as NAS <<$bProcess>><<behavior>> #Business
+        rectangle "Validate" as VAL <<$bProcess>><<behavior>> #Business
+        rectangle "Investigate" as INV <<$bProcess>><<behavior>> #Business
+        rectangle "Pay" as PAY <<$bProcess>><<behavior>> #Business
+    }
+
+    rectangle "Insurant" as ISR2 <<$bRole>> #Business
+
+    CLR <|-- CIN
+    CSI <|-- NAS
+    CLP <|-- PAY
+    CIN -right->> NAS
+    NAS -right->> VAL
+    VAL -right->> INV
+    INV -right->> PAY
+    HCL <<- ISR2
+}
+
+folder "External Application Services" {
+    rectangle "Scanning" as SCA <<$aService>><<behavior>> #Application
+    rectangle "Customer administration" as CUA <<$aService>><<behavior>> #Application
+    rectangle "Claims administration" as CLA <<$aService>><<behavior>> #Application
+    rectangle "Printing" AS PRT <<$aService>><<behavior>> #Application
+    rectangle "Payment" as PAY2 <<$aService>><<behavior>> #Application
+
+    CIN <-- SCA
+    CIN <-- CUA
+    CIN <-- CLA
+    CIN <-- PRT
+    PAY <-- PAY2
+    SCA -right[hidden]-> CUA
+    CUA -right[hidden]-> CLA
+    CLA -right[hidden]-> PRT
+    PRT -right[hidden]-> PAY2
+}
+
+folder "Application Components and Services" {
+    component "CRM System" AS CRM #Application
+
+    CUA <|-- CRM
+}
+
+@enduml
+
+```
+
 
 ### Office
 
@@ -13560,6 +13643,51 @@ BigQuery(bigquery, "Our BigQuery", "Data analytics")
 ## ER図
 
 クラス図と同じ文法で、classの代わりにentityを使う
+
+```plantuml
+
+@startuml
+
+hide <<legend>> circle
+hide <<legend>> stereotype
+
+
+entity **Legend** <<legend>> #CCFFEE {
+    (PK) = Primary Key
+    --
+    (PN) = Primary Name
+    * Required
+    + Recommended
+    Standard
+}
+
+entity account <<standard>>
+{
+    *accountid (PK): Uniqueidentifier
+    --
+    *name (PN): String
+    *ownerid: Owner
+    *statecode: State
+}
+
+entity contact <<standard>>
+{
+    *contactid (PK): Uniqueidentifier
+    --
+    fullname (PN): String
+    *lastname: String
+    *ownerid: Owner
+    *parentcustomeridname: String
+    *parentcustomeridyominame: String
+    *statecode: State
+    +firstname: String
+}
+
+contact -{ account
+
+@enduml
+
+```
 
 ```plantuml
 
