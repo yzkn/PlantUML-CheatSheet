@@ -1,36 +1,39 @@
 # PlantUML概要
 
-| ダイアグラム |                                 |                        | 内容                                                                                      |
-| ------------ | ------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------- |
-| 構造図       |                                 |                        |
-|              | 〇 クラス図                     |                        | クラスの定義とクラス間の関係を記述                                                        |
-|              | 〇 オブジェクト図               |                        | クラス図の定義を具体化（インスタンス化）して記述                                          |
-|              | ● パッケージ図                  |                        | クラスをグループ化して記述                                                                |
-|              | 〇 コンポーネント図             |                        | コンポーネント、ポート、インターフェイス、コンポーネント間の関係を記述                    |
-|              | ● コンポジット構造図            |                        | 複数のクラスの定義とクラス間の関係を記述                                                  |
-|              | 〇 配置図                       |                        | 物理的な構成を記述                                                                        |
-| ふるまい図   |                                 |                        |
-|              | ● 相互作用図                    |                        |                                                                                           |
-|              |                                 | 〇 シーケンス図        | 登場人物とシステム内のオブジェクト、通過するメッセージと発生順序を記述                    |
-|              |                                 | ● コミュニケーション図 | クラスやオブジェクト間の応答と関係を記述                                                  |
-|              |                                 | 〇 タイミング図        | 時間軸と状態変化を記述                                                                    |
-|              |                                 | ● 相互作用概要図       | *相互作用図* をアクティビティ図の構成要素にしたもの                                       |
-|              |                                 |                        |                                                                                           |
-|              | 〇 ユースケース図               |                        | アクター（人／組織／別のシステム）とシステムのやり取りを記述                              |
-|              | 〇 アクティビティ図             |                        | 「アクション（制御）」の遷移を記述                                                        |
-|              | 〇 状態遷移図                   |                        | 「状態」の遷移を記述（ステート図 / ステートマシン図）                                     |
-| その他       |                                 |                        |
-|              | △ Archimate（アーキテクチャ図） |                        | システムの構造を記述                                                                      |
-|              | △ AsciiMath                     |                        | 数式を記述                                                                                |
-|              | △ Ditaa                         |                        | アスキーアートを画像化するものDitaa (DIagrams Through Ascii Art)                          |
-|              | △ JSON                          |                        |                                                                                           |
-|              | △ nwdiag（ネットワーク図）      |                        | ネットワーク機器の物理的な接続を記述                                                      |
-|              | △ Salt（Wireframe）             |                        | ワイヤフレームによる GUI 設計ツール                                                       |
-|              | △ WBS                           |                        | タスクを分割して階層構造を可視化するもの（Work Breakdown Structure）                      |
-|              | △ YAML                          |                        |                                                                                           |
-|              | △ ガントチャート                |                        | タスクごとのスケジュールを可視化するもの                                                  |
-|              | △ マインドマップ                |                        | アイディアを可視化するもの                                                                |
-|              | ▲ ER図                          |                        | RDBの構造（エンティティ・アトリビュート・リレーション・カーディナリティ）を可視化するもの |
+| ダイアグラム                                                           | 内容                                                                                      |                                                                                                                                   |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                        |                                                                                           |                                                                                                                                   |
+| 構造図                                                                 |                                                                                           |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 クラス図                                    | クラスの定義とクラス間の関係を記述                                                        | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-class.png" height="128">               |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 オブジェクト図                              | クラス図の定義を具体化（インスタンス化）して記述                                          | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-object.png" height="128">              |
+| &nbsp;&nbsp;&nbsp;&nbsp;● パッケージ図                                 | クラスをグループ化して記述                                                                | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-package.png" height="128">             |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 コンポーネント図                            | コンポーネント、ポート、インターフェイス、コンポーネント間の関係を記述                    | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-component.png" height="128">           |
+| &nbsp;&nbsp;&nbsp;&nbsp;● コンポジット構造図                           | 複数のクラスの定義とクラス間の関係を記述                                                  | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-composite-structure.png" height="128"> |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 配置図                                      | 物理的な構成を記述                                                                        | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-deployment.png" height="128">          |
+|                                                                        |                                                                                           |                                                                                                                                   |
+| ふるまい図                                                             |                                                                                           |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;● 相互作用図                                   |                                                                                           |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〇 シーケンス図        | 登場人物とシステム内のオブジェクト、通過するメッセージと発生順序を記述                    | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-sequence.png" height="128">            |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● コミュニケーション図 | クラスやオブジェクト間の応答と関係を記述                                                  | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-communication.png" height="128">       |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〇 タイミング図        | 時間軸と状態変化を記述                                                                    | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-timing.png" height="128">              |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● 相互作用概要図       | *相互作用図* をアクティビティ図の構成要素にしたもの                                       |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 ユースケース図                              | アクター（人／組織／別のシステム）とシステムのやり取りを記述                              | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-usecase.png" height="128">             |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 アクティビティ図                            | 「アクション（制御）」の遷移を記述                                                        | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-activity.png" height="128">            |
+| &nbsp;&nbsp;&nbsp;&nbsp;〇 状態遷移図                                  | 「状態」の遷移を記述（ステート図 / ステートマシン図）                                     | <img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-state.png" height="128">               |
+|                                                                        |                                                                                           |                                                                                                                                   |
+| その他                                                                 |                                                                                           |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ Archimate（アーキテクチャ図）                | システムの構造を記述                                                                      |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ AsciiMath                                    | 数式を記述                                                                                |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ Ditaa                                        | アスキーアートを画像化するものDitaa (DIagrams Through Ascii Art)                          |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ JSON                                         |                                                                                           |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ nwdiag（ネットワーク図）                     | ネットワーク機器の物理的な接続を記述                                                      |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ Salt（Wireframe）                            | ワイヤフレームによる GUI 設計ツール                                                       |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ WBS                                          | タスクを分割して階層構造を可視化するもの（Work Breakdown Structure）                      |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ YAML                                         |                                                                                           |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ ガントチャート                               | タスクごとのスケジュールを可視化するもの                                                  |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;△ マインドマップ                               | アイディアを可視化するもの                                                                |                                                                                                                                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;▲ ER図                                         | RDBの構造（エンティティ・アトリビュート・リレーション・カーディナリティ）を可視化するもの |                                                                                                                                   |
+|                                                                        |                                                                                           |                                                                                                                                   |
 
 ## UMLダイアグラムの関係
 
@@ -66,6 +69,8 @@ UMLダイアグラム <|-- ふるまい図
 @enduml
 
 ```
+
+<img src="https://raw.githubusercontent.com/YA-androidapp/PlantUML-CheatSheet/main/img/toc-index.png">
 
 
 ## 共通コマンド
@@ -11095,13 +11100,7 @@ note on link : インポート：依存先のパッケージ内のクラス・�
 
 note on link : アクセス：依存先のパッケージ内のクラス・インターフェイスを依存元のパッケージ・クラス・インターフェイスで利用できる
 
-@enduml
-
-```
-
-```plantuml
-
-@startuml
+' ''''''''''
 
 hide empty members
 
@@ -11141,6 +11140,32 @@ namespace 検索 {
 ```plantuml
 
 @startuml
+
+skinparam component {
+    ArrowColor Tomato
+    ArrowFontColor OrangeRed
+    ArrowFontName Impact
+    BackgroundColor Azure
+    BackgroundColor<<Apache>> Pink
+    BorderColor SeaGreen
+    BorderColor<<Apache>> Red
+    FontName Courier
+    FontSize 16
+}
+
+skinparam databaseBackgroundColor Aqua
+
+skinparam interface {
+    backgroundColor #MistyRose
+    borderColor #Red
+}
+
+skinparam node {
+    borderColor Gold
+    backgroundColor Yellow
+    backgroundColor<<shared_node>> Magenta
+}
+
 
 skinparam interface {
     Shadowing false
@@ -11231,6 +11256,15 @@ package "Group" {
 
     component Component $tagComponent
 
+    Component "Web Server" as WS << Apache >>
+    component "Component" as C1
+    database DB
+    () "Data Access" as DA
+    node Node
+    DA - C1
+    C1 ..> () HTTP : use
+    HTTP - WS
+
     node "Node" {
         [Component] as c11
 
@@ -11284,52 +11318,6 @@ package "Group" {
     }
 
 }
-
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
-skinparam component {
-    ArrowColor Tomato
-    ArrowFontColor OrangeRed
-    ArrowFontName Impact
-    BackgroundColor PaleGreen
-    BackgroundColor<<Apache>> Pink
-    BorderColor SeaGreen
-    BorderColor<<Apache>> Red
-    FontName Courier
-    FontSize 16
-}
-
-skinparam databaseBackgroundColor Aqua
-
-skinparam interface {
-    backgroundColor #MistyRose
-    borderColor #Red
-}
-
-skinparam node {
-    borderColor Gold
-    backgroundColor Yellow
-    backgroundColor<<shared_node>> Magenta
-}
-
-Component "Web Server" as WS << Apache >>
-component "Component" as C1
-
-database DB
-
-() "Data Access" as DA
-
-node Node
-
-DA - C1
-C1 ..> () HTTP : use
-HTTP - WS
 
 @enduml
 
@@ -11445,16 +11433,16 @@ rectangle オブジェクト図 {
     object " : タイヤ" as wheel3
     object " : タイヤ" as wheel4
 
-    wheel1 o-- car
-    wheel2 o-- car
-    wheel3 o-- car
-    wheel4 o-- car
+    wheel1 o-o car
+    wheel2 --o car
+    wheel3 --o car
+    wheel4 --o car
     note on link : 集約
     wheel1 -[hidden]> wheel2
     wheel2 -[hidden]> wheel3
     wheel3 -[hidden]> wheel4
 
-    engine *- car
+    engine -* car
     note on link : コンポジション
 }
 
@@ -12423,14 +12411,6 @@ rectangle Colors {
     foo --> (bar3) #blue;line.dotted;text:blue   : blue dotted
 }
 
-@enduml
-
-```
-
-```plantuml
-
-@startuml
-
 
 ' 作図方向
 ' top to bottom direction /' 既定値 '/
@@ -12497,7 +12477,6 @@ package "E-commerce website" {
 }
 
 @enduml
-
 
 ```
 
